@@ -16,6 +16,7 @@
 		3782EC7C2500A6B500341AF6 /* BuyingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7B2500A6B500341AF6 /* BuyingTab.storyboard */; };
 		3782EC7E2500A6D200341AF6 /* SellingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */; };
 		3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7F2500A6E700341AF6 /* MyMain.storyboard */; };
+		379593672502354800A340DE /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379593662502354800A340DE /* Chatting.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3782EC7B2500A6B500341AF6 /* BuyingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BuyingTab.storyboard; sourceTree = "<group>"; };
 		3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SellingTab.storyboard; sourceTree = "<group>"; };
 		3782EC7F2500A6E700341AF6 /* MyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMain.storyboard; sourceTree = "<group>"; };
+		379593662502354800A340DE /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3782EC792500A64300341AF6 /* Main */,
 				3782EC762500A61B00341AF6 /* 니꺼사기 */,
 				3782EC772500A62D00341AF6 /* 내꺼팔기 */,
+				379593652502352B00A340DE /* 채팅 */,
 				3782EC782500A63400341AF6 /* MY */,
 				3782EC6225007F0500341AF6 /* AppDelegate.swift */,
 				3782EC6425007F0500341AF6 /* SceneDelegate.swift */,
@@ -116,6 +119,15 @@
 				3782EC6B25007F0600341AF6 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		379593652502352B00A340DE /* 채팅 */ = {
+			isa = PBXGroup;
+			children = (
+				379593662502354800A340DE /* Chatting.storyboard */,
+			);
+			name = "채팅";
+			path = "채팅";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +193,7 @@
 				3782EC7C2500A6B500341AF6 /* BuyingTab.storyboard in Resources */,
 				3782EC6C25007F0600341AF6 /* Assets.xcassets in Resources */,
 				3782EC7E2500A6D200341AF6 /* SellingTab.storyboard in Resources */,
+				379593672502354800A340DE /* Chatting.storyboard in Resources */,
 				3782EC6A25007F0500341AF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,82 @@
+
+[
+    {
+        "sellerID":"hanaBank_001",
+        "buyerID":"",
+        "price":"42,000",
+        "location":"서울",
+        "itemContent":{
+            "image":"catTower.png",
+            "explain":"저희집 냥이는 가지고 놀지 않아서 거의 새상품이에요~"
+        },
+        "category":"1"
+    },
+    {
+        "sellerID":"hanaTi_001",
+        "buyerID":"",
+        "price":"51,600",
+        "location":"부산",
+        "itemContent":{
+            "image":"catTower.png",
+            "explain":"마이클조던 싸인 그려진 농구공임다"
+        },
+        "category":"1"
+    },
+    {
+        "sellerID":"hanaTi_002",
+        "buyerID":"",
+        "price":"37,000",
+        "location":"청라",
+        "itemContent":{
+            "image":"giftCard01.png",
+            "explain":"선물받았는데 판매합니다"
+        },
+        "category":"1"
+        },
+    {
+        "sellerID":"hanaCard_001",
+        "buyerID":"",
+        "price":"12,000",
+        "location":"청라",
+        "itemContent":{
+            "image":"catTower.png",
+            "explain":"저희집 냥이는 가지고 놀지 않아서 거의 새상품이에요~"
+        },
+        "category":"1"
+        },
+    {
+        "sellerID":"hanaBank_002",
+        "buyerID":"",
+        "price":"20,000",
+        "location":"명동",
+        "itemContent":{
+            "image":"catTower.png",
+            "explain":"저희집 냥이는 가지고 놀지 않아서 거의 새상품이에요~"
+        },
+        "category":"1"
+    },
+    {
+        "sellerID":"hanaInsurance_001",
+        "buyerID":"",
+        "price":"100,000",
+        "location":"명동",
+        "itemContent":{
+            "image":"iPad.png",
+            "explain":"경품으로 받은 아이패드 경매 올려요~"
+        },
+        "category":"3"
+    },
+    
+    {
+        "sellerID":"hanaBank_003",
+        "buyerID":"",
+        "price":"15,000",
+        "location":"을지로",
+        "itemContent":{
+            "image":"flower.png",
+            "explain":"꽃꽂이 배우고 싶으신분~ 모여주세요 :)"
+        },
+        "category":"2"
+    }
+    
+]

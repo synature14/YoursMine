@@ -12,9 +12,18 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        showIntroVC()
     }
 
-
+    // 인트로 화면 띄우기
+    private func showIntroVC() {
+        let introVC = IntroViewController.create()
+        introVC.modalPresentationStyle = .overFullScreen
+        self.present(introVC, animated: false, completion: nil)
+    }
 }
 

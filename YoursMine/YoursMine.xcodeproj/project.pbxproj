@@ -26,6 +26,8 @@
 		57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A8A2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf */; };
 		57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489A9025060023003D7F1A /* btnCloseNormal@3x.png */; };
 		57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */; };
+		57489A95250605D1003D7F1A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A94250605D1003D7F1A /* TermsViewController.swift */; };
+		57489A97250611BD003D7F1A /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A96250611BD003D7F1A /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		57489A8A2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicUltraLight.ttf; sourceTree = "<group>"; };
 		57489A9025060023003D7F1A /* btnCloseNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCloseNormal@3x.png"; sourceTree = "<group>"; };
 		57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allmenu_detail_arrow_n@3x.png"; sourceTree = "<group>"; };
+		57489A94250605D1003D7F1A /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		57489A96250611BD003D7F1A /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			children = (
 				37959369250236BF00A340DE /* Auth.storyboard */,
 				57489A7C2505C46D003D7F1A /* IntroViewController.swift */,
+				57489A94250605D1003D7F1A /* TermsViewController.swift */,
 			);
 			name = "앱가입";
 			path = "앱가입";
@@ -166,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				57489A782505C3FA003D7F1A /* UIView+Extension.swift */,
+				57489A96250611BD003D7F1A /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,7 +282,9 @@
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				3782EC6325007F0500341AF6 /* AppDelegate.swift in Sources */,
 				57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */,
+				57489A95250605D1003D7F1A /* TermsViewController.swift in Sources */,
 				3782EC6525007F0500341AF6 /* SceneDelegate.swift in Sources */,
+				57489A97250611BD003D7F1A /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

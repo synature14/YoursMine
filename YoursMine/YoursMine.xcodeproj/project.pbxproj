@@ -17,6 +17,7 @@
 		3782EC7E2500A6D200341AF6 /* SellingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */; };
 		3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7F2500A6E700341AF6 /* MyMain.storyboard */; };
 		379593672502354800A340DE /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379593662502354800A340DE /* Chatting.storyboard */; };
+		3795936A250236BF00A340DE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37959369250236BF00A340DE /* Auth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SellingTab.storyboard; sourceTree = "<group>"; };
 		3782EC7F2500A6E700341AF6 /* MyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMain.storyboard; sourceTree = "<group>"; };
 		379593662502354800A340DE /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
+		37959369250236BF00A340DE /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3782EC7A2500A67C00341AF6 /* Resource */,
+				379593682502365700A340DE /* 앱가입 */,
 				3782EC792500A64300341AF6 /* Main */,
 				3782EC762500A61B00341AF6 /* 니꺼사기 */,
 				3782EC772500A62D00341AF6 /* 내꺼팔기 */,
@@ -130,6 +133,15 @@
 			path = "채팅";
 			sourceTree = "<group>";
 		};
+		379593682502365700A340DE /* 앱가입 */ = {
+			isa = PBXGroup;
+			children = (
+				37959369250236BF00A340DE /* Auth.storyboard */,
+			);
+			name = "앱가입";
+			path = "앱가입";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3795936A250236BF00A340DE /* Auth.storyboard in Resources */,
 				3782EC6F25007F0600341AF6 /* LaunchScreen.storyboard in Resources */,
 				3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */,
 				3782EC7C2500A6B500341AF6 /* BuyingTab.storyboard in Resources */,

@@ -1,8 +1,5 @@
 
-
-
-{
-    "SellingProducts":[
+[
     {
         "sellerID":"hanaBank_001",
         "buyerID":"",
@@ -82,6 +79,4 @@
         "category":"2"
     }
     
-    ]
-}
-    
+]

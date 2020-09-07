@@ -9,33 +9,28 @@
 import UIKit
 
 class BuyingMainViewController: UIViewController {
-
+    var productArr: [Product] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        readLocalFile(fileName: "product")
+        readLocalFile(fileName: "item")
     }
     
     private func readLocalFile(fileName: String) {
-        var json: Dictionary<String, Any>?
         let urlPath = Bundle.main.path(forResource: fileName, ofType: "json")
         do {
-            print("urlPath = \(urlPath)")
-            // Getting data from JSON file using the file URL
+
             guard let urlPath = urlPath else {
                 return
             }
             let url = URL(fileURLWithPath: urlPath)
             let data = try Data(contentsOf: url, options: .mappedIfSafe)
-            json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? Dictionary
-            
-            let productArr = json?["SellingProducts"] as! [AnyObject]
-            
-            print("productArr = \(productArr)")
-            
+//            json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? Dictionary
+
+            let dataModel = try JSONDecoder().decode([Product].self, from: data)
+            productArr = dataModel
         } catch {
-            // Handle error here
-            print("data not found")
             print(error)
         }
     }

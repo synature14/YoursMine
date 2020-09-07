@@ -18,6 +18,14 @@
 		3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7F2500A6E700341AF6 /* MyMain.storyboard */; };
 		379593672502354800A340DE /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379593662502354800A340DE /* Chatting.storyboard */; };
 		3795936A250236BF00A340DE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37959369250236BF00A340DE /* Auth.storyboard */; };
+		57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A782505C3FA003D7F1A /* UIView+Extension.swift */; };
+		57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A7C2505C46D003D7F1A /* IntroViewController.swift */; };
+		57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */; };
+		57489A8C2505D00A003D7F1A /* NanumBarunGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A882505D009003D7F1A /* NanumBarunGothicLight.ttf */; };
+		57489A8D2505D00A003D7F1A /* NanumBarunGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A892505D00A003D7F1A /* NanumBarunGothic.ttf */; };
+		57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A8A2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf */; };
+		57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489A9025060023003D7F1A /* btnCloseNormal@3x.png */; };
+		57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,14 @@
 		3782EC7F2500A6E700341AF6 /* MyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMain.storyboard; sourceTree = "<group>"; };
 		379593662502354800A340DE /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 		37959369250236BF00A340DE /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		57489A782505C3FA003D7F1A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		57489A7C2505C46D003D7F1A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
+		57489A882505D009003D7F1A /* NanumBarunGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicLight.ttf; sourceTree = "<group>"; };
+		57489A892505D00A003D7F1A /* NanumBarunGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothic.ttf; sourceTree = "<group>"; };
+		57489A8A2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicUltraLight.ttf; sourceTree = "<group>"; };
+		57489A9025060023003D7F1A /* btnCloseNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCloseNormal@3x.png"; sourceTree = "<group>"; };
+		57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allmenu_detail_arrow_n@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +82,7 @@
 		3782EC6125007F0500341AF6 /* YoursMine */ = {
 			isa = PBXGroup;
 			children = (
+				57489A772505C3EB003D7F1A /* Extension */,
 				3782EC7A2500A67C00341AF6 /* Resource */,
 				379593682502365700A340DE /* 앱가입 */,
 				3782EC792500A64300341AF6 /* Main */,
@@ -119,6 +136,8 @@
 		3782EC7A2500A67C00341AF6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				57489A8F2506000E003D7F1A /* @3x */,
+				57489A7E2505CE56003D7F1A /* Font */,
 				3782EC6B25007F0600341AF6 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -137,9 +156,38 @@
 			isa = PBXGroup;
 			children = (
 				37959369250236BF00A340DE /* Auth.storyboard */,
+				57489A7C2505C46D003D7F1A /* IntroViewController.swift */,
 			);
 			name = "앱가입";
 			path = "앱가입";
+			sourceTree = "<group>";
+		};
+		57489A772505C3EB003D7F1A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57489A782505C3FA003D7F1A /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		57489A7E2505CE56003D7F1A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				57489A892505D00A003D7F1A /* NanumBarunGothic.ttf */,
+				57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */,
+				57489A882505D009003D7F1A /* NanumBarunGothicLight.ttf */,
+				57489A8A2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		57489A8F2506000E003D7F1A /* @3x */ = {
+			isa = PBXGroup;
+			children = (
+				57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */,
+				57489A9025060023003D7F1A /* btnCloseNormal@3x.png */,
+			);
+			path = "@3x";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +251,12 @@
 				3795936A250236BF00A340DE /* Auth.storyboard in Resources */,
 				3782EC6F25007F0600341AF6 /* LaunchScreen.storyboard in Resources */,
 				3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */,
+				57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */,
+				57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */,
+				57489A8D2505D00A003D7F1A /* NanumBarunGothic.ttf in Resources */,
+				57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */,
+				57489A8C2505D00A003D7F1A /* NanumBarunGothicLight.ttf in Resources */,
+				57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */,
 				3782EC7C2500A6B500341AF6 /* BuyingTab.storyboard in Resources */,
 				3782EC6C25007F0600341AF6 /* Assets.xcassets in Resources */,
 				3782EC7E2500A6D200341AF6 /* SellingTab.storyboard in Resources */,
@@ -218,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				3782EC6325007F0500341AF6 /* AppDelegate.swift in Sources */,
+				57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */,
 				3782EC6525007F0500341AF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,11 @@
+
+[
+    {
+        "id":"hanaBank_001",
+        "name": "김하나",
+        "employeeNum": "aaa0001",
+        "point":"500",
+        "grade": "2",
+        "company":"하나은행"
+    }
+]

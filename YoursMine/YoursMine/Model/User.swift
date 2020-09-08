@@ -17,10 +17,10 @@ class User {
     var company: Company!
 }
 
-enum Grade {
-    case 일반판매자
-    case 리뷰왕
-    case 우수판매자
+enum Grade: Int {
+    case 일반판매자 = 0
+    case 리뷰왕 = 1
+    case 우수판매자 = 2
 }
 
 enum Company {

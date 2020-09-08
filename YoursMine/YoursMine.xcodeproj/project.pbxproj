@@ -11,6 +11,11 @@
 		3718FEC62505C286004B43E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC52505C286004B43E6 /* User.swift */; };
 		3718FECA2505FF88004B43E6 /* BuyingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */; };
 		3718FECC250616CD004B43E6 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 3718FECB250616CD004B43E6 /* item.json */; };
+		375FF11C25062D8D00AA47BC /* ProductSellingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */; };
+		375FF11F25062DB100AA47BC /* ProductSellingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 375FF11E25062DB100AA47BC /* ProductSellingCell.xib */; };
+		375FF12125070FC900AA47BC /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 375FF12025070FC900AA47BC /* Users.json */; };
+		375FF1232507154D00AA47BC /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 375FF1222507154D00AA47BC /* ItemListCell.xib */; };
+		375FF1252507156F00AA47BC /* ItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FF1242507156F00AA47BC /* ItemListCell.swift */; };
 		3782EC6325007F0500341AF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782EC6225007F0500341AF6 /* AppDelegate.swift */; };
 		3782EC6525007F0500341AF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782EC6425007F0500341AF6 /* SceneDelegate.swift */; };
 		3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3782EC6625007F0500341AF6 /* MainViewController.swift */; };
@@ -39,6 +44,11 @@
 		3718FEC52505C286004B43E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingMainViewController.swift; sourceTree = "<group>"; };
 		3718FECB250616CD004B43E6 /* item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = item.json; sourceTree = "<group>"; };
+		375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductSellingCell.swift; path = ../ProductSellingCell.swift; sourceTree = "<group>"; };
+		375FF11E25062DB100AA47BC /* ProductSellingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductSellingCell.xib; sourceTree = "<group>"; };
+		375FF12025070FC900AA47BC /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
+		375FF1222507154D00AA47BC /* ItemListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
+		375FF1242507156F00AA47BC /* ItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCell.swift; sourceTree = "<group>"; };
 		3782EC5F25007F0500341AF6 /* YoursMine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoursMine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3782EC6225007F0500341AF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3782EC6425007F0500341AF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +94,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		375FF11D25062D9800AA47BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */,
+				375FF11E25062DB100AA47BC /* ProductSellingCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3782EC5625007F0500341AF6 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +142,9 @@
 		3782EC762500A61B00341AF6 /* 니꺼사기 */ = {
 			isa = PBXGroup;
 			children = (
+				375FF1222507154D00AA47BC /* ItemListCell.xib */,
+				375FF1242507156F00AA47BC /* ItemListCell.swift */,
+				375FF11D25062D9800AA47BC /* Cells */,
 				3782EC7B2500A6B500341AF6 /* BuyingTab.storyboard */,
 				3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */,
 			);
@@ -163,6 +185,7 @@
 				57489A7E2505CE56003D7F1A /* Font */,
 				3782EC6B25007F0600341AF6 /* Assets.xcassets */,
 				3718FECB250616CD004B43E6 /* item.json */,
+				375FF12025070FC900AA47BC /* Users.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -276,10 +299,13 @@
 			files = (
 				3795936A250236BF00A340DE /* Auth.storyboard in Resources */,
 				3782EC6F25007F0600341AF6 /* LaunchScreen.storyboard in Resources */,
+				375FF12125070FC900AA47BC /* Users.json in Resources */,
 				3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */,
 				57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */,
 				57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */,
 				57489A8D2505D00A003D7F1A /* NanumBarunGothic.ttf in Resources */,
+				375FF11F25062DB100AA47BC /* ProductSellingCell.xib in Resources */,
+				375FF1232507154D00AA47BC /* ItemListCell.xib in Resources */,
 				57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */,
 				57489A8C2505D00A003D7F1A /* NanumBarunGothicLight.ttf in Resources */,
 				57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */,
@@ -299,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375FF1252507156F00AA47BC /* ItemListCell.swift in Sources */,
 				57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				3718FEC42505BF54004B43E6 /* Product.swift in Sources */,
@@ -308,6 +335,7 @@
 				3718FEC62505C286004B43E6 /* User.swift in Sources */,
 				3718FECA2505FF88004B43E6 /* BuyingMainViewController.swift in Sources */,
 				3782EC6525007F0500341AF6 /* SceneDelegate.swift in Sources */,
+				375FF11C25062D8D00AA47BC /* ProductSellingCell.swift in Sources */,
 				57489A97250611BD003D7F1A /* UIApplication+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

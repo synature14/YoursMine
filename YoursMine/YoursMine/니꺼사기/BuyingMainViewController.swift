@@ -11,10 +11,18 @@ import UIKit
 class BuyingMainViewController: UIViewController {
     var productArr: [Product] = []
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         readLocalFile(fileName: "item")
+        registerCells()
+    }
+    
+    private func registerCells() {
+        let productSellingCell = UINib(nibName: ProductSellingCell.name, bundle: nil)
+        collectionView.register(productSellingCell, forCellWithReuseIdentifier: ProductSellingCell.name)
     }
     
     private func readLocalFile(fileName: String) {
@@ -34,4 +42,20 @@ class BuyingMainViewController: UIViewController {
             print(error)
         }
     }
+}
+
+extension BuyingMainViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let productSellingCell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductSellingCell.name, for: indexPath) as? ProductSellingCell {
+            return productSellingCell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    
 }

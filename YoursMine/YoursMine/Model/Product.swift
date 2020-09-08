@@ -18,6 +18,8 @@ struct Product {
         case location
         case itemContent
         case category
+        case nLikes
+        case nChattings
     }
     
     var sellerID: String!
@@ -26,6 +28,8 @@ struct Product {
     var location: Location!
     var itemContent: ItemContent!
     var category: ProductCategory!
+    var nLikes: String!
+    var nChattings: String!
     
 
 //    convenience init(fromDict dictionary: [String:Any]) {
@@ -66,6 +70,8 @@ extension Product: Decodable {
         location = try container.decode(Location.self, forKey: .location)
         itemContent = try container.decode(ItemContent.self, forKey: .itemContent)
         category = try container.decode(ProductCategory.self, forKey: .category)
+        nLikes = try container.decode(String.self, forKey: .nLikes)
+        nChattings = try container.decode(String.self, forKey: .nChattings)
     }
 }
 
@@ -124,6 +130,7 @@ enum ProductCategory: String, Decodable {
     case 물건 = "1"
     case 재능 = "2"
     case 나눔 = "3"
+    case 공구 = "4"
 }
 
 enum Location: String, Decodable {

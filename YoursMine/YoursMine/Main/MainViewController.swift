@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        showIntroVC()
+//        showIntroVC()
     }
 
     // 인트로 화면 띄우기

@@ -18,6 +18,13 @@ class BuyingMainViewController: UIViewController {
         
         readLocalFile(fileName: "item")
         registerCells()
+        
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+            layout.minimumLineSpacing = 0
+            layout.estimatedItemSize = collectionView.contentSize
+            layout.scrollDirection = .horizontal
+        }
     }
     
     private func registerCells() {
@@ -56,6 +63,4 @@ extension BuyingMainViewController: UICollectionViewDataSource, UICollectionView
         
         return UICollectionViewCell()
     }
-    
-    
 }

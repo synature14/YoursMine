@@ -14,8 +14,11 @@ class ProductSellingCell: UICollectionViewCell {
     @IBOutlet weak var tableView: UITableView!
     
     override func awakeFromNib() {
+        tableView.delegate = self
+        tableView.dataSource = self
         let itemListCell = UINib(nibName: ItemListCell.name, bundle: nil)
         tableView.register(itemListCell, forCellReuseIdentifier: ItemListCell.name)
+        tableView.estimatedRowHeight = 110
     }
     
     override func prepareForReuse() {

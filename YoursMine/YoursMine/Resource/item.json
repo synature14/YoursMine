@@ -22,6 +22,8 @@
             "image":"catTower.png",
             "explain":"마이클조던 싸인 그려진 농구공임다"
         },
+        "nLikes": "0",
+        "nChattings": "0",
         "category":"1"
     },
     {
@@ -33,6 +35,8 @@
             "image":"giftCard01.png",
             "explain":"선물받았는데 판매합니다"
         },
+        "nLikes": "0",
+        "nChattings": "0",
         "category":"1"
         },
     {
@@ -44,6 +48,8 @@
             "image":"catTower.png",
             "explain":"저희집 냥이는 가지고 놀지 않아서 거의 새상품이에요~"
         },
+        "nLikes": "0",
+        "nChattings": "0",
         "category":"1"
         },
     {
@@ -55,6 +61,8 @@
             "image":"catTower.png",
             "explain":"저희집 냥이는 가지고 놀지 않아서 거의 새상품이에요~"
         },
+        "nLikes": "0",
+        "nChattings": "0",
         "category":"1"
     },
     {
@@ -66,6 +74,8 @@
             "image":"iPad.png",
             "explain":"경품으로 받은 아이패드 경매 올려요~"
         },
+        "nLikes": "0",
+        "nChattings": "0",
         "category":"3"
     },
     
@@ -78,6 +88,8 @@
             "image":"flower.png",
             "explain":"꽃꽂이 배우고 싶으신분~ 모여주세요 :)"
         },
+        "nLikes": "0",
+        "nChattings": "0",
         "category":"2"
     }
     

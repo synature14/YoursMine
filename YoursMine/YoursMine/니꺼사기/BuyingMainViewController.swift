@@ -16,7 +16,12 @@ class Category {
     init(title: String, productType: ProductCategory) {
         self.title = title
         self.productType = productType
-        self.didSelected = false
+        
+        if productType == .물건 {
+            self.didSelected = true
+        } else {
+            self.didSelected = false
+        }
     }
 }
 
@@ -38,10 +43,14 @@ class BuyingMainViewController: UIViewController {
         registerCells()
         
         if let layout = listCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
             layout.minimumLineSpacing = 0
-            layout.estimatedItemSize = listCollectionView.contentSize
+            layout.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: listCollectionView.frame.size.height)
             layout.scrollDirection = .horizontal
+        }
+        
+        if let categoryCellLayout = categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            categoryCellLayout.estimatedItemSize = CGSize(width: 100, height: 50)
+            categoryCellLayout.scrollDirection = .horizontal
         }
     }
     
@@ -80,6 +89,7 @@ extension BuyingMainViewController: UICollectionViewDataSource, UICollectionView
         case categoryCollectionView:
             if let categoryCell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.name, for: indexPath) as? CategoryCell {
                 categoryCell.setCategory(categoryArr[indexPath.item])
+                return categoryCell
             }
             
         case listCollectionView:
@@ -101,6 +111,11 @@ extension BuyingMainViewController: UICollectionViewDataSource, UICollectionView
         if (collectionView.cellForItem(at: indexPath) as? CategoryCell) != nil {
             categoryArr.forEach { $0.didSelected = false }
             categoryArr[indexPath.item].didSelected = true
+            collectionView.reloadData()
         }
     }
+}
+
+extension BuyingMainViewController: UICollectionViewDelegateFlowLayout {
+    
 }

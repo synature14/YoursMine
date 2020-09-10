@@ -39,6 +39,4 @@ extension ProductSellingCell: UITableViewDataSource, UITableViewDelegate {
         
         return UITableViewCell()
     }
-    
-    
 }

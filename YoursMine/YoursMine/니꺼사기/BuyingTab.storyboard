@@ -169,46 +169,104 @@
                                     <constraint firstAttribute="trailing" secondItem="mYL-Yb-iX4" secondAttribute="trailing" id="qix-Rq-n5f"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JWx-dw-jLj">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gc6-w6-gH0">
                                 <rect key="frame" x="0.0" y="154" width="414" height="708"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Flr-Mc-JaT">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="TW1-xz-aDB" id="DJP-s5-sNc"/>
-                                    <outlet property="delegate" destination="TW1-xz-aDB" id="qNz-8K-bqa"/>
+                                    <segue destination="mIu-8w-X5z" kind="embed" id="Pch-Vl-oHO"/>
                                 </connections>
-                            </collectionView>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Gkw-XP-zB6" firstAttribute="trailing" secondItem="P5o-sj-wid" secondAttribute="trailing" id="ADY-gF-OY9"/>
                             <constraint firstItem="P5o-sj-wid" firstAttribute="top" secondItem="Gkw-XP-zB6" secondAttribute="top" id="Ai0-cO-0m4"/>
-                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="bottom" secondItem="JWx-dw-jLj" secondAttribute="bottom" id="BqB-1I-Kus"/>
-                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="trailing" secondItem="JWx-dw-jLj" secondAttribute="trailing" id="E6a-Xq-6h8"/>
+                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="trailing" secondItem="gc6-w6-gH0" secondAttribute="trailing" id="HBq-4x-Agp"/>
                             <constraint firstItem="aCX-Ru-1N2" firstAttribute="trailing" secondItem="Gkw-XP-zB6" secondAttribute="trailing" id="ILm-3x-7dI"/>
                             <constraint firstItem="P5o-sj-wid" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="L0G-DY-vGv"/>
                             <constraint firstItem="aCX-Ru-1N2" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="UZq-UZ-Gc3"/>
-                            <constraint firstItem="JWx-dw-jLj" firstAttribute="top" secondItem="aCX-Ru-1N2" secondAttribute="bottom" id="asn-73-M4y"/>
-                            <constraint firstItem="JWx-dw-jLj" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="tne-jU-f2O"/>
+                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="bottom" secondItem="gc6-w6-gH0" secondAttribute="bottom" id="gkM-jd-YC9"/>
+                            <constraint firstItem="gc6-w6-gH0" firstAttribute="top" secondItem="aCX-Ru-1N2" secondAttribute="bottom" id="pMK-Ma-eCm"/>
                             <constraint firstItem="aCX-Ru-1N2" firstAttribute="top" secondItem="P5o-sj-wid" secondAttribute="bottom" id="z4O-gK-OhO"/>
+                            <constraint firstItem="gc6-w6-gH0" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="zPo-EP-Qt4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gkw-XP-zB6"/>
                     </view>
                     <navigationItem key="navigationItem" id="B7s-1f-KhX"/>
                     <connections>
                         <outlet property="categoryCollectionView" destination="mYL-Yb-iX4" id="2Jb-ha-2bI"/>
-                        <outlet property="listCollectionView" destination="JWx-dw-jLj" id="qDl-ca-E1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAs-0v-JkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="834.78260869565224" y="-315.40178571428572"/>
+        </scene>
+        <!--Product List Controller-->
+        <scene sceneID="veV-1c-EaM">
+            <objects>
+                <viewController storyboardIdentifier="ProductListController" id="0Ju-Tj-iwu" customClass="ProductListController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J45-TX-XGp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JRO-r0-slQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOc-Df-SNi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="360"/>
+        </scene>
+        <!--Lessons List Controller-->
+        <scene sceneID="ue6-mW-Uwg">
+            <objects>
+                <viewController storyboardIdentifier="LessonsListController" id="8VI-Xh-NDC" customClass="LessonsListController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hbO-jq-Jga">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pXK-I9-n56"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzj-Ww-2xT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="360"/>
+        </scene>
+        <!--Auction List Controller-->
+        <scene sceneID="bI7-aQ-Afv">
+            <objects>
+                <viewController storyboardIdentifier="AuctionListController" id="Ch5-4s-ZIJ" customClass="AuctionListController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2o-O5-bhl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Bqo-ea-Meq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9A-fb-Zuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="360"/>
+        </scene>
+        <!--Group Buying List Controller-->
+        <scene sceneID="ajm-I0-724">
+            <objects>
+                <viewController storyboardIdentifier="GroupBuyingListController" id="7Jz-5D-EnO" customClass="GroupBuyingListController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yhj-Sb-EWD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hfK-iK-DKF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LSe-9I-cGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3464" y="360"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="dgF-Pn-Sta">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="mIu-8w-X5z" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6O-PN-QoX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="-272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z6V-RZ-a64">

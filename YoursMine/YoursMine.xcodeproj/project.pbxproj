@@ -37,6 +37,7 @@
 		57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */; };
 		57489A95250605D1003D7F1A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A94250605D1003D7F1A /* TermsViewController.swift */; };
 		57489A97250611BD003D7F1A /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A96250611BD003D7F1A /* UIApplication+Extension.swift */; };
+		988C7F592509B5BC002EC7F8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F582509B5BC002EC7F8 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allmenu_detail_arrow_n@3x.png"; sourceTree = "<group>"; };
 		57489A94250605D1003D7F1A /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		57489A96250611BD003D7F1A /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		988C7F582509B5BC002EC7F8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */,
 				375FF11E25062DB100AA47BC /* ProductSellingCell.xib */,
+				988C7F582509B5BC002EC7F8 /* CategoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988C7F592509B5BC002EC7F8 /* CategoryCell.swift in Sources */,
 				375FF1252507156F00AA47BC /* ItemListCell.swift in Sources */,
 				57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,

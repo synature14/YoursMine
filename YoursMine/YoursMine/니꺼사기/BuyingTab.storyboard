@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2dA-Zf-E80">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2dA-Zf-E80">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -101,7 +101,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="pzY-5Q-riG">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="pzY-5Q-riG" customClass="CategoryCell" customModule="YoursMine" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="1.5" width="140" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q5v-Ua-E2i">
@@ -148,6 +148,10 @@
                                                     </constraints>
                                                 </collectionViewCellContentView>
                                                 <size key="customSize" width="140" height="47"/>
+                                                <connections>
+                                                    <outlet property="categoryLabel" destination="NRg-mf-4g1" id="E6B-vX-Oqv"/>
+                                                    <outlet property="underLineView" destination="bP6-SL-aVN" id="vuD-Zr-O0Z"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -165,40 +169,41 @@
                                     <constraint firstAttribute="trailing" secondItem="mYL-Yb-iX4" secondAttribute="trailing" id="qix-Rq-n5f"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ksf-N5-CWf">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JWx-dw-jLj">
                                 <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Cvy-LP-txy">
-                                    <size key="itemSize" width="412" height="655"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Flr-Mc-JaT">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="TW1-xz-aDB" id="D5a-fr-8wb"/>
-                                    <outlet property="delegate" destination="TW1-xz-aDB" id="n3B-lp-j6Y"/>
+                                    <outlet property="dataSource" destination="TW1-xz-aDB" id="DJP-s5-sNc"/>
+                                    <outlet property="delegate" destination="TW1-xz-aDB" id="qNz-8K-bqa"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ksf-N5-CWf" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="4GB-5k-Whj"/>
                             <constraint firstItem="Gkw-XP-zB6" firstAttribute="trailing" secondItem="P5o-sj-wid" secondAttribute="trailing" id="ADY-gF-OY9"/>
                             <constraint firstItem="P5o-sj-wid" firstAttribute="top" secondItem="Gkw-XP-zB6" secondAttribute="top" id="Ai0-cO-0m4"/>
+                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="bottom" secondItem="JWx-dw-jLj" secondAttribute="bottom" id="BqB-1I-Kus"/>
+                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="trailing" secondItem="JWx-dw-jLj" secondAttribute="trailing" id="E6a-Xq-6h8"/>
                             <constraint firstItem="aCX-Ru-1N2" firstAttribute="trailing" secondItem="Gkw-XP-zB6" secondAttribute="trailing" id="ILm-3x-7dI"/>
                             <constraint firstItem="P5o-sj-wid" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="L0G-DY-vGv"/>
                             <constraint firstItem="aCX-Ru-1N2" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="UZq-UZ-Gc3"/>
-                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="trailing" secondItem="Ksf-N5-CWf" secondAttribute="trailing" id="ZWI-Jc-Nhq"/>
-                            <constraint firstItem="Ksf-N5-CWf" firstAttribute="top" secondItem="aCX-Ru-1N2" secondAttribute="bottom" id="ZkY-oF-NuE"/>
-                            <constraint firstItem="Gkw-XP-zB6" firstAttribute="bottom" secondItem="Ksf-N5-CWf" secondAttribute="bottom" id="hKw-by-ba1"/>
+                            <constraint firstItem="JWx-dw-jLj" firstAttribute="top" secondItem="aCX-Ru-1N2" secondAttribute="bottom" id="asn-73-M4y"/>
+                            <constraint firstItem="JWx-dw-jLj" firstAttribute="leading" secondItem="Gkw-XP-zB6" secondAttribute="leading" id="tne-jU-f2O"/>
                             <constraint firstItem="aCX-Ru-1N2" firstAttribute="top" secondItem="P5o-sj-wid" secondAttribute="bottom" id="z4O-gK-OhO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gkw-XP-zB6"/>
                     </view>
                     <navigationItem key="navigationItem" id="B7s-1f-KhX"/>
                     <connections>
-                        <outlet property="collectionView" destination="Ksf-N5-CWf" id="tM4-Vy-kg9"/>
+                        <outlet property="categoryCollectionView" destination="mYL-Yb-iX4" id="2Jb-ha-2bI"/>
+                        <outlet property="listCollectionView" destination="JWx-dw-jLj" id="qDl-ca-E1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAs-0v-JkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -222,7 +227,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrowtriangle.down.square" catalog="system" width="64" height="56"/>
+        <image name="arrowtriangle.down.square" catalog="system" width="128" height="114"/>
         <namedColor name="DarkBrown">
             <color red="0.21568627450980393" green="0.13725490196078433" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -38,6 +38,10 @@ class BuyingMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let pageVC = self.children[0] as? BuyPageViewController {
+            pageVC.pageDelegate = self
+        }
+        
         readLocalFile(fileName: "item")
         
         
@@ -63,6 +67,12 @@ class BuyingMainViewController: UIViewController {
         } catch {
             print(error)
         }
+    }
+}
+
+extension BuyingMainViewController: PageIndexDelegate {
+    func selectMenuItem(pageIndex: Int) {
+        self.setSelectedCategoryCell(pageIndex)
     }
 }
 

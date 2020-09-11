@@ -11,12 +11,29 @@ import UIKit
 class LessonsListController: UIViewController {
     static let name = "LessonsListController"
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        let itemListCell = UINib(nibName: ItemListCell.name, bundle: nil)
+        tableView.register(itemListCell, forCellReuseIdentifier: ItemListCell.name)
+        tableView.estimatedRowHeight = 110
     }
 
+}
 
-
+extension LessonsListController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let itemListCell = tableView.dequeueReusableCell(withIdentifier: ItemListCell.name, for: indexPath) as? ItemListCell {
+            return itemListCell
+        }
+        
+        return UITableViewCell()
+    }
 }

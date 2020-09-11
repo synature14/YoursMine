@@ -34,11 +34,13 @@ class BuyingMainViewController: UIViewController {
     var pageVC: BuyPageViewController!
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
-    
+    @IBOutlet var searchView: UIView!
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.view.frame.height)
         if let pageVC = self.children[0] as? BuyPageViewController {
             self.pageVC = pageVC
             self.pageVC.pageDelegate = self
@@ -69,6 +71,16 @@ class BuyingMainViewController: UIViewController {
         } catch {
             print(error)
         }
+    }
+    
+    @IBAction func searchButtonTapped(_ sender: Any) {
+        self.view.addSubview(searchView)
+        textField.becomeFirstResponder()
+    }
+    
+    @IBAction func cancelSearchButtonTapped(_ sender: Any) {
+        textField.resignFirstResponder()
+        self.searchView.removeFromSuperview()
     }
 }
 

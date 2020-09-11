@@ -160,6 +160,8 @@
 		57489BC42506293C003D7F1A /* KeyframeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489B442506293C003D7F1A /* KeyframeExtensions.swift */; };
 		57489BC52506293C003D7F1A /* AnimationContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489B462506293C003D7F1A /* AnimationContext.swift */; };
 		57489BC825062A77003D7F1A /* checkbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC725062A77003D7F1A /* checkbox.json */; };
+		57489BCA25071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */; };
+		57489BCC25072192003D7F1A /* EmployeeCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -318,6 +320,8 @@
 		57489B442506293C003D7F1A /* KeyframeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyframeExtensions.swift; sourceTree = "<group>"; };
 		57489B462506293C003D7F1A /* AnimationContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationContext.swift; sourceTree = "<group>"; };
 		57489BC725062A77003D7F1A /* checkbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkbox.json; sourceTree = "<group>"; };
+		57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ccomBtnBackHeaderNormal@3x.png"; sourceTree = "<group>"; };
+		57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCertificateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -440,6 +444,7 @@
 				37959369250236BF00A340DE /* Auth.storyboard */,
 				57489A7C2505C46D003D7F1A /* IntroViewController.swift */,
 				57489A94250605D1003D7F1A /* TermsViewController.swift */,
+				57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */,
 			);
 			name = "앱가입";
 			path = "앱가입";
@@ -468,6 +473,7 @@
 		57489A8F2506000E003D7F1A /* @3x */ = {
 			isa = PBXGroup;
 			children = (
+				57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */,
 				57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */,
 				57489A9025060023003D7F1A /* btnCloseNormal@3x.png */,
 			);
@@ -1042,6 +1048,7 @@
 				379593672502354800A340DE /* Chatting.storyboard in Resources */,
 				3782EC6A25007F0500341AF6 /* Main.storyboard in Resources */,
 				3718FECC250616CD004B43E6 /* item.json in Resources */,
+				57489BCA25071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1100,6 +1107,7 @@
 				57489B5A2506293C003D7F1A /* AnimationTextProvider.swift in Sources */,
 				3718FEC42505BF54004B43E6 /* Product.swift in Sources */,
 				57489BB32506293C003D7F1A /* PrecompAsset.swift in Sources */,
+				57489BCC25072192003D7F1A /* EmployeeCertificateViewController.swift in Sources */,
 				57489B852506293C003D7F1A /* AnyNodeProperty.swift in Sources */,
 				57489B502506293C003D7F1A /* UIColorExtension.swift in Sources */,
 				57489B6D2506293C003D7F1A /* LayerImageProvider.swift in Sources */,

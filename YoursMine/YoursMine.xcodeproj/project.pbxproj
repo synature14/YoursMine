@@ -41,6 +41,8 @@
 		988C7F60250A2095002EC7F8 /* LessonsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F5F250A2095002EC7F8 /* LessonsListController.swift */; };
 		988C7F62250A20B3002EC7F8 /* AuctionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F61250A20B3002EC7F8 /* AuctionListController.swift */; };
 		988C7F64250A211F002EC7F8 /* GroupBuyingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F63250A211F002EC7F8 /* GroupBuyingListController.swift */; };
+		98B7261F250B50E700994C7E /* LessonsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B7261D250B50E700994C7E /* LessonsListCell.swift */; };
+		98B72620250B50E700994C7E /* LessonsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98B7261E250B50E700994C7E /* LessonsListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		988C7F5F250A2095002EC7F8 /* LessonsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsListController.swift; sourceTree = "<group>"; };
 		988C7F61250A20B3002EC7F8 /* AuctionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionListController.swift; sourceTree = "<group>"; };
 		988C7F63250A211F002EC7F8 /* GroupBuyingListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBuyingListController.swift; sourceTree = "<group>"; };
+		98B7261D250B50E700994C7E /* LessonsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsListCell.swift; sourceTree = "<group>"; };
+		98B7261E250B50E700994C7E /* LessonsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonsListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +109,11 @@
 		375FF11D25062D9800AA47BC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				988C7F582509B5BC002EC7F8 /* CategoryCell.swift */,
 				375FF1222507154D00AA47BC /* ItemListCell.xib */,
 				375FF1242507156F00AA47BC /* ItemListCell.swift */,
-				988C7F582509B5BC002EC7F8 /* CategoryCell.swift */,
+				98B7261E250B50E700994C7E /* LessonsListCell.xib */,
+				98B7261D250B50E700994C7E /* LessonsListCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -151,10 +157,10 @@
 		3782EC762500A61B00341AF6 /* 니꺼사기 */ = {
 			isa = PBXGroup;
 			children = (
-				375FF11D25062D9800AA47BC /* Cells */,
 				3782EC7B2500A6B500341AF6 /* BuyingTab.storyboard */,
 				3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */,
 				988C7F5A250A1F93002EC7F8 /* BuyPageViewController.swift */,
+				375FF11D25062D9800AA47BC /* Cells */,
 				988C7F5C250A200A002EC7F8 /* SubPage */,
 			);
 			name = "니꺼사기";
@@ -325,6 +331,7 @@
 				57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */,
 				57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */,
 				57489A8D2505D00A003D7F1A /* NanumBarunGothic.ttf in Resources */,
+				98B72620250B50E700994C7E /* LessonsListCell.xib in Resources */,
 				375FF1232507154D00AA47BC /* ItemListCell.xib in Resources */,
 				57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */,
 				57489A8C2505D00A003D7F1A /* NanumBarunGothicLight.ttf in Resources */,
@@ -350,6 +357,7 @@
 				57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				3718FEC42505BF54004B43E6 /* Product.swift in Sources */,
+				98B7261F250B50E700994C7E /* LessonsListCell.swift in Sources */,
 				988C7F62250A20B3002EC7F8 /* AuctionListController.swift in Sources */,
 				3782EC6325007F0500341AF6 /* AppDelegate.swift in Sources */,
 				988C7F64250A211F002EC7F8 /* GroupBuyingListController.swift in Sources */,

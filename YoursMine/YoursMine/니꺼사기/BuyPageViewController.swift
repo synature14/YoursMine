@@ -94,6 +94,11 @@ class BuyPageViewController: UIPageViewController, UIPageViewControllerDataSourc
 
 extension BuyPageViewController {
     func goToViewController(_ index: Int) {
-        
+        var direction: UIPageViewController.NavigationDirection = .forward
+        if index < currentIndex {
+            direction = .reverse
+        }
+        self.setViewControllers([VCArray[index]], direction: direction, animated: true)
+        self.currentIndex = index
     }
 }

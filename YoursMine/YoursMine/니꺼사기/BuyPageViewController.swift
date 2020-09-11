@@ -15,8 +15,12 @@ protocol PageIndexDelegate {
 class BuyPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     var pageDelegate: PageIndexDelegate?
-    var pendingPage: Int?
-
+    var currentIndex: Int {
+        didSet {
+            self.pageDelegate?.selectMenuItem(pageIndex: currentIndex)
+        }
+    }
+    
     lazy var VCArray: [UIViewController] = {
         return [self.VCInstance(name: ProductListController.name),
                 self.VCInstance(name: LessonsListController.name),
@@ -25,6 +29,7 @@ class BuyPageViewController: UIPageViewController, UIPageViewControllerDataSourc
     }()
 
     required init?(coder aDecoder: NSCoder) {
+        self.currentIndex = 0
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
     }
 
@@ -68,5 +73,27 @@ class BuyPageViewController: UIPageViewController, UIPageViewControllerDataSourc
         
         self.pageDelegate?.selectMenuItem(pageIndex: vcIndex)
     }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            if let currentViewController = pageViewController.viewControllers?.first,
+                let index = VCArray.firstIndex(of: currentViewController) {
+                self.currentIndex = index
+            }
+        }
+    }
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return VCArray.count
+    }
+    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        return self.currentIndex
+    }
+}
 
+extension BuyPageViewController {
+    func goToViewController(_ index: Int) {
+        
+    }
 }

@@ -31,6 +31,7 @@ class BuyingMainViewController: UIViewController {
                                Category(title: "재능 구매", productType: .재능),
                                Category(title: "나눔 경매", productType: .나눔),
                                Category(title: "공구", productType: .공구)]
+    var pageVC: BuyPageViewController!
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
@@ -39,7 +40,8 @@ class BuyingMainViewController: UIViewController {
         super.viewDidLoad()
         
         if let pageVC = self.children[0] as? BuyPageViewController {
-            pageVC.pageDelegate = self
+            self.pageVC = pageVC
+            self.pageVC.pageDelegate = self
         }
         
         readLocalFile(fileName: "item")
@@ -104,7 +106,7 @@ extension BuyingMainViewController: UICollectionViewDataSource, UICollectionView
         
         if (collectionView.cellForItem(at: indexPath) as? CategoryCell) != nil {
             setSelectedCategoryCell(indexPath.item)
-            
+            self.pageVC.goToViewController(indexPath.item)
             // ProductSellingCell도 scrollToItemAt:
         }
     }

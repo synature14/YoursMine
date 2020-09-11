@@ -30,6 +30,7 @@ extension AuctionListController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let itemListCell = tableView.dequeueReusableCell(withIdentifier: ItemListCell.name, for: indexPath) as? ItemListCell {
+            itemListCell.setBackgroundColor(.blue)
             return itemListCell
         }
         

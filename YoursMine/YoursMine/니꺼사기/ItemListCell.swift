@@ -16,12 +16,16 @@ class ItemListCell: UITableViewCell {
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var sellerIDLabel: UILabel!
     @IBOutlet weak var nLikesLabel: UILabel!
-    
+    @IBOutlet weak var cellView: UIView!
     
     static let name = "ItemListCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setBackgroundColor(_ color: UIColor) {
+        cellView.backgroundColor = color
     }
 }

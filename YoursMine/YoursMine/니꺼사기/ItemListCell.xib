@@ -192,6 +192,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="cellView" destination="3ww-Mq-8G9" id="tJg-aS-aAX"/>
                 <outlet property="companyLabel" destination="b9I-sa-TZx" id="uVS-AT-VYc"/>
                 <outlet property="itemImageView" destination="agm-tE-Dd3" id="bAV-ql-c8A"/>
                 <outlet property="itemTitleLabel" destination="Fpr-zh-XTg" id="Y11-UD-1Um"/>

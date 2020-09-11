@@ -139,6 +139,14 @@ class TermsViewController: UIViewController {
         hide()
     }
     
+    @IBAction func next(_ sender: UIButton) {
+        let vc = EmployeeCertificateViewController.create()
+        // push해야하는데 일단 present
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     // MARK: - Public Methods
     func hide() {
         self.dismiss(animated: true, completion: nil)

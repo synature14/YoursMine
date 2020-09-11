@@ -10,21 +10,118 @@ import UIKit
 
 class EmployeeCertificateViewController: UIViewController {
 
+    @IBOutlet weak var pickerCompany: UIPickerView!
+    @IBOutlet weak var txtFldemplyoeeNum: UITextField!
+    @IBOutlet weak var txtFldPw: UITextField!
+    @IBOutlet weak var lblSelectedCompanyName: UILabel!
+    @IBOutlet weak var btnNext: UIButton!
+    
+    private var arrCompany = [Company.하나금융지주.rawValue, Company.하나은행.rawValue, Company.하나카드.rawValue,
+                              Company.하나금융투자.rawValue, Company.하나생명.rawValue, Company.하나금융티아이.rawValue,
+                              Company.하나캐피탈.rawValue, Company.하나손해보험.rawValue, Company.하나선물.rawValue, Company.하나자산신탁.rawValue]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        initUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    */
+    
+    private func initUI() {
+        txtFldemplyoeeNum.delegate = self
+        txtFldPw.delegate = self
+        pickerCompany.isHidden = true
+        lblSelectedCompanyName.text = arrCompany.first ?? ""
+        btnNext.setTitleColor(.lightGray, for: .normal)
+    }
+    
+    static func create() -> EmployeeCertificateViewController {
+        let sb = UIStoryboard(name: "Auth", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "EmployeeCertificateViewController") as! EmployeeCertificateViewController
+        return vc
+    }
+    
+    
+    @IBAction func selectCompany(_ sender: UIButton) {
+        sender.isSelected = !(sender.isSelected)
+        
+        if sender.isSelected {
+            UIView.animate(withDuration: 0.35, animations: {
+                self.pickerCompany.isHidden = false
+            })
+        }
+        else {
+            UIView.animate(withDuration: 0.35, animations: {
+                self.pickerCompany.isHidden = true
+            })
+        }
+    }
+    
+    @IBAction func goNext(_ sender: UIButton) {
+        
+    }
+    
+    
+}
 
+extension EmployeeCertificateViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return arrCompany.count
+    }
+}
+
+extension EmployeeCertificateViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let companyName = arrCompany[row]
+        return companyName
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 30
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.pickerCompany.selectRow(row, inComponent: 0, animated: true)
+        self.lblSelectedCompanyName.text = arrCompany[row]
+    }
+}
+
+extension EmployeeCertificateViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print(#function)
+        
+        if let pw = txtFldPw.text, let num = txtFldemplyoeeNum.text, let company = lblSelectedCompanyName.text {
+            if pw.count > 0 && num.count > 0 && company.count > 0 {
+                btnNext.setTitleColor(.black, for: .normal)
+            } else {
+                btnNext.setTitleColor(.lightGray, for: .normal)
+            }
+        }
+        else {
+            btnNext.setTitleColor(.lightGray, for: .normal)
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case self.txtFldemplyoeeNum:
+            self.txtFldemplyoeeNum.resignFirstResponder()
+            self.txtFldPw.becomeFirstResponder()
+            
+        case self.txtFldPw:
+            self.txtFldPw.resignFirstResponder()
+            
+        default:
+            break
+        }
+        
+        return true
+    }
 }

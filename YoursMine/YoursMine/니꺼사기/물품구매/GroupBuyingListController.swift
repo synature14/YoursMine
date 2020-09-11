@@ -19,7 +19,7 @@ class GroupBuyingListController: UIViewController {
         tableView.dataSource = self
         let itemListCell = UINib(nibName: ItemListCell.name, bundle: nil)
         tableView.register(itemListCell, forCellReuseIdentifier: ItemListCell.name)
-        tableView.estimatedRowHeight = 110
+        tableView.estimatedRowHeight = 80
     }
 }
 

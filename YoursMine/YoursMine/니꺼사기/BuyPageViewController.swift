@@ -82,14 +82,6 @@ class BuyPageViewController: UIPageViewController, UIPageViewControllerDataSourc
             }
         }
     }
-    
-    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return VCArray.count
-    }
-    
-    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return self.currentIndex
-    }
 }
 
 extension BuyPageViewController {

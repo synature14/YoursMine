@@ -32,13 +32,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="명동 사옥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNL-7a-Oc2">
-                                                <rect key="frame" x="15" y="10" width="67.5" height="40"/>
+                                                <rect key="frame" x="15" y="10" width="68.5" height="40"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="18"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowtriangle.down.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gBx-Ci-Zdc">
-                                                <rect key="frame" x="90.5" y="21" width="19.5" height="17.5"/>
+                                                <rect key="frame" x="91.5" y="21" width="19.5" height="17.5"/>
                                                 <color key="tintColor" name="TextColor"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1i-dL-LsP">
@@ -89,10 +89,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCX-Ru-1N2">
-                                <rect key="frame" x="0.0" y="104" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="40"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mYL-Yb-iX4">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="Ldh-4j-H0g">
                                             <size key="itemSize" width="140" height="47"/>
@@ -102,7 +102,7 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="pzY-5Q-riG" customClass="CategoryCell" customModule="YoursMine" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="1.5" width="140" height="47"/>
+                                                <rect key="frame" x="0.0" y="-3.5" width="140" height="47"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="q5v-Ua-E2i">
                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="47"/>
@@ -163,14 +163,14 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="mYL-Yb-iX4" firstAttribute="leading" secondItem="aCX-Ru-1N2" secondAttribute="leading" id="CFX-2P-8BK"/>
-                                    <constraint firstAttribute="height" constant="50" id="XXx-A0-9aC"/>
+                                    <constraint firstAttribute="height" constant="40" id="XXx-A0-9aC"/>
                                     <constraint firstAttribute="bottom" secondItem="mYL-Yb-iX4" secondAttribute="bottom" id="gu5-bw-Xnb"/>
                                     <constraint firstItem="mYL-Yb-iX4" firstAttribute="top" secondItem="aCX-Ru-1N2" secondAttribute="top" id="hhf-cH-Wcb"/>
                                     <constraint firstAttribute="trailing" secondItem="mYL-Yb-iX4" secondAttribute="trailing" id="qix-Rq-n5f"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gc6-w6-gH0">
-                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
                                 <connections>
                                     <segue destination="mIu-8w-X5z" kind="embed" id="Pch-Vl-oHO"/>
                                 </connections>

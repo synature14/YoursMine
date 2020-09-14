@@ -21,6 +21,7 @@ class ProductListController: UIViewController {
         let itemListCell = UINib(nibName: ItemListCell.name, bundle: nil)
         tableView.register(itemListCell, forCellReuseIdentifier: ItemListCell.name)
         tableView.estimatedRowHeight = 80
+        tableView.contentInset.bottom = 100
     }
 }
 

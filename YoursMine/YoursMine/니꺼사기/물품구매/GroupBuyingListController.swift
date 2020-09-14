@@ -19,6 +19,7 @@ class GroupBuyingListController: UIViewController {
         tableView.dataSource = self
         let groupBuyingCell = UINib(nibName: GroupBuyingCell.name, bundle: nil)
         tableView.register(groupBuyingCell, forCellReuseIdentifier: GroupBuyingCell.name)
+        tableView.contentInset.bottom = 100
     }
 }
 

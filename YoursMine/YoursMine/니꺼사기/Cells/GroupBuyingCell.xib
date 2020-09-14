@@ -25,13 +25,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR5-tu-gmd">
-                        <rect key="frame" x="15" y="10" width="418" height="92"/>
+                        <rect key="frame" x="15" y="10" width="433" height="92"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kf0-sV-7Mw">
-                                <rect key="frame" x="0.0" y="0.0" width="418" height="92"/>
+                                <rect key="frame" x="0.0" y="0.0" width="433" height="92"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[2차 오픈] 이케아 손목받침대 공동구매 (2개 이상 구매시 배송비 무료)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDu-q8-spK">
-                                        <rect key="frame" x="3" y="5" width="325" height="32.5"/>
+                                        <rect key="frame" x="3" y="5" width="340" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="VNS-RO-c4o"/>
                                         </constraints>
@@ -40,16 +40,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lL-Xu-O27">
-                                        <rect key="frame" x="3" y="45.5" width="315" height="13"/>
+                                        <rect key="frame" x="3" y="46" width="330" height="13"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나저축은행" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b94-Tt-nLH">
-                                                <rect key="frame" x="0.0" y="0.0" width="59" height="13"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="13"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김정만" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyl-vp-ymL">
-                                                <rect key="frame" x="67" y="0.0" width="29.5" height="13"/>
+                                                <rect key="frame" x="65.5" y="0.0" width="29" height="13"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -66,10 +66,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEK-ml-EwQ">
-                                        <rect key="frame" x="0.0" y="71" width="303" height="21"/>
+                                        <rect key="frame" x="0.0" y="71" width="318" height="21"/>
                                         <subviews>
                                             <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000001192092896" translatesAutoresizingMaskIntoConstraints="NO" id="f5v-YI-Fdn">
-                                                <rect key="frame" x="0.0" y="6" width="303" height="10"/>
+                                                <rect key="frame" x="0.0" y="6" width="318" height="10"/>
                                                 <color key="backgroundColor" name="LightYellowColor"/>
                                                 <color key="tintColor" name="PointYellowColor"/>
                                                 <constraints>
@@ -82,16 +82,16 @@
                                                 </userDefinedRuntimeAttributes>
                                             </progressView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaf-vv-mvz">
-                                                <rect key="frame" x="115" y="-0.5" width="73" height="13"/>
+                                                <rect key="frame" x="124" y="-0.5" width="70" height="13"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8/10 명" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qQ-8T-YvX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="36.5" height="13"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="13"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                         <color key="textColor" name="DarkBrown"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참여중" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV2-fh-dhN">
-                                                        <rect key="frame" x="36.5" y="0.0" width="36.5" height="13"/>
+                                                        <rect key="frame" x="35" y="0.0" width="35" height="13"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                         <color key="textColor" name="DarkBrown"/>
                                                         <nil key="highlightedColor"/>
@@ -110,13 +110,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15,800원" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-ph-hFJ">
-                                        <rect key="frame" x="352" y="10" width="66" height="15"/>
+                                        <rect key="frame" x="367" y="10" width="56" height="15.5"/>
                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
                                         <color key="textColor" name="DarkBrown"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IHv-zF-6Fu">
-                                        <rect key="frame" x="318" y="72" width="100" height="20"/>
+                                        <rect key="frame" x="333" y="72" width="100" height="20"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxT-4x-f5x">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="20"/>
@@ -196,7 +196,7 @@
                                     <constraint firstItem="6lL-Xu-O27" firstAttribute="top" secondItem="jDu-q8-spK" secondAttribute="bottom" constant="8" id="UQH-NW-kT8"/>
                                     <constraint firstItem="jDu-q8-spK" firstAttribute="leading" secondItem="kf0-sV-7Mw" secondAttribute="leading" constant="3" id="cFY-a9-T9d"/>
                                     <constraint firstItem="jDu-q8-spK" firstAttribute="top" secondItem="kf0-sV-7Mw" secondAttribute="top" constant="5" id="gvU-5S-ux5"/>
-                                    <constraint firstAttribute="trailing" secondItem="cfJ-ph-hFJ" secondAttribute="trailing" id="hfe-Bc-6wD"/>
+                                    <constraint firstAttribute="trailing" secondItem="cfJ-ph-hFJ" secondAttribute="trailing" constant="10" id="hfe-Bc-6wD"/>
                                     <constraint firstAttribute="bottom" secondItem="IHv-zF-6Fu" secondAttribute="bottom" id="mD5-Wh-oUj"/>
                                     <constraint firstAttribute="trailing" secondItem="jDu-q8-spK" secondAttribute="trailing" constant="90" id="pKd-ih-twx"/>
                                     <constraint firstItem="6lL-Xu-O27" firstAttribute="leading" secondItem="jDu-q8-spK" secondAttribute="leading" id="uMf-D0-ehd"/>
@@ -213,7 +213,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="TR5-tu-gmd" secondAttribute="trailing" constant="15" id="9lJ-N4-QE7"/>
+                    <constraint firstAttribute="trailing" secondItem="TR5-tu-gmd" secondAttribute="trailing" id="9lJ-N4-QE7"/>
                     <constraint firstAttribute="bottom" secondItem="TR5-tu-gmd" secondAttribute="bottom" constant="10" id="FI9-AL-mxK"/>
                     <constraint firstItem="TR5-tu-gmd" firstAttribute="leading" secondItem="22e-qJ-pUK" secondAttribute="leading" constant="15" id="YOm-CB-Efn"/>
                     <constraint firstItem="TR5-tu-gmd" firstAttribute="top" secondItem="22e-qJ-pUK" secondAttribute="top" constant="10" id="z0L-aP-WAt"/>

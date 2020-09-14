@@ -10,6 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var tabBarView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -24,6 +26,17 @@ class MainViewController: UIViewController {
         let introVC = IntroViewController.create()
         introVC.modalPresentationStyle = .overFullScreen
         self.present(introVC, animated: false, completion: nil)
+    }
+    
+    // 탭바 숨기기
+    func hideTabBar() {
+        self.tabBarView.isHidden = true
+        self.view.backgroundColor = UIColor(named: "PointYellowColor")
+    }
+    
+    func showTabBar() {
+        self.tabBarView.isHidden = false
+        self.view.backgroundColor = .white
     }
 }
 

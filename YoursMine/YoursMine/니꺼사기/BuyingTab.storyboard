@@ -43,6 +43,9 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1i-dL-LsP">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                                                <connections>
+                                                    <action selector="locationSettingButtonTapped:" destination="TW1-xz-aDB" eventType="touchUpInside" id="9I4-KZ-pbq"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -217,6 +220,8 @@
                     <navigationItem key="navigationItem" id="B7s-1f-KhX"/>
                     <connections>
                         <outlet property="categoryCollectionView" destination="mYL-Yb-iX4" id="2Jb-ha-2bI"/>
+                        <outlet property="pickerContainerView" destination="8Aw-Km-lqD" id="Yja-yX-RKI"/>
+                        <outlet property="pickerView" destination="4cL-7I-eCp" id="mdz-Hu-Pfl"/>
                         <outlet property="searchView" destination="R0L-lq-FIg" id="bU0-eU-H02"/>
                         <outlet property="textField" destination="EMa-b6-Bap" id="Zzh-mP-efd"/>
                     </connections>
@@ -276,6 +281,66 @@
                         <constraint firstItem="cHu-Pr-ZUq" firstAttribute="trailing" secondItem="tjS-du-XdJ" secondAttribute="trailing" id="rxK-Yz-h2b"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="cHu-Pr-ZUq"/>
+                </view>
+                <view contentMode="scaleToFill" id="8Aw-Km-lqD">
+                    <rect key="frame" x="0.0" y="0.0" width="477" height="582"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJl-m6-02j">
+                            <rect key="frame" x="0.0" y="148" width="477" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuy-bG-DRf">
+                                    <rect key="frame" x="397" y="0.0" width="80" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="80" id="oV7-ss-oeH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
+                                    <state key="normal" title="변경">
+                                        <color key="titleColor" name="DarkBrown"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="PointYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="uuy-bG-DRf" secondAttribute="trailing" id="RoP-Wh-nul"/>
+                                <constraint firstAttribute="height" constant="50" id="b6h-PT-jq3"/>
+                                <constraint firstItem="uuy-bG-DRf" firstAttribute="top" secondItem="ZJl-m6-02j" secondAttribute="top" id="gZD-Wd-kvA"/>
+                                <constraint firstAttribute="bottom" secondItem="uuy-bG-DRf" secondAttribute="bottom" id="qO4-tr-ss2"/>
+                            </constraints>
+                        </view>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-7I-eCp">
+                            <rect key="frame" x="0.0" y="198" width="477" height="250"/>
+                            <color key="backgroundColor" name="PointYellowColor"/>
+                            <color key="tintColor" name="DarkBrown"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="2xh-nE-meO"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="TW1-xz-aDB" id="oB6-Sl-l90"/>
+                                <outlet property="delegate" destination="TW1-xz-aDB" id="qxT-rF-zlr"/>
+                            </connections>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3a-nt-RpV">
+                            <rect key="frame" x="0.0" y="44" width="477" height="104"/>
+                            <connections>
+                                <action selector="dimViewTapped:" destination="TW1-xz-aDB" eventType="touchUpInside" id="QNG-ij-wqM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4cL-7I-eCp" firstAttribute="leading" secondItem="yfr-QD-ktD" secondAttribute="leading" id="3Pw-ka-0Wb"/>
+                        <constraint firstItem="yfr-QD-ktD" firstAttribute="bottom" secondItem="4cL-7I-eCp" secondAttribute="bottom" constant="100" id="6W7-qF-jjP"/>
+                        <constraint firstItem="ZJl-m6-02j" firstAttribute="leading" secondItem="yfr-QD-ktD" secondAttribute="leading" id="G6G-RG-WSm"/>
+                        <constraint firstItem="M3a-nt-RpV" firstAttribute="leading" secondItem="yfr-QD-ktD" secondAttribute="leading" id="KMW-Ye-UlH"/>
+                        <constraint firstItem="ZJl-m6-02j" firstAttribute="trailing" secondItem="yfr-QD-ktD" secondAttribute="trailing" id="LNz-kw-EV0"/>
+                        <constraint firstItem="yfr-QD-ktD" firstAttribute="trailing" secondItem="M3a-nt-RpV" secondAttribute="trailing" id="VeX-dW-H6U"/>
+                        <constraint firstItem="ZJl-m6-02j" firstAttribute="top" secondItem="M3a-nt-RpV" secondAttribute="bottom" id="fm1-sQ-XS9"/>
+                        <constraint firstItem="M3a-nt-RpV" firstAttribute="top" secondItem="yfr-QD-ktD" secondAttribute="top" id="i6d-VE-fYK"/>
+                        <constraint firstItem="4cL-7I-eCp" firstAttribute="top" secondItem="ZJl-m6-02j" secondAttribute="bottom" id="klq-PY-usa"/>
+                        <constraint firstAttribute="trailing" secondItem="4cL-7I-eCp" secondAttribute="trailing" id="zaQ-Th-5Kw"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="yfr-QD-ktD"/>
                 </view>
             </objects>
             <point key="canvasLocation" x="834.78260869565224" y="-315.40178571428572"/>
@@ -444,6 +509,9 @@
         </namedColor>
         <namedColor name="LightYellowColor">
             <color red="1" green="0.92941176470588238" blue="0.7686274509803922" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PointYellowColor">
+            <color red="1" green="0.92900002002716064" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.37299999594688416" green="0.24699999392032623" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

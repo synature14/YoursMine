@@ -19,6 +19,7 @@ class LessonsListController: UIViewController {
         tableView.dataSource = self
         let lessonsListCell = UINib(nibName: LessonsListCell.name, bundle: nil)
         tableView.register(lessonsListCell, forCellReuseIdentifier: LessonsListCell.name)
+        tableView.contentInset.bottom = 100
     }
 
 }

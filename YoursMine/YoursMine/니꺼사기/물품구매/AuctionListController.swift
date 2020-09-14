@@ -19,6 +19,7 @@ class AuctionListController: UIViewController {
         tableView.dataSource = self
         let auctionListCell = UINib(nibName: AuctionListCell.name, bundle: nil)
         tableView.register(auctionListCell, forCellReuseIdentifier: AuctionListCell.name)
+        tableView.contentInset.bottom = 100
     }
     
 }

@@ -32,15 +32,23 @@ class BuyingMainViewController: UIViewController {
                                Category(title: "나눔 경매", productType: .나눔),
                                Category(title: "공구", productType: .공구)]
     var pageVC: BuyPageViewController!
+    var searchingLocation: Location = .명동
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet var searchView: UIView!
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet var pickerContainerView: UIView!
+    @IBOutlet weak var pickerView: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: self.view.frame.height)
+        searchView.frame = CGRect(x: 0, y: 0,
+                                  width: UIScreen.main.bounds.width, height: self.view.frame.height)
+        pickerContainerView.frame = CGRect(x: 0, y: 0,
+                                           width: UIScreen.main.bounds.width, height: self.view.frame.height)
+        
         if let pageVC = self.children[0] as? BuyPageViewController {
             self.pageVC = pageVC
             self.pageVC.pageDelegate = self
@@ -58,14 +66,11 @@ class BuyingMainViewController: UIViewController {
     private func readLocalFile(fileName: String) {
         let urlPath = Bundle.main.path(forResource: fileName, ofType: "json")
         do {
-
             guard let urlPath = urlPath else {
                 return
             }
             let url = URL(fileURLWithPath: urlPath)
             let data = try Data(contentsOf: url, options: .mappedIfSafe)
-//            json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? Dictionary
-
             let dataModel = try JSONDecoder().decode([Product].self, from: data)
             productArr = dataModel
         } catch {
@@ -81,6 +86,33 @@ class BuyingMainViewController: UIViewController {
     @IBAction func cancelSearchButtonTapped(_ sender: Any) {
         textField.resignFirstResponder()
         self.searchView.removeFromSuperview()
+    }
+    
+    // Picker뷰
+    @IBAction func locationSettingButtonTapped(_ sender: Any) {
+        let mainVC = self.navigationController?.parent as? MainViewController
+        mainVC!.hideTabBar()
+        self.view.addSubview(pickerContainerView)
+    }
+    
+    @IBAction func dimViewTapped(_ sender: Any) {
+        self.pickerContainerView.removeFromSuperview()
+        let mainVC = self.navigationController?.parent as? MainViewController
+        mainVC!.showTabBar()
+    }
+}
+
+extension BuyingMainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return Location.allCases.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return  Location.allCases[row].rawValue
     }
 }
 

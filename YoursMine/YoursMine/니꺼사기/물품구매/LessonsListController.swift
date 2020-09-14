@@ -8,10 +8,12 @@
 
 import UIKit
 
-class LessonsListController: UIViewController {
+class LessonsListController: ItemListSuperController {
     static let name = "LessonsListController"
+    private var itemArray: [Product] = []
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,15 +24,20 @@ class LessonsListController: UIViewController {
         tableView.contentInset.bottom = 100
     }
 
+    override func setData(_ productArr: [Product]) {
+        self.itemArray = productArr
+    }
 }
 
 extension LessonsListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return itemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = itemArray[indexPath.row]
         if let lessonsListCell = tableView.dequeueReusableCell(withIdentifier: LessonsListCell.name, for: indexPath) as? LessonsListCell {
+            lessonsListCell.setItem(item)
             return lessonsListCell
         }
         

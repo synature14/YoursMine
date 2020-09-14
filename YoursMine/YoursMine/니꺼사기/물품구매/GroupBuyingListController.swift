@@ -8,10 +8,12 @@
 
 import UIKit
 
-class GroupBuyingListController: UIViewController {
-
+class GroupBuyingListController: ItemListSuperController {
+    private var itemArray: [Product] = []
+    
     @IBOutlet weak var tableView: UITableView!
     static let name = "GroupBuyingListController"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +23,22 @@ class GroupBuyingListController: UIViewController {
         tableView.register(groupBuyingCell, forCellReuseIdentifier: GroupBuyingCell.name)
         tableView.contentInset.bottom = 100
     }
+    
+    override func setData(_ productArr: [Product]) {
+        self.itemArray = productArr
+    }
 }
 
 extension GroupBuyingListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return itemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = itemArray[indexPath.row]
+        
         if let groupBuyingCell = tableView.dequeueReusableCell(withIdentifier: GroupBuyingCell.name, for: indexPath) as? GroupBuyingCell {
+            groupBuyingCell.setItem(item)
             return groupBuyingCell
         }
         

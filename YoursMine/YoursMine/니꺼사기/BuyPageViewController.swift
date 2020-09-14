@@ -14,6 +14,7 @@ protocol PageIndexDelegate {
 
 class BuyPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
+    var itemArray: [Product] = []
     var pageDelegate: PageIndexDelegate?
     var currentIndex: Int {
         didSet {

@@ -49,12 +49,7 @@ class BuyingMainViewController: UIViewController {
         pickerContainerView.frame = CGRect(x: 0, y: 0,
                                            width: UIScreen.main.bounds.width, height: self.view.frame.height)
         
-        if let pageVC = self.children[0] as? BuyPageViewController {
-            self.pageVC = pageVC
-            self.pageVC.pageDelegate = self
-        }
-        
-        readLocalFile(fileName: "item")
+        readLocalFile(fileName: "Item")
         
         
         if let categoryCellLayout = categoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -72,9 +67,30 @@ class BuyingMainViewController: UIViewController {
             let url = URL(fileURLWithPath: urlPath)
             let data = try Data(contentsOf: url, options: .mappedIfSafe)
             let dataModel = try JSONDecoder().decode([Product].self, from: data)
+            
             productArr = dataModel
+            setPageVC()
         } catch {
             print(error)
+        }
+    }
+    
+    private func filterItems(category: ProductCategory) -> [Product] {
+        return productArr.filter { $0.category == category }
+    }
+    
+    private func setPageVC() {
+        if let pageVC = self.children[0] as? BuyPageViewController {
+            self.pageVC = pageVC
+            self.pageVC.pageDelegate = self
+            self.pageVC.itemArray = productArr
+            
+            for i in 0..<4 {
+                if let listVC = pageVC.VCArray[i] as? ItemListSuperController {
+                    let filetered = filterItems(category: ProductCategory(rawValue: "\(i)") ?? .물건)
+                    listVC.setData(filetered)
+                }
+            }
         }
     }
     

@@ -9,7 +9,6 @@
 import UIKit
 
 class GroupBuyingCell: UITableViewCell {
-    @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
@@ -26,5 +25,13 @@ class GroupBuyingCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setItem(_ item: Product) {
+        titleLabel.text = item.itemContent.explain
+        userNameLabel.text = item.sellerID
+        priceLabel.text = item.price + "원"
+        nLikeLabel.text = item.nLikes
+        nCommentLabel.text = item.nChattings
     }
 }

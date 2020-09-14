@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ProductListController: UIViewController {
+class ProductListController: ItemListSuperController {
 
     @IBOutlet weak var tableView: UITableView!
+    private var itemArray: [Product] = []
     
     static let name = "ProductListController"
     override func viewDidLoad() {
@@ -23,15 +24,22 @@ class ProductListController: UIViewController {
         tableView.estimatedRowHeight = 80
         tableView.contentInset.bottom = 100
     }
+    
+    override func setData(_ productArr: [Product]) {
+        self.itemArray = productArr
+    }
 }
 
 extension ProductListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return itemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = itemArray[indexPath.row]
+        
         if let itemListCell = tableView.dequeueReusableCell(withIdentifier: ItemListCell.name, for: indexPath) as? ItemListCell {
+            itemListCell.setItem(item)
             return itemListCell
         }
         

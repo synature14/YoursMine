@@ -8,7 +8,8 @@
 
 import UIKit
 
-class AuctionListController: UIViewController {
+class AuctionListController: ItemListSuperController {
+    private var itemArray: [Product] = []
     static let name = "AuctionListController"
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,14 +23,21 @@ class AuctionListController: UIViewController {
         tableView.contentInset.bottom = 100
     }
     
+    override func setData(_ productArr: [Product]) {
+        self.itemArray = productArr
+    }
+    
 }
 extension AuctionListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return itemArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = itemArray[indexPath.row]
+        
         if let auctionListCell = tableView.dequeueReusableCell(withIdentifier: AuctionListCell.name, for: indexPath) as? AuctionListCell {
+            auctionListCell.setItem(item)
             return auctionListCell
         }
         

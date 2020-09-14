@@ -22,9 +22,17 @@ class LessonsListCell: UITableViewCell {
     @IBOutlet weak var nCommentLabel: UILabel!
     
     static let name = "LessonsListCell"
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    func setItem(_ item: Product) {
+        titleLabel.text = item.itemContent.explain
+        userNameLabel.text = item.sellerID
+        
+        nLikeLabel.text = item.nLikes
+        nCommentLabel.text = item.nChattings
     }
 }

@@ -150,6 +150,13 @@
                     <constraint firstItem="Ebq-Gz-Whk" firstAttribute="top" secondItem="l6v-4M-xvp" secondAttribute="top" constant="10" id="ppz-lW-TQm"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="companyLabel" destination="tld-Pt-7R5" id="8i5-bh-jFT"/>
+                <outlet property="previewImageView" destination="Jym-Vs-hXy" id="DCN-J4-5Uf"/>
+                <outlet property="priceLabel" destination="5yB-mo-ei0" id="OYJ-1o-zzk"/>
+                <outlet property="titleLabel" destination="Atl-Yz-ReH" id="qRi-i4-eb9"/>
+                <outlet property="userNameLabel" destination="q1D-bz-WV0" id="m7M-hK-DP3"/>
+            </connections>
             <point key="canvasLocation" x="184.78260869565219" y="-113.16964285714285"/>
         </tableViewCell>
     </objects>

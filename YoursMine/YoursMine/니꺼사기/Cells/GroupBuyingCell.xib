@@ -221,6 +221,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="companyLabel" destination="b94-Tt-nLH" id="Qnl-kf-dSP"/>
+                <outlet property="nCommentLabel" destination="eOu-ia-mFx" id="pGC-on-J1g"/>
+                <outlet property="nLikeLabel" destination="K3c-VP-mX4" id="Df7-6t-HyR"/>
                 <outlet property="nParticipantLabel" destination="3qQ-8T-YvX" id="mFe-ue-FBs"/>
                 <outlet property="priceLabel" destination="cfJ-ph-hFJ" id="lKJ-zl-b6F"/>
                 <outlet property="progressView" destination="f5v-YI-Fdn" id="Nnm-JL-Yxs"/>

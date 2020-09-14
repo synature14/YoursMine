@@ -196,6 +196,7 @@
                 <outlet property="companyLabel" destination="b9I-sa-TZx" id="uVS-AT-VYc"/>
                 <outlet property="itemImageView" destination="agm-tE-Dd3" id="bAV-ql-c8A"/>
                 <outlet property="itemTitleLabel" destination="Fpr-zh-XTg" id="Y11-UD-1Um"/>
+                <outlet property="nCommentLabel" destination="dQE-Kz-nuq" id="6OI-oh-d9m"/>
                 <outlet property="nLikesLabel" destination="bYR-AR-ZwU" id="mtL-eZ-vxq"/>
                 <outlet property="priceLabel" destination="9fY-h8-buI" id="Mei-xg-2mm"/>
                 <outlet property="sellerIDLabel" destination="991-wF-PBW" id="Wbb-pO-c00"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -40,17 +40,17 @@
                                         <rect key="frame" x="0.0" y="10" width="289" height="101"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="레오나르도 갈축 키보드 보드 nChattings nChattings" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fpr-zh-XTg">
-                                                <rect key="frame" x="3" y="15" width="201" height="33"/>
-                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                <rect key="frame" x="3" y="15" width="201" height="37.5"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51,000원" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fY-h8-buI">
-                                                <rect key="frame" x="229" y="15" width="55" height="18"/>
+                                                <rect key="frame" x="225" y="15" width="59" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="QcZ-xf-ItW"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
                                                 <color key="textColor" red="0.23137254900000001" green="0.20784313730000001" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -58,14 +58,14 @@
                                                 <rect key="frame" x="3" y="76" width="111" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나은행" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9I-sa-TZx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="38.5" height="20"/>
-                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
                                                         <color key="textColor" name="TextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="김하나" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="991-wF-PBW">
-                                                        <rect key="frame" x="46.5" y="3.5" width="29" height="13"/>
-                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
+                                                        <rect key="frame" x="53" y="2.5" width="34" height="15.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
                                                         <color key="textColor" name="TextColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -192,11 +192,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cellView" destination="3ww-Mq-8G9" id="tJg-aS-aAX"/>
                 <outlet property="companyLabel" destination="b9I-sa-TZx" id="uVS-AT-VYc"/>
                 <outlet property="itemImageView" destination="agm-tE-Dd3" id="bAV-ql-c8A"/>
                 <outlet property="itemTitleLabel" destination="Fpr-zh-XTg" id="Y11-UD-1Um"/>
-                <outlet property="nCommentLabel" destination="dQE-Kz-nuq" id="6OI-oh-d9m"/>
                 <outlet property="nLikesLabel" destination="bYR-AR-ZwU" id="mtL-eZ-vxq"/>
                 <outlet property="priceLabel" destination="9fY-h8-buI" id="Mei-xg-2mm"/>
                 <outlet property="sellerIDLabel" destination="991-wF-PBW" id="Wbb-pO-c00"/>

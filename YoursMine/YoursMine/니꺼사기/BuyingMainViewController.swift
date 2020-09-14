@@ -85,8 +85,8 @@ class BuyingMainViewController: UIViewController {
             self.pageVC.pageDelegate = self
             self.pageVC.itemArray = productArr
             
-            for i in 0..<4 {
-                if let listVC = pageVC.VCArray[i] as? ItemListSuperController {
+            for i in 1...4 {
+                if let listVC = pageVC.VCArray[i-1] as? ItemListSuperController {
                     let filetered = filterItems(category: ProductCategory(rawValue: "\(i)") ?? .물건)
                     listVC.setData(filetered)
                 }

@@ -61,7 +61,10 @@ class EmployeeCertificateViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: UIButton) {
-        
+        let vc = PWSettingViewController.create()
+        // push해야하는데 일단 present
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
     

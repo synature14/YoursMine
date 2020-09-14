@@ -694,6 +694,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="goLogin:" destination="3T5-Qe-C1k" eventType="touchUpInside" id="gre-0r-uoP"/>
+                                    <action selector="goNext:" destination="k80-9N-1cj" eventType="touchUpInside" id="TyI-ti-lBu"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZM-bl-cSk" userLabel="네비View">
@@ -743,32 +744,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인 설정" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTg-bS-H1z">
-                                <rect key="frame" x="55" y="178" width="75" height="18.5"/>
-                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                <rect key="frame" x="20" y="178" width="80" height="20"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTR-UJ-A7f" customClass="AnimationView" customModule="YoursMine" customModuleProvider="target">
-                                <rect key="frame" x="20" y="172" width="30" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Os6-Cr-HLb" userLabel="전체동의 Button">
-                                <rect key="frame" x="20" y="172" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="0Fo-LK-Amn"/>
-                                    <constraint firstAttribute="height" constant="30" id="3TH-Ms-MVq"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jPO-a0-z3h" userLabel="Line View">
-                                <rect key="frame" x="20" y="211.5" width="374" height="1"/>
+                                <rect key="frame" x="20" y="213" width="374" height="1"/>
                                 <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="CLI-Hw-gcg"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Uwq-Vn-gMu">
-                                <rect key="frame" x="20" y="227.5" width="374" height="100"/>
+                                <rect key="frame" x="20" y="229" width="374" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tn-VY-zSd">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -777,13 +766,16 @@
                                                 <rect key="frame" x="0.0" y="10" width="30" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMj-7I-Web">
+                                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMj-7I-Web">
                                                 <rect key="frame" x="0.0" y="10" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="82J-f8-c6k"/>
                                                     <constraint firstAttribute="width" constant="30" id="ciU-8s-MIe"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="selectLogin:" destination="k80-9N-1cj" eventType="touchUpInside" id="hrj-0w-Hhp"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="패턴 로그인" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ML-Nl-YxI">
                                                 <rect key="frame" x="35" y="15" width="80" height="20"/>
@@ -813,13 +805,16 @@
                                                 <rect key="frame" x="0.0" y="10" width="30" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-qh-zdU">
+                                            <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWs-qh-zdU">
                                                 <rect key="frame" x="0.0" y="10" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="6SK-yH-aQf"/>
                                                     <constraint firstAttribute="height" constant="30" id="IdM-Z0-Feu"/>
                                                 </constraints>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="selectLogin:" destination="k80-9N-1cj" eventType="touchUpInside" id="Tcu-CF-eBO"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="간편 비밀번호 로그인" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-pg-r8P">
                                                 <rect key="frame" x="35" y="15" width="144.5" height="20"/>
@@ -846,13 +841,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iTg-bS-H1z" firstAttribute="centerY" secondItem="Os6-Cr-HLb" secondAttribute="centerY" id="2Sd-0A-GeO"/>
-                            <constraint firstItem="iTg-bS-H1z" firstAttribute="leading" secondItem="Os6-Cr-HLb" secondAttribute="trailing" constant="5" id="4Px-wV-ng3"/>
+                            <constraint firstItem="iTg-bS-H1z" firstAttribute="leading" secondItem="jPO-a0-z3h" secondAttribute="leading" id="4L6-pw-1gR"/>
                             <constraint firstItem="0sK-PS-89G" firstAttribute="leading" secondItem="com-MV-VSF" secondAttribute="leading" constant="30" id="Be1-FQ-1XS"/>
                             <constraint firstItem="com-MV-VSF" firstAttribute="trailing" secondItem="Ayb-Y8-3aE" secondAttribute="trailing" constant="20" id="Jdg-M3-QRj"/>
                             <constraint firstItem="com-MV-VSF" firstAttribute="bottom" secondItem="0sK-PS-89G" secondAttribute="bottom" constant="30" id="Nmr-Gl-rzu"/>
-                            <constraint firstItem="JTR-UJ-A7f" firstAttribute="trailing" secondItem="Os6-Cr-HLb" secondAttribute="trailing" id="Ov8-2n-jxJ"/>
-                            <constraint firstItem="JTR-UJ-A7f" firstAttribute="top" secondItem="Os6-Cr-HLb" secondAttribute="top" id="PVF-MI-UIL"/>
                             <constraint firstItem="SZM-bl-cSk" firstAttribute="top" secondItem="com-MV-VSF" secondAttribute="top" id="Puo-Xw-qeu"/>
                             <constraint firstItem="Ayb-Y8-3aE" firstAttribute="leading" secondItem="com-MV-VSF" secondAttribute="leading" constant="20" id="Rwi-Yw-ST8"/>
                             <constraint firstAttribute="trailing" secondItem="jPO-a0-z3h" secondAttribute="trailing" constant="20" id="T9g-KG-vlO"/>
@@ -860,20 +852,22 @@
                             <constraint firstItem="com-MV-VSF" firstAttribute="trailing" secondItem="SZM-bl-cSk" secondAttribute="trailing" id="X5e-d1-eKA"/>
                             <constraint firstItem="SZM-bl-cSk" firstAttribute="leading" secondItem="com-MV-VSF" secondAttribute="leading" id="Ys4-dI-jFJ"/>
                             <constraint firstItem="Uwq-Vn-gMu" firstAttribute="top" secondItem="jPO-a0-z3h" secondAttribute="bottom" constant="15" id="gKp-AP-LaF"/>
-                            <constraint firstItem="Os6-Cr-HLb" firstAttribute="leading" secondItem="com-MV-VSF" secondAttribute="leading" constant="20" id="iQy-Ah-XkN"/>
                             <constraint firstItem="Ayb-Y8-3aE" firstAttribute="top" secondItem="SZM-bl-cSk" secondAttribute="bottom" constant="30" id="jEN-LM-JkZ"/>
+                            <constraint firstItem="iTg-bS-H1z" firstAttribute="top" secondItem="Ayb-Y8-3aE" secondAttribute="bottom" constant="36" id="n7y-qS-TzT"/>
                             <constraint firstItem="com-MV-VSF" firstAttribute="trailing" secondItem="Uwq-Vn-gMu" secondAttribute="trailing" constant="20" id="tCT-Ai-bKj"/>
                             <constraint firstItem="iTg-bS-H1z" firstAttribute="bottom" secondItem="jPO-a0-z3h" secondAttribute="top" constant="-15" id="tie-Vm-QeX"/>
                             <constraint firstItem="com-MV-VSF" firstAttribute="trailing" secondItem="0sK-PS-89G" secondAttribute="trailing" constant="30" id="tqq-Hi-WKx"/>
-                            <constraint firstItem="JTR-UJ-A7f" firstAttribute="bottom" secondItem="Os6-Cr-HLb" secondAttribute="bottom" id="uVw-oE-Odc"/>
                             <constraint firstItem="jPO-a0-z3h" firstAttribute="leading" secondItem="IU8-cA-R8u" secondAttribute="leading" constant="20" id="uYj-IF-xus"/>
                             <constraint firstItem="Uwq-Vn-gMu" firstAttribute="leading" secondItem="com-MV-VSF" secondAttribute="leading" constant="20" id="umT-Ah-Haj"/>
-                            <constraint firstItem="JTR-UJ-A7f" firstAttribute="leading" secondItem="Os6-Cr-HLb" secondAttribute="leading" id="wJz-T7-Lha"/>
-                            <constraint firstItem="Os6-Cr-HLb" firstAttribute="top" secondItem="Ayb-Y8-3aE" secondAttribute="bottom" constant="30" id="xPq-oG-eHS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="com-MV-VSF"/>
                     </view>
                     <navigationItem key="navigationItem" id="jaf-FZ-RKx"/>
+                    <connections>
+                        <outlet property="aniViewPW" destination="4zl-SN-O0c" id="XbC-51-gpd"/>
+                        <outlet property="aniViewPattern" destination="pRt-Ge-UVi" id="mD0-6W-Uzz"/>
+                        <outlet property="btnFinish" destination="0sK-PS-89G" id="DWt-k4-zXZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1Y-pW-qk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

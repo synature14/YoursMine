@@ -31,28 +31,25 @@
                         <rect key="frame" x="150" y="10" width="258" height="110"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4z-Oc-l7K">
-                                <rect key="frame" x="0.0" y="10" width="258" height="100"/>
+                                <rect key="frame" x="0.0" y="0.0" width="258" height="110"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원룸용 스팀 다리미 (거치대 포함)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-Yz-ReH">
-                                        <rect key="frame" x="3" y="5" width="245" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="QlT-K5-VTH"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원룸용 스팀 다리미 (거치대 포함) [상태 AAA+급]" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-Yz-ReH">
+                                        <rect key="frame" x="3" y="5" width="245" height="33"/>
                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-CK-c18">
-                                        <rect key="frame" x="3" y="45" width="155" height="20"/>
+                                        <rect key="frame" x="3" y="46" width="155" height="13"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나금융티아이" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tld-Pt-7R5">
-                                                <rect key="frame" x="0.0" y="0.0" width="67" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="13"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1D-bz-WV0">
-                                                <rect key="frame" x="75" y="3.5" width="29" height="13"/>
+                                                <rect key="frame" x="75" y="0.0" width="29" height="13"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                 <color key="textColor" name="TextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -60,7 +57,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="0eD-dh-Sms"/>
                                             <constraint firstItem="q1D-bz-WV0" firstAttribute="leading" secondItem="tld-Pt-7R5" secondAttribute="trailing" constant="8" id="Vcu-9E-Trl"/>
                                             <constraint firstItem="tld-Pt-7R5" firstAttribute="top" secondItem="ZQo-CK-c18" secondAttribute="top" id="ZEb-yL-JA1"/>
                                             <constraint firstAttribute="bottom" secondItem="tld-Pt-7R5" secondAttribute="bottom" id="ddv-mj-m3j"/>
@@ -69,10 +65,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGf-xu-ezY">
-                                        <rect key="frame" x="0.0" y="73" width="258" height="27"/>
+                                        <rect key="frame" x="0.0" y="67" width="258" height="43"/>
                                         <subviews>
                                             <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="sHd-a9-aGg">
-                                                <rect key="frame" x="0.0" y="12" width="258" height="10"/>
+                                                <rect key="frame" x="0.0" y="28" width="258" height="10"/>
                                                 <color key="backgroundColor" name="LightYellowColor"/>
                                                 <color key="tintColor" name="PointYellowColor"/>
                                                 <constraints>
@@ -85,13 +81,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </progressView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:21:40 남음" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki4-MN-uf8">
-                                                <rect key="frame" x="25" y="5.5" width="59" height="13"/>
+                                                <rect key="frame" x="25" y="21.5" width="59" height="13"/>
                                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                                 <color key="textColor" name="DarkBrown"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkv-wX-AlC">
-                                                <rect key="frame" x="163" y="-2" width="95" height="14"/>
+                                                <rect key="frame" x="163" y="14" width="95" height="14"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최고가" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXB-PG-Sek">
                                                         <rect key="frame" x="0.0" y="0.0" width="47.5" height="14"/>
@@ -125,20 +121,20 @@
                                     <constraint firstItem="Atl-Yz-ReH" firstAttribute="leading" secondItem="r4z-Oc-l7K" secondAttribute="leading" constant="3" id="1gv-ME-dyT"/>
                                     <constraint firstItem="xGf-xu-ezY" firstAttribute="leading" secondItem="r4z-Oc-l7K" secondAttribute="leading" id="Jct-hu-vXM"/>
                                     <constraint firstItem="Atl-Yz-ReH" firstAttribute="top" secondItem="r4z-Oc-l7K" secondAttribute="top" constant="5" id="Kfk-DO-UPd"/>
-                                    <constraint firstItem="ZQo-CK-c18" firstAttribute="top" secondItem="Atl-Yz-ReH" secondAttribute="bottom" constant="10" id="NaA-O7-7AQ"/>
+                                    <constraint firstItem="ZQo-CK-c18" firstAttribute="top" secondItem="Atl-Yz-ReH" secondAttribute="bottom" constant="8" id="NaA-O7-7AQ"/>
                                     <constraint firstAttribute="bottom" secondItem="xGf-xu-ezY" secondAttribute="bottom" id="WMa-0V-abP"/>
                                     <constraint firstAttribute="trailing" secondItem="ZQo-CK-c18" secondAttribute="trailing" constant="100" id="XVz-ZW-wOG"/>
+                                    <constraint firstItem="xGf-xu-ezY" firstAttribute="top" secondItem="ZQo-CK-c18" secondAttribute="bottom" constant="8" id="YEG-Gs-QzX"/>
                                     <constraint firstItem="ZQo-CK-c18" firstAttribute="leading" secondItem="Atl-Yz-ReH" secondAttribute="leading" id="amJ-JY-ydU"/>
                                     <constraint firstAttribute="trailing" secondItem="Atl-Yz-ReH" secondAttribute="trailing" constant="10" id="byN-T9-fXV"/>
                                     <constraint firstAttribute="trailing" secondItem="xGf-xu-ezY" secondAttribute="trailing" id="fFj-RC-jcg"/>
-                                    <constraint firstItem="xGf-xu-ezY" firstAttribute="top" secondItem="ZQo-CK-c18" secondAttribute="bottom" constant="8" id="jQ0-d1-66D"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="r4z-Oc-l7K" secondAttribute="bottom" id="3yw-Zc-1Vp"/>
-                            <constraint firstItem="r4z-Oc-l7K" firstAttribute="top" secondItem="Ebq-Gz-Whk" secondAttribute="top" constant="10" id="JST-XK-4uY"/>
+                            <constraint firstItem="r4z-Oc-l7K" firstAttribute="top" secondItem="Ebq-Gz-Whk" secondAttribute="top" id="JST-XK-4uY"/>
                             <constraint firstAttribute="trailing" secondItem="r4z-Oc-l7K" secondAttribute="trailing" id="S2P-kS-66e"/>
                             <constraint firstItem="r4z-Oc-l7K" firstAttribute="leading" secondItem="Ebq-Gz-Whk" secondAttribute="leading" id="yix-gf-DaO"/>
                         </constraints>

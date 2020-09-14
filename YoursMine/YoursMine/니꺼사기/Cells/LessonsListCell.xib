@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마감임박" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fQ-nY-v89">
-                                        <rect key="frame" x="15" y="5" width="45" height="15.5"/>
+                                        <rect key="frame" x="15" y="5" width="46.5" height="15"/>
                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
                                         <color key="textColor" red="0.79420358940000002" green="0.30957214910000003" blue="0.2907174716" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -72,23 +72,23 @@
                         <rect key="frame" x="0.0" y="25" width="390" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="롱보드 원데이 레슨 롱보드 " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1j-o8-NOK">
-                                <rect key="frame" x="15" y="0.0" width="160" height="55"/>
-                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
+                                <rect key="frame" x="15" y="10" width="160" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
                                 <color key="textColor" name="TextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Em-z9-usV">
-                                <rect key="frame" x="15" y="60" width="195" height="20"/>
+                                <rect key="frame" x="15" y="31.5" width="195" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나은행" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wND-az-DAv">
-                                        <rect key="frame" x="0.0" y="0.0" width="45" height="20"/>
-                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="39.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Robert" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fn-iL-YJN">
-                                        <rect key="frame" x="53" y="2.5" width="39.5" height="15.5"/>
-                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
+                                        <rect key="frame" x="47.5" y="3.5" width="34" height="13"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -170,7 +170,7 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="KcR-b4-auT">
-                                <rect key="frame" x="215" y="15" width="160" height="10"/>
+                                <rect key="frame" x="215" y="18" width="160" height="10"/>
                                 <color key="backgroundColor" name="LightYellowColor"/>
                                 <color key="tintColor" name="PointYellowColor"/>
                                 <constraints>
@@ -184,7 +184,7 @@
                                 </userDefinedRuntimeAttributes>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1차 7명 / 10명" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WI-aT-K7i">
-                                <rect key="frame" x="235" y="12" width="120" height="13"/>
+                                <rect key="frame" x="235" y="13.5" width="120" height="13"/>
                                 <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="11"/>
                                 <color key="textColor" name="DarkBrown"/>
                                 <nil key="highlightedColor"/>
@@ -194,19 +194,19 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="KcR-b4-auT" secondAttribute="trailing" constant="15" id="0Fb-zt-zkH"/>
                             <constraint firstItem="3WI-aT-K7i" firstAttribute="leading" secondItem="KcR-b4-auT" secondAttribute="leading" constant="20" id="29Y-tw-6br"/>
-                            <constraint firstItem="KcR-b4-auT" firstAttribute="top" secondItem="y1j-o8-NOK" secondAttribute="top" constant="15" id="7mS-iH-FtX"/>
+                            <constraint firstItem="KcR-b4-auT" firstAttribute="top" secondItem="y1j-o8-NOK" secondAttribute="top" constant="8" id="7mS-iH-FtX"/>
                             <constraint firstAttribute="trailing" secondItem="3WI-aT-K7i" secondAttribute="trailing" constant="35" id="Njb-Cw-62X"/>
                             <constraint firstItem="3Em-z9-usV" firstAttribute="leading" secondItem="y1j-o8-NOK" secondAttribute="leading" id="PqI-iB-yMV"/>
                             <constraint firstAttribute="height" constant="100" id="QSZ-DE-VEH"/>
                             <constraint firstItem="y1j-o8-NOK" firstAttribute="leading" secondItem="kw7-Hb-DrT" secondAttribute="leading" constant="15" id="VVw-yR-D1K"/>
-                            <constraint firstAttribute="bottom" secondItem="3Em-z9-usV" secondAttribute="bottom" constant="20" id="ay2-Ct-mmK"/>
-                            <constraint firstItem="y1j-o8-NOK" firstAttribute="top" secondItem="kw7-Hb-DrT" secondAttribute="top" id="bmA-XU-2jZ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3Em-z9-usV" secondAttribute="bottom" constant="20" id="ay2-Ct-mmK"/>
+                            <constraint firstItem="y1j-o8-NOK" firstAttribute="top" secondItem="kw7-Hb-DrT" secondAttribute="top" constant="10" id="bmA-XU-2jZ"/>
+                            <constraint firstItem="3WI-aT-K7i" firstAttribute="centerY" secondItem="KcR-b4-auT" secondAttribute="centerY" constant="-3" id="eeZ-9E-HDv"/>
                             <constraint firstAttribute="trailing" secondItem="Eh8-G5-8Wu" secondAttribute="trailing" constant="5" id="ff2-e9-z0n"/>
                             <constraint firstItem="3Em-z9-usV" firstAttribute="top" secondItem="y1j-o8-NOK" secondAttribute="bottom" constant="5" id="hzz-MP-fHG"/>
                             <constraint firstAttribute="bottom" secondItem="Eh8-G5-8Wu" secondAttribute="bottom" constant="5" id="kjv-rM-lt4"/>
                             <constraint firstAttribute="trailing" secondItem="3Em-z9-usV" secondAttribute="trailing" constant="180" id="s03-aS-VAo"/>
                             <constraint firstItem="KcR-b4-auT" firstAttribute="leading" secondItem="y1j-o8-NOK" secondAttribute="trailing" constant="40" id="tTm-rA-mE3"/>
-                            <constraint firstItem="3WI-aT-K7i" firstAttribute="top" secondItem="kw7-Hb-DrT" secondAttribute="top" constant="12" id="wPx-FM-ave"/>
                         </constraints>
                     </view>
                 </subviews>

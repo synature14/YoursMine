@@ -8,7 +8,9 @@
 
 import UIKit
 
-class AuctionListCell: UICollectionViewCell {
+class AuctionListCell: UITableViewCell {
+    
+    static let name = "AuctionListCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

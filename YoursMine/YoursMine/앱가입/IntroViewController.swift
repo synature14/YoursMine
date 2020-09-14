@@ -17,7 +17,9 @@ class IntroViewController: UIViewController {
     // MARK: - Button Event
     // 로그인
     @IBAction private func goLogin(_ sender: UIButton) {
-        
+        let vc = PatternLockViewController.create()
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
     }
     
     // 임직원 인증 / 비밀번호 재설정

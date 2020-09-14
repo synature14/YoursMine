@@ -23,7 +23,7 @@ enum Grade: Int {
     case 우수판매자 = 2
 }
 
-enum Company {
+enum Company: String {
     case 하나금융지주
     case 하나은행
     case 하나카드

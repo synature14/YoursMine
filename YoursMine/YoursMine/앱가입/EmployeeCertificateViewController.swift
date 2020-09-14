@@ -36,6 +36,7 @@ class EmployeeCertificateViewController: UIViewController {
         pickerCompany.isHidden = true
         lblSelectedCompanyName.text = arrCompany.first ?? ""
         btnNext.setTitleColor(.lightGray, for: .normal)
+        btnNext.isEnabled = false
     }
     
     static func create() -> EmployeeCertificateViewController {
@@ -81,9 +82,11 @@ extension EmployeeCertificateViewController: UIPickerViewDataSource {
 }
 
 extension EmployeeCertificateViewController: UIPickerViewDelegate {
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
         let companyName = arrCompany[row]
-        return companyName
+        let attStr = NSMutableAttributedString(string: companyName, attributes: [.font: UIFont(name: "NanumBarunGothic", size: 17.0)!,
+                                                                                 .foregroundColor: UIColor(white: 0.0, alpha: 1.0) ])
+        return attStr
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
@@ -103,12 +106,15 @@ extension EmployeeCertificateViewController: UITextFieldDelegate {
         if let pw = txtFldPw.text, let num = txtFldemplyoeeNum.text, let company = lblSelectedCompanyName.text {
             if pw.count > 0 && num.count > 0 && company.count > 0 {
                 btnNext.setTitleColor(.black, for: .normal)
+                btnNext.isEnabled = true
             } else {
                 btnNext.setTitleColor(.lightGray, for: .normal)
+                btnNext.isEnabled = false
             }
         }
         else {
             btnNext.setTitleColor(.lightGray, for: .normal)
+            btnNext.isEnabled = false
         }
     }
     

@@ -884,6 +884,73 @@
             </objects>
             <point key="canvasLocation" x="475" y="408"/>
         </scene>
+        <!--Pattern Lock View Controller-->
+        <scene sceneID="hKm-DP-dQk">
+            <objects>
+                <viewController storyboardIdentifier="PatternLockViewController" id="i4H-BB-XCb" customClass="PatternLockViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SdL-tN-Ie6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-Ov-dij">
+                                <rect key="frame" x="20" y="74" width="374" height="47"/>
+                                <string key="text">안녕하세요
+패턴을 입력해주세요</string>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEZ-Pt-FNj">
+                                <rect key="frame" x="30" y="276" width="354" height="354"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zEZ-Pt-FNj" secondAttribute="height" multiplier="1:1" id="Kxq-4h-uBK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpD-FV-Xw8">
+                                <rect key="frame" x="30" y="787" width="354" height="45"/>
+                                <color key="backgroundColor" name="PointYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bec-IY-bbk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="17"/>
+                                <state key="normal" title="패턴을 잊으셨나요?">
+                                    <color key="titleColor" red="0.37254901959999998" green="0.2470588235" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goReRegisterAuth:" destination="i4H-BB-XCb" eventType="touchUpInside" id="Oyh-8A-Nzj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fth-Rv-A1V" firstAttribute="trailing" secondItem="QpD-FV-Xw8" secondAttribute="trailing" constant="30" id="4Nh-UW-71N"/>
+                            <constraint firstItem="zEZ-Pt-FNj" firstAttribute="centerX" secondItem="fth-Rv-A1V" secondAttribute="centerX" id="6ox-qw-IRx"/>
+                            <constraint firstItem="QpD-FV-Xw8" firstAttribute="leading" secondItem="fth-Rv-A1V" secondAttribute="leading" constant="30" id="Bf9-Mf-BVK"/>
+                            <constraint firstItem="fth-Rv-A1V" firstAttribute="trailing" secondItem="9vb-Ov-dij" secondAttribute="trailing" constant="20" id="DS3-gP-7fx"/>
+                            <constraint firstItem="9vb-Ov-dij" firstAttribute="top" secondItem="fth-Rv-A1V" secondAttribute="top" constant="30" id="Hb7-u7-5Jn"/>
+                            <constraint firstItem="zEZ-Pt-FNj" firstAttribute="trailing" secondItem="QpD-FV-Xw8" secondAttribute="trailing" id="X5m-6U-gcB"/>
+                            <constraint firstItem="fth-Rv-A1V" firstAttribute="bottom" secondItem="QpD-FV-Xw8" secondAttribute="bottom" constant="30" id="YQX-ka-DO1"/>
+                            <constraint firstItem="zEZ-Pt-FNj" firstAttribute="leading" secondItem="QpD-FV-Xw8" secondAttribute="leading" id="d4Y-IS-a4E"/>
+                            <constraint firstItem="9vb-Ov-dij" firstAttribute="leading" secondItem="fth-Rv-A1V" secondAttribute="leading" constant="20" id="f75-gC-uF7"/>
+                            <constraint firstItem="zEZ-Pt-FNj" firstAttribute="centerY" secondItem="fth-Rv-A1V" secondAttribute="centerY" id="mzN-D2-YnO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fth-Rv-A1V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MhI-WU-6Nu"/>
+                    <connections>
+                        <outlet property="patternContentView" destination="zEZ-Pt-FNj" id="h3m-69-QwR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1in-on-on5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="-250"/>
+        </scene>
     </scenes>
     <resources>
         <image name="allmenu_detail_arrow_n.png" width="12" height="27"/>

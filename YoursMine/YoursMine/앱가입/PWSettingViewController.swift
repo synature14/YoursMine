@@ -77,9 +77,16 @@ class PWSettingViewController: UIViewController {
     }
     
     @IBAction func goNext(_ sender: UIButton) {
-        UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: {
-            self.dismiss(animated: false, completion: nil)
-        })
+        if isPatternSelected {
+            let vc = PatternLockViewController.create()
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+        else {
+            UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: {
+                self.dismiss(animated: false, completion: nil)
+            })
+        }
     }
     
     
@@ -94,15 +101,17 @@ extension PWSettingViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         print(#function)
         
-        if let pw = txtFldPw.text, pw.count > 0 {
-            btnFinish.isEnabled = true
-            btnFinish.backgroundColor = UIColor(named: "PointYellowColor")
-            btnFinish.setTitleColor(UIColor(named: "TextColor"), for: .normal)
-        }
-        else {
-            btnFinish.isEnabled = false
-            btnFinish.backgroundColor = #colorLiteral(red: 0.8530235887, green: 0.8479533195, blue: 0.856921494, alpha: 1)
-            btnFinish.setTitleColor(.white, for: .normal)
+        if !isPatternSelected {
+            if let pw = txtFldPw.text, pw.count > 0 {
+                btnFinish.isEnabled = true
+                btnFinish.backgroundColor = UIColor(named: "PointYellowColor")
+                btnFinish.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+            }
+//            else {
+//                btnFinish.isEnabled = false
+//                btnFinish.backgroundColor = #colorLiteral(red: 0.8530235887, green: 0.8479533195, blue: 0.856921494, alpha: 1)
+//                btnFinish.setTitleColor(.white, for: .normal)
+//            }
         }
     }
     

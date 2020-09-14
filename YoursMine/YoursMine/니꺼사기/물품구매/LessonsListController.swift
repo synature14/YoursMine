@@ -19,7 +19,7 @@ class LessonsListController: UIViewController {
         tableView.dataSource = self
         let lessonsListCell = UINib(nibName: LessonsListCell.name, bundle: nil)
         tableView.register(lessonsListCell, forCellReuseIdentifier: LessonsListCell.name)
-        tableView.estimatedRowHeight = 130
+        tableView.estimatedRowHeight = 100
     }
 
 }
@@ -35,5 +35,9 @@ extension LessonsListController: UITableViewDataSource, UITableViewDelegate {
         }
         
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }

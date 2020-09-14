@@ -17,9 +17,8 @@ class GroupBuyingListController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        let itemListCell = UINib(nibName: ItemListCell.name, bundle: nil)
-        tableView.register(itemListCell, forCellReuseIdentifier: ItemListCell.name)
-        tableView.estimatedRowHeight = 80
+        let groupBuyingCell = UINib(nibName: GroupBuyingCell.name, bundle: nil)
+        tableView.register(groupBuyingCell, forCellReuseIdentifier: GroupBuyingCell.name)
     }
 }
 
@@ -29,10 +28,14 @@ extension GroupBuyingListController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let itemListCell = tableView.dequeueReusableCell(withIdentifier: ItemListCell.name, for: indexPath) as? ItemListCell {
-            return itemListCell
+        if let groupBuyingCell = tableView.dequeueReusableCell(withIdentifier: GroupBuyingCell.name, for: indexPath) as? GroupBuyingCell {
+            return groupBuyingCell
         }
         
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
     }
 }

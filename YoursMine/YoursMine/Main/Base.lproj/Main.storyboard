@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="drJ-zp-vTD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="drJ-zp-vTD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +32,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-iz-WsX">
-                                <rect key="frame" x="0.0" y="80" width="414" height="746"/>
+                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
                                 <connections>
                                     <segue destination="MwG-Ti-k4X" kind="embed" id="Jqp-DY-UDo"/>
                                 </connections>
@@ -165,7 +165,7 @@
                             <constraint firstItem="p2H-64-pFz" firstAttribute="top" secondItem="2QX-fh-Ms1" secondAttribute="top" id="Rur-hu-79V"/>
                             <constraint firstItem="p2H-64-pFz" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="XPJ-VL-jw5"/>
                             <constraint firstAttribute="bottom" secondItem="OHT-mG-nSk" secondAttribute="bottom" id="mhL-EO-TYw"/>
-                            <constraint firstItem="OHT-mG-nSk" firstAttribute="top" secondItem="aZ8-iz-WsX" secondAttribute="bottom" id="qVQ-i5-ncE"/>
+                            <constraint firstItem="Pez-Kc-r0R" firstAttribute="bottom" secondItem="aZ8-iz-WsX" secondAttribute="bottom" id="qw4-Md-kLl"/>
                             <constraint firstItem="OHT-mG-nSk" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="uTM-YP-oAD"/>
                             <constraint firstItem="aZ8-iz-WsX" firstAttribute="top" secondItem="p2H-64-pFz" secondAttribute="bottom" id="yCh-nb-04l"/>
                             <constraint firstItem="aZ8-iz-WsX" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="ybz-Lm-Kq1"/>
@@ -173,6 +173,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pez-Kc-r0R"/>
                     </view>
+                    <connections>
+                        <outlet property="tabBarView" destination="OHT-mG-nSk" id="9tf-EW-4CQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gn-4B-vpp" sceneMemberID="firstResponder"/>
             </objects>

@@ -133,7 +133,7 @@ enum ProductCategory: String, Decodable {
     case 공구 = "4"
 }
 
-enum Location: String, Decodable {
+enum Location: String, Decodable, CaseIterable {
     case 서울 = "서울"
     case 명동 = "명동"
     case 을지로 = "을지로"

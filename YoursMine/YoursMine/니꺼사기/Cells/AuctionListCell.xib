@@ -140,6 +140,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="LightYellowColor"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Ebq-Gz-Whk" secondAttribute="trailing" constant="15" id="GBx-1I-dop"/>
                     <constraint firstItem="Jym-Vs-hXy" firstAttribute="top" secondItem="l6v-4M-xvp" secondAttribute="top" constant="10" id="HuZ-Ch-zPo"/>

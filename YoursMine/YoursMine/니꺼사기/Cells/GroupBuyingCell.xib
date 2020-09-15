@@ -212,6 +212,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="LightYellowColor"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="TR5-tu-gmd" secondAttribute="trailing" id="9lJ-N4-QE7"/>
                     <constraint firstAttribute="bottom" secondItem="TR5-tu-gmd" secondAttribute="bottom" constant="10" id="FI9-AL-mxK"/>

@@ -33,7 +33,7 @@ class ItemListCell: UITableViewCell {
     func setItem(_ item: Product) {
         itemTitleLabel.text = item.itemContent.explain
         sellerIDLabel.text = item.sellerID
-        
+        itemImageView.image = UIImage(named: item.itemContent.image ?? "")
         priceLabel.text = item.price + "원"
         nLikesLabel.text = item.nLikes
         nCommentLabel.text = item.nChattings

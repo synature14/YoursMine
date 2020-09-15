@@ -6,7 +6,7 @@
         "price":"42,000",
         "location":"서울",
         "itemContent":{
-            "image":"catTower.png",
+            "image":"catTower.jpeg",
             "explain":"저희집 냥이는 가지고 놀지 않아서 거의 새상품이에요~"
         },
         "nLikes" : "0",
@@ -19,7 +19,7 @@
         "price":"51,600",
         "location":"부산",
         "itemContent":{
-            "image":"catTower.png",
+            "image":"basketBall.jpg",
             "explain":"마이클쪼단 싸인 그려진 농구공임다"
         },
         "nLikes" : "0",
@@ -32,7 +32,7 @@
         "price":"37,000",
         "location":"청라",
         "itemContent":{
-            "image":"giftCard01.png",
+            "image":"giftCard.jpg",
             "explain":"선물받았는데 판매합니다"
         },
         "nLikes" : "0",
@@ -45,11 +45,11 @@
         "price":"",
         "location":"청라",
         "itemContent":{
-            "image":"",
+            "image":"community.jpg",
             "explain":"주 3회 함께 운동할 크루원 모집합니다."
         },
-        "nLikes" : "0",
-        "nChattings" : "0",
+        "nLikes" : "5",
+        "nChattings" : "1",
         "category":"2"
     },
     {
@@ -58,11 +58,11 @@
         "price":"",
         "location":"명동",
         "itemContent":{
-            "image":"",
+            "image":"wakeBoard.jpeg",
             "explain":"보드 강습후 같이 취미활동하실 분 구합니다."
         },
-        "nLikes" : "0",
-        "nChattings" : "0",   
+        "nLikes" : "31",
+        "nChattings" : "10",
         "category":"2"
     },
     {
@@ -71,11 +71,11 @@
         "price":"",
         "location":"명동",
         "itemContent":{
-            "image":"iPad.png",
+            "image":"study01.jpg",
             "explain":"영어스터디 모집합니다(강습가능)"
         },
-        "nLikes" : "0",
-        "nChattings" : "0",
+        "nLikes" : "2",
+        "nChattings" : "1",
         "category":"2"
     },
     
@@ -85,7 +85,7 @@
         "price":"300,000",
         "location":"을지로",
         "itemContent":{
-            "image":"insamju.png",
+            "image":"drink.jpg",
             "explain":"선물로 받은 20년근 인삼주 경매 올려보아요"
         },
         "nLikes" : "0",
@@ -98,7 +98,7 @@
         "price":"150,000",
         "location":"을지로",
         "itemContent":{
-            "image":"iron.png",
+            "image":"ironman.jpg",
             "explain":"5년 전에 구입한 단종된 아이언 경매합니다. 상태 S급입니다."
         },
         "nLikes" : "0",
@@ -111,7 +111,7 @@
         "price":"50,000",
         "location":"을지로",
         "itemContent":{
-            "image":"balentine.png",
+            "image":"drink02.jpeg",
             "explain":"발렌타인 30년산 5만원 부터 경매합니다. 싸게들여갈 기회 ㅋ~"
         },
         "nLikes" : "0",
@@ -124,7 +124,7 @@
         "price":"15,000",
         "location":"을지로",
         "itemContent":{
-            "image":"suninjang.png",
+            "image":"plant01.jpg",
             "explain":"선인장 해외직공구 하실분~ 5명만"
         },
         "nLikes" : "0",

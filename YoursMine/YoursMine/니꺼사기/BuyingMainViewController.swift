@@ -32,12 +32,13 @@ class BuyingMainViewController: UIViewController {
                                Category(title: "나눔 경매", productType: .나눔),
                                Category(title: "공구", productType: .공구)]
     var pageVC: BuyPageViewController!
-    var searchingLocation: Location = .명동
+    var searchingLocationIndex: Int = 1
     
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet var searchView: UIView!
     @IBOutlet weak var textField: UITextField!
     
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet var pickerContainerView: UIView!
     @IBOutlet weak var pickerView: UIPickerView!
     
@@ -108,14 +109,21 @@ class BuyingMainViewController: UIViewController {
     @IBAction func locationSettingButtonTapped(_ sender: Any) {
         let mainVC = self.navigationController?.parent as? MainViewController
         mainVC!.hideTabBar()
+        pickerView.selectRow(searchingLocationIndex, inComponent: 0, animated: true)
         self.view.addSubview(pickerContainerView)
     }
     
-    @IBAction func dimViewTapped(_ sender: Any) {
+    @IBAction func dimViewTapped() {
         self.pickerContainerView.removeFromSuperview()
         let mainVC = self.navigationController?.parent as? MainViewController
         mainVC!.showTabBar()
     }
+    
+    @IBAction func pickerChangeButtonTapped(_ sender: Any) {
+        locationLabel.text = Location.allCases[searchingLocationIndex].rawValue
+        dimViewTapped()
+    }
+    
 }
 
 extension BuyingMainViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -129,6 +137,10 @@ extension BuyingMainViewController: UIPickerViewDelegate, UIPickerViewDataSource
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return  Location.allCases[row].rawValue
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.searchingLocationIndex = row
     }
 }
 

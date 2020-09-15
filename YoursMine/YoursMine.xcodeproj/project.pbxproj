@@ -11,8 +11,6 @@
 		3718FEC62505C286004B43E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC52505C286004B43E6 /* User.swift */; };
 		3718FECA2505FF88004B43E6 /* BuyingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */; };
 		3718FECC250616CD004B43E6 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 3718FECB250616CD004B43E6 /* item.json */; };
-		375FF11C25062D8D00AA47BC /* ProductSellingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */; };
-		375FF11F25062DB100AA47BC /* ProductSellingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 375FF11E25062DB100AA47BC /* ProductSellingCell.xib */; };
 		375FF12125070FC900AA47BC /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 375FF12025070FC900AA47BC /* Users.json */; };
 		375FF1232507154D00AA47BC /* ItemListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 375FF1222507154D00AA47BC /* ItemListCell.xib */; };
 		375FF1252507156F00AA47BC /* ItemListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375FF1242507156F00AA47BC /* ItemListCell.swift */; };
@@ -174,6 +172,18 @@
 		57D7B69725107ABD00805E26 /* VersionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69225107ABD00805E26 /* VersionBridge.swift */; };
 		57D7B69825107ABD00805E26 /* CCGestureLockCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69325107ABD00805E26 /* CCGestureLockCollectionViewCell.swift */; };
 		57D7B69925107ABD00805E26 /* CCGestureLockAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69425107ABD00805E26 /* CCGestureLockAppearance.swift */; };
+		9870B9342510800E008C91F6 /* AuctionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9870B92E2510800E008C91F6 /* AuctionListCell.xib */; };
+		9870B9352510800E008C91F6 /* AuctionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B92F2510800E008C91F6 /* AuctionListCell.swift */; };
+		9870B9362510800E008C91F6 /* LessonsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B9302510800E008C91F6 /* LessonsListCell.swift */; };
+		9870B9372510800E008C91F6 /* LessonsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9870B9312510800E008C91F6 /* LessonsListCell.xib */; };
+		9870B9382510800E008C91F6 /* GroupBuyingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B9322510800E008C91F6 /* GroupBuyingCell.swift */; };
+		9870B9392510800E008C91F6 /* GroupBuyingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9870B9332510800E008C91F6 /* GroupBuyingCell.xib */; };
+		9870B93B25108026008C91F6 /* BuyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B93A25108026008C91F6 /* BuyPageViewController.swift */; };
+		9870B94125108036008C91F6 /* ProductListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B93C25108035008C91F6 /* ProductListController.swift */; };
+		9870B94225108036008C91F6 /* AuctionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B93D25108035008C91F6 /* AuctionListController.swift */; };
+		9870B94325108036008C91F6 /* GroupBuyingListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B93E25108035008C91F6 /* GroupBuyingListController.swift */; };
+		9870B94425108036008C91F6 /* ItemListSuperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B93F25108035008C91F6 /* ItemListSuperController.swift */; };
+		9870B94525108036008C91F6 /* LessonsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9870B94025108036008C91F6 /* LessonsListController.swift */; };
 		988C7F592509B5BC002EC7F8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F582509B5BC002EC7F8 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -182,8 +192,6 @@
 		3718FEC52505C286004B43E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingMainViewController.swift; sourceTree = "<group>"; };
 		3718FECB250616CD004B43E6 /* item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = item.json; sourceTree = "<group>"; };
-		375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductSellingCell.swift; path = ../ProductSellingCell.swift; sourceTree = "<group>"; };
-		375FF11E25062DB100AA47BC /* ProductSellingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductSellingCell.xib; sourceTree = "<group>"; };
 		375FF12025070FC900AA47BC /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		375FF1222507154D00AA47BC /* ItemListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListCell.xib; sourceTree = "<group>"; };
 		375FF1242507156F00AA47BC /* ItemListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListCell.swift; sourceTree = "<group>"; };
@@ -347,6 +355,18 @@
 		57D7B69225107ABD00805E26 /* VersionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionBridge.swift; sourceTree = "<group>"; };
 		57D7B69325107ABD00805E26 /* CCGestureLockCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLockCollectionViewCell.swift; sourceTree = "<group>"; };
 		57D7B69425107ABD00805E26 /* CCGestureLockAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLockAppearance.swift; sourceTree = "<group>"; };
+		9870B92E2510800E008C91F6 /* AuctionListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuctionListCell.xib; sourceTree = "<group>"; };
+		9870B92F2510800E008C91F6 /* AuctionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListCell.swift; sourceTree = "<group>"; };
+		9870B9302510800E008C91F6 /* LessonsListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonsListCell.swift; sourceTree = "<group>"; };
+		9870B9312510800E008C91F6 /* LessonsListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LessonsListCell.xib; sourceTree = "<group>"; };
+		9870B9322510800E008C91F6 /* GroupBuyingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBuyingCell.swift; sourceTree = "<group>"; };
+		9870B9332510800E008C91F6 /* GroupBuyingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupBuyingCell.xib; sourceTree = "<group>"; };
+		9870B93A25108026008C91F6 /* BuyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyPageViewController.swift; sourceTree = "<group>"; };
+		9870B93C25108035008C91F6 /* ProductListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductListController.swift; path = "../물품구매/ProductListController.swift"; sourceTree = "<group>"; };
+		9870B93D25108035008C91F6 /* AuctionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuctionListController.swift; path = "../물품구매/AuctionListController.swift"; sourceTree = "<group>"; };
+		9870B93E25108035008C91F6 /* GroupBuyingListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupBuyingListController.swift; path = "../물품구매/GroupBuyingListController.swift"; sourceTree = "<group>"; };
+		9870B93F25108035008C91F6 /* ItemListSuperController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemListSuperController.swift; path = "../물품구매/ItemListSuperController.swift"; sourceTree = "<group>"; };
+		9870B94025108036008C91F6 /* LessonsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LessonsListController.swift; path = "../물품구매/LessonsListController.swift"; sourceTree = "<group>"; };
 		988C7F582509B5BC002EC7F8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -373,9 +393,13 @@
 		375FF11D25062D9800AA47BC /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				375FF11B25062D8D00AA47BC /* ProductSellingCell.swift */,
-				375FF11E25062DB100AA47BC /* ProductSellingCell.xib */,
 				988C7F582509B5BC002EC7F8 /* CategoryCell.swift */,
+				9870B92F2510800E008C91F6 /* AuctionListCell.swift */,
+				9870B92E2510800E008C91F6 /* AuctionListCell.xib */,
+				9870B9322510800E008C91F6 /* GroupBuyingCell.swift */,
+				9870B9332510800E008C91F6 /* GroupBuyingCell.xib */,
+				9870B9302510800E008C91F6 /* LessonsListCell.swift */,
+				9870B9312510800E008C91F6 /* LessonsListCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -421,11 +445,13 @@
 		3782EC762500A61B00341AF6 /* 니꺼사기 */ = {
 			isa = PBXGroup;
 			children = (
+				3782EC7B2500A6B500341AF6 /* BuyingTab.storyboard */,
+				3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */,
+				9870B93A25108026008C91F6 /* BuyPageViewController.swift */,
+				9870B94625108048008C91F6 /* Category */,
 				375FF1222507154D00AA47BC /* ItemListCell.xib */,
 				375FF1242507156F00AA47BC /* ItemListCell.swift */,
 				375FF11D25062D9800AA47BC /* Cells */,
-				3782EC7B2500A6B500341AF6 /* BuyingTab.storyboard */,
-				3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */,
 			);
 			name = "니꺼사기";
 			path = "니꺼사기";
@@ -1037,6 +1063,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9870B94625108048008C91F6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9870B93F25108035008C91F6 /* ItemListSuperController.swift */,
+				9870B93C25108035008C91F6 /* ProductListController.swift */,
+				9870B94025108036008C91F6 /* LessonsListController.swift */,
+				9870B93D25108035008C91F6 /* AuctionListController.swift */,
+				9870B93E25108035008C91F6 /* GroupBuyingListController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1102,9 +1140,9 @@
 				57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */,
 				57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */,
 				57489A8D2505D00A003D7F1A /* NanumBarunGothic.ttf in Resources */,
-				375FF11F25062DB100AA47BC /* ProductSellingCell.xib in Resources */,
 				375FF1232507154D00AA47BC /* ItemListCell.xib in Resources */,
 				57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */,
+				9870B9342510800E008C91F6 /* AuctionListCell.xib in Resources */,
 				57489A8C2505D00A003D7F1A /* NanumBarunGothicLight.ttf in Resources */,
 				57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */,
 				3782EC7C2500A6B500341AF6 /* BuyingTab.storyboard in Resources */,
@@ -1113,8 +1151,10 @@
 				57489BC825062A77003D7F1A /* checkbox.json in Resources */,
 				379593672502354800A340DE /* Chatting.storyboard in Resources */,
 				3782EC6A25007F0500341AF6 /* Main.storyboard in Resources */,
+				9870B9372510800E008C91F6 /* LessonsListCell.xib in Resources */,
 				3718FECC250616CD004B43E6 /* item.json in Resources */,
 				57489BCA25071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png in Resources */,
+				9870B9392510800E008C91F6 /* GroupBuyingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1140,8 +1180,10 @@
 				57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */,
 				57489BA52506293C003D7F1A /* ShapeLayerModel.swift in Sources */,
 				57489B742506293C003D7F1A /* FillRenderer.swift in Sources */,
+				9870B9352510800E008C91F6 /* AuctionListCell.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				57489B682506293C003D7F1A /* ShapeCompositionLayer.swift in Sources */,
+				9870B93B25108026008C91F6 /* BuyPageViewController.swift in Sources */,
 				57D7B69625107ABD00805E26 /* CCGestureLock.swift in Sources */,
 				57489B7D2506293C003D7F1A /* StarNode.swift in Sources */,
 				57489B492506293C003D7F1A /* AnimationPublic.swift in Sources */,
@@ -1165,6 +1207,7 @@
 				57489B9B2506293C003D7F1A /* GradientFill.swift in Sources */,
 				57489B672506293C003D7F1A /* ImageCompositionLayer.swift in Sources */,
 				57489B4D2506293C003D7F1A /* FilepathImageProvider.swift in Sources */,
+				9870B94425108036008C91F6 /* ItemListSuperController.swift in Sources */,
 				57489B5E2506293C003D7F1A /* FloatValueProvider.swift in Sources */,
 				57489BAA2506293C003D7F1A /* Marker.swift in Sources */,
 				57489BAB2506293C003D7F1A /* KeyedDecodingContainerExtensions.swift in Sources */,
@@ -1190,7 +1233,9 @@
 				57489B6E2506293C003D7F1A /* LayerTextProvider.swift in Sources */,
 				57489B752506293C003D7F1A /* StrokeRenderer.swift in Sources */,
 				57489B7E2506293C003D7F1A /* TextAnimatorNode.swift in Sources */,
+				9870B94325108036008C91F6 /* GroupBuyingListController.swift in Sources */,
 				57489B552506293C003D7F1A /* AnimationTime.swift in Sources */,
+				9870B9382510800E008C91F6 /* GroupBuyingCell.swift in Sources */,
 				57489BB62506293C003D7F1A /* LayerDebugging.swift in Sources */,
 				57489B522506293C003D7F1A /* LottieView.swift in Sources */,
 				57489B6F2506293C003D7F1A /* CompositionLayersInitializer.swift in Sources */,
@@ -1207,14 +1252,17 @@
 				57489BC42506293C003D7F1A /* KeyframeExtensions.swift in Sources */,
 				57489B842506293C003D7F1A /* NodeProperty.swift in Sources */,
 				57489B952506293C003D7F1A /* Shape.swift in Sources */,
+				9870B94225108036008C91F6 /* AuctionListController.swift in Sources */,
 				57489B9C2506293C003D7F1A /* GradientStroke.swift in Sources */,
 				57489B6B2506293C003D7F1A /* LayerTransformNode.swift in Sources */,
 				57489B642506293C003D7F1A /* TextCompositionLayer.swift in Sources */,
 				57489B5B2506293C003D7F1A /* AnimationKeypath.swift in Sources */,
 				57489B802506293C003D7F1A /* StrokeNode.swift in Sources */,
+				9870B94525108036008C91F6 /* LessonsListController.swift in Sources */,
 				57489B4B2506293C003D7F1A /* CompatibleAnimationKeypath.swift in Sources */,
 				57489B612506293C003D7F1A /* PointValueProvider.swift in Sources */,
 				57489BA02506293C003D7F1A /* SolidLayerModel.swift in Sources */,
+				9870B94125108036008C91F6 /* ProductListController.swift in Sources */,
 				57489A95250605D1003D7F1A /* TermsViewController.swift in Sources */,
 				57489B692506293C003D7F1A /* MaskContainerLayer.swift in Sources */,
 				57489B4A2506293C003D7F1A /* AnimationImageProvider.swift in Sources */,
@@ -1257,10 +1305,10 @@
 				57489BB72506293C003D7F1A /* AnimatorNodeDebugging.swift in Sources */,
 				57489BC32506293C003D7F1A /* Interpolatable.swift in Sources */,
 				3782EC6525007F0500341AF6 /* SceneDelegate.swift in Sources */,
-				375FF11C25062D8D00AA47BC /* ProductSellingCell.swift in Sources */,
 				57489B922506293C003D7F1A /* Ellipse.swift in Sources */,
 				57489B6C2506293C003D7F1A /* InvertedMatteLayer.swift in Sources */,
 				57489B8F2506293C003D7F1A /* PathNode.swift in Sources */,
+				9870B9362510800E008C91F6 /* LessonsListCell.swift in Sources */,
 				57489B9F2506293C003D7F1A /* Star.swift in Sources */,
 				57489B702506293C003D7F1A /* TrimPathNode.swift in Sources */,
 				57D7B69925107ABD00805E26 /* CCGestureLockAppearance.swift in Sources */,

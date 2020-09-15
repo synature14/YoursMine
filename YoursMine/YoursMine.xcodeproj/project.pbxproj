@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,7 +37,6 @@
 		57489A9325060023003D7F1A /* allmenu_detail_arrow_n@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */; };
 		57489A95250605D1003D7F1A /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A94250605D1003D7F1A /* TermsViewController.swift */; };
 		57489A97250611BD003D7F1A /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A96250611BD003D7F1A /* UIApplication+Extension.swift */; };
-		988C7F592509B5BC002EC7F8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F582509B5BC002EC7F8 /* CategoryCell.swift */; };
 		57489B472506293C003D7F1A /* AnimationViewInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A9F2506293C003D7F1A /* AnimationViewInitializers.swift */; };
 		57489B482506293C003D7F1A /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489AA02506293C003D7F1A /* AnimationView.swift */; };
 		57489B492506293C003D7F1A /* AnimationPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489AA12506293C003D7F1A /* AnimationPublic.swift */; };
@@ -170,12 +169,15 @@
 		57489BCC25072192003D7F1A /* EmployeeCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */; };
 		57B6340D250B731A004B98D8 /* PWSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6340C250B731A004B98D8 /* PWSettingViewController.swift */; };
 		57D7B68E250F356000805E26 /* PatternLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B68D250F356000805E26 /* PatternLockViewController.swift */; };
-		83909BF9F47E7F66991C940C /* Pods_YoursMine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F321CC07698372E98EF9D8 /* Pods_YoursMine.framework */; };
+		57D7B69525107ABD00805E26 /* CCGestureLockSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69025107ABD00805E26 /* CCGestureLockSensor.swift */; };
+		57D7B69625107ABD00805E26 /* CCGestureLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69125107ABD00805E26 /* CCGestureLock.swift */; };
+		57D7B69725107ABD00805E26 /* VersionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69225107ABD00805E26 /* VersionBridge.swift */; };
+		57D7B69825107ABD00805E26 /* CCGestureLockCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69325107ABD00805E26 /* CCGestureLockCollectionViewCell.swift */; };
+		57D7B69925107ABD00805E26 /* CCGestureLockAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69425107ABD00805E26 /* CCGestureLockAppearance.swift */; };
+		988C7F592509B5BC002EC7F8 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C7F582509B5BC002EC7F8 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		058E2CF0DA7AD0A491ECA709 /* Pods-YoursMine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoursMine.release.xcconfig"; path = "Target Support Files/Pods-YoursMine/Pods-YoursMine.release.xcconfig"; sourceTree = "<group>"; };
-		2998816F0B509370B954A619 /* Pods-YoursMine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoursMine.debug.xcconfig"; path = "Target Support Files/Pods-YoursMine/Pods-YoursMine.debug.xcconfig"; sourceTree = "<group>"; };
 		3718FEC32505BF54004B43E6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3718FEC52505C286004B43E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingMainViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +210,6 @@
 		57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allmenu_detail_arrow_n@3x.png"; sourceTree = "<group>"; };
 		57489A94250605D1003D7F1A /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		57489A96250611BD003D7F1A /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
-		988C7F582509B5BC002EC7F8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		57489A9F2506293C003D7F1A /* AnimationViewInitializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewInitializers.swift; sourceTree = "<group>"; };
 		57489AA02506293C003D7F1A /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		57489AA12506293C003D7F1A /* AnimationPublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationPublic.swift; sourceTree = "<group>"; };
@@ -341,7 +342,12 @@
 		57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCertificateViewController.swift; sourceTree = "<group>"; };
 		57B6340C250B731A004B98D8 /* PWSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSettingViewController.swift; sourceTree = "<group>"; };
 		57D7B68D250F356000805E26 /* PatternLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLockViewController.swift; sourceTree = "<group>"; };
-		91F321CC07698372E98EF9D8 /* Pods_YoursMine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoursMine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D7B69025107ABD00805E26 /* CCGestureLockSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLockSensor.swift; sourceTree = "<group>"; };
+		57D7B69125107ABD00805E26 /* CCGestureLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLock.swift; sourceTree = "<group>"; };
+		57D7B69225107ABD00805E26 /* VersionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionBridge.swift; sourceTree = "<group>"; };
+		57D7B69325107ABD00805E26 /* CCGestureLockCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLockCollectionViewCell.swift; sourceTree = "<group>"; };
+		57D7B69425107ABD00805E26 /* CCGestureLockAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLockAppearance.swift; sourceTree = "<group>"; };
+		988C7F582509B5BC002EC7F8 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,7 +355,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83909BF9F47E7F66991C940C /* Pods_YoursMine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +386,6 @@
 				3782EC6125007F0500341AF6 /* YoursMine */,
 				3782EC6025007F0500341AF6 /* Products */,
 				78845B2282DCF823D000E2BC /* Pods */,
-				B8C5A3FCC6E4E4C905FCDD8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -522,6 +526,7 @@
 		57489A9B25062928003D7F1A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				57D7B68F25107AA800805E26 /* CCGestureLock */,
 				57489A9C2506293C003D7F1A /* Lottie */,
 			);
 			path = Library;
@@ -1013,21 +1018,23 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		57D7B68F25107AA800805E26 /* CCGestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				57D7B69125107ABD00805E26 /* CCGestureLock.swift */,
+				57D7B69425107ABD00805E26 /* CCGestureLockAppearance.swift */,
+				57D7B69325107ABD00805E26 /* CCGestureLockCollectionViewCell.swift */,
+				57D7B69025107ABD00805E26 /* CCGestureLockSensor.swift */,
+				57D7B69225107ABD00805E26 /* VersionBridge.swift */,
+			);
+			path = CCGestureLock;
+			sourceTree = "<group>";
+		};
 		78845B2282DCF823D000E2BC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2998816F0B509370B954A619 /* Pods-YoursMine.debug.xcconfig */,
-				058E2CF0DA7AD0A491ECA709 /* Pods-YoursMine.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		B8C5A3FCC6E4E4C905FCDD8C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				91F321CC07698372E98EF9D8 /* Pods_YoursMine.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1037,11 +1044,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3782EC7325007F0600341AF6 /* Build configuration list for PBXNativeTarget "YoursMine" */;
 			buildPhases = (
-				B63E7081E7DD3C524F97FC85 /* [CP] Check Pods Manifest.lock */,
 				3782EC5B25007F0500341AF6 /* Sources */,
 				3782EC5C25007F0500341AF6 /* Frameworks */,
 				3782EC5D25007F0500341AF6 /* Resources */,
-				067E43C3CB3D652ED41918CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1115,48 +1120,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		067E43C3CB3D652ED41918CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YoursMine/Pods-YoursMine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YoursMine/Pods-YoursMine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoursMine/Pods-YoursMine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B63E7081E7DD3C524F97FC85 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YoursMine-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		3782EC5B25007F0500341AF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1167,6 +1130,7 @@
 				57489B4F2506293C003D7F1A /* BundleImageProvider.swift in Sources */,
 				57489BAE2506293C003D7F1A /* TextDocument.swift in Sources */,
 				57489BC12506293C003D7F1A /* VectorsExtensions.swift in Sources */,
+				57D7B69825107ABD00805E26 /* CCGestureLockCollectionViewCell.swift in Sources */,
 				57489BB42506293C003D7F1A /* AssetLibrary.swift in Sources */,
 				57489B5C2506293C003D7F1A /* AnyValueProvider.swift in Sources */,
 				57489B972506293C003D7F1A /* ShapeTransform.swift in Sources */,
@@ -1178,6 +1142,7 @@
 				57489B742506293C003D7F1A /* FillRenderer.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				57489B682506293C003D7F1A /* ShapeCompositionLayer.swift in Sources */,
+				57D7B69625107ABD00805E26 /* CCGestureLock.swift in Sources */,
 				57489B7D2506293C003D7F1A /* StarNode.swift in Sources */,
 				57489B492506293C003D7F1A /* AnimationPublic.swift in Sources */,
 				57489BC52506293C003D7F1A /* AnimationContext.swift in Sources */,
@@ -1218,6 +1183,7 @@
 				57489B502506293C003D7F1A /* UIColorExtension.swift in Sources */,
 				57489B6D2506293C003D7F1A /* LayerImageProvider.swift in Sources */,
 				57489BAD2506293C003D7F1A /* Keyframe.swift in Sources */,
+				57D7B69725107ABD00805E26 /* VersionBridge.swift in Sources */,
 				57489B8A2506293C003D7F1A /* SingleValueProvider.swift in Sources */,
 				57489BC02506293C003D7F1A /* CurveVertex.swift in Sources */,
 				3782EC6325007F0500341AF6 /* AppDelegate.swift in Sources */,
@@ -1270,6 +1236,7 @@
 				3718FEC62505C286004B43E6 /* User.swift in Sources */,
 				57489B632506293C003D7F1A /* NullCompositionLayer.swift in Sources */,
 				57489B8C2506293C003D7F1A /* ItemsExtension.swift in Sources */,
+				57D7B69525107ABD00805E26 /* CCGestureLockSensor.swift in Sources */,
 				57489B4E2506293C003D7F1A /* AnimatedSwitch.swift in Sources */,
 				3718FECA2505FF88004B43E6 /* BuyingMainViewController.swift in Sources */,
 				57489B512506293C003D7F1A /* AnimatedButton.swift in Sources */,
@@ -1296,6 +1263,7 @@
 				57489B8F2506293C003D7F1A /* PathNode.swift in Sources */,
 				57489B9F2506293C003D7F1A /* Star.swift in Sources */,
 				57489B702506293C003D7F1A /* TrimPathNode.swift in Sources */,
+				57D7B69925107ABD00805E26 /* CCGestureLockAppearance.swift in Sources */,
 				57489B7F2506293C003D7F1A /* GradientFillNode.swift in Sources */,
 				57489BAF2506293C003D7F1A /* Glyph.swift in Sources */,
 				57489B582506293C003D7F1A /* AnimationCacheProvider.swift in Sources */,
@@ -1446,7 +1414,6 @@
 		};
 		3782EC7425007F0600341AF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2998816F0B509370B954A619 /* Pods-YoursMine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1464,7 +1431,6 @@
 		};
 		3782EC7525007F0600341AF6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 058E2CF0DA7AD0A491ECA709 /* Pods-YoursMine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

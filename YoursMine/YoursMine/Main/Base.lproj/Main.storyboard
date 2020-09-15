@@ -34,7 +34,25 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZ8-iz-WsX">
                                 <rect key="frame" x="0.0" y="80" width="414" height="782"/>
                                 <connections>
-                                    <segue destination="MwG-Ti-k4X" kind="embed" id="Jqp-DY-UDo"/>
+                                    <segue destination="MwG-Ti-k4X" kind="embed" id="cbT-ik-BxN"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ai-bL-OIi">
+                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
+                                <connections>
+                                    <segue destination="fNi-nA-VL4" kind="embed" id="53f-T8-v6h"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHk-lk-hLR">
+                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
+                                <connections>
+                                    <segue destination="SsD-Qi-Yay" kind="embed" id="dQa-tC-clL"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHy-M6-Te3">
+                                <rect key="frame" x="0.0" y="80" width="414" height="782"/>
+                                <connections>
+                                    <segue destination="IOJ-dU-opE" kind="embed" id="bfE-2o-QQD"/>
                                 </connections>
                             </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHT-mG-nSk">
@@ -54,6 +72,9 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cF-M6-Bcj">
                                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="55"/>
+                                                        <connections>
+                                                            <action selector="tabBarSelect:" destination="drJ-zp-vTD" eventType="touchUpInside" id="fOe-CV-Sp3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,10 +96,10 @@
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El4-dr-YIk">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="El4-dr-YIk">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="55"/>
                                                         <connections>
-                                                            <segue destination="IOJ-dU-opE" kind="show" id="R91-pi-kaO"/>
+                                                            <action selector="tabBarSelect:" destination="drJ-zp-vTD" eventType="touchUpInside" id="5Eg-gx-edI"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -101,10 +122,10 @@
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-k2-KVJ">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-k2-KVJ">
                                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="55"/>
                                                         <connections>
-                                                            <segue destination="SsD-Qi-Yay" kind="show" id="6yt-PS-dOf"/>
+                                                            <action selector="tabBarSelect:" destination="drJ-zp-vTD" eventType="touchUpInside" id="t5j-RZ-VoV"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -127,10 +148,10 @@
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-7S-eFW">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBK-7S-eFW">
                                                         <rect key="frame" x="0.0" y="0.0" width="97" height="55"/>
                                                         <connections>
-                                                            <segue destination="fNi-nA-VL4" kind="show" id="85i-48-VAU"/>
+                                                            <action selector="tabBarSelect:" destination="drJ-zp-vTD" eventType="touchUpInside" id="VTr-Ow-beQ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -161,9 +182,21 @@
                         <constraints>
                             <constraint firstItem="Pez-Kc-r0R" firstAttribute="trailing" secondItem="aZ8-iz-WsX" secondAttribute="trailing" id="0rM-eX-FCX"/>
                             <constraint firstItem="OHT-mG-nSk" firstAttribute="trailing" secondItem="Pez-Kc-r0R" secondAttribute="trailing" id="90u-5j-7ok"/>
+                            <constraint firstItem="8Ai-bL-OIi" firstAttribute="bottom" secondItem="Pez-Kc-r0R" secondAttribute="bottom" id="AU7-u9-Cyh"/>
+                            <constraint firstItem="hHy-M6-Te3" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="AdB-ZE-L4h"/>
+                            <constraint firstItem="8Ai-bL-OIi" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="GYa-OI-2XG"/>
+                            <constraint firstItem="zHk-lk-hLR" firstAttribute="trailing" secondItem="Pez-Kc-r0R" secondAttribute="trailing" id="O5B-Zv-s8I"/>
                             <constraint firstItem="p2H-64-pFz" firstAttribute="trailing" secondItem="Pez-Kc-r0R" secondAttribute="trailing" id="PW6-hS-Q7F"/>
                             <constraint firstItem="p2H-64-pFz" firstAttribute="top" secondItem="2QX-fh-Ms1" secondAttribute="top" id="Rur-hu-79V"/>
+                            <constraint firstItem="zHk-lk-hLR" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="U6d-uZ-o2I"/>
+                            <constraint firstItem="8Ai-bL-OIi" firstAttribute="trailing" secondItem="Pez-Kc-r0R" secondAttribute="trailing" id="WQR-pG-Emm"/>
                             <constraint firstItem="p2H-64-pFz" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="XPJ-VL-jw5"/>
+                            <constraint firstItem="hHy-M6-Te3" firstAttribute="top" secondItem="p2H-64-pFz" secondAttribute="bottom" id="ZG4-qO-mku"/>
+                            <constraint firstItem="Pez-Kc-r0R" firstAttribute="bottom" secondItem="hHy-M6-Te3" secondAttribute="bottom" id="ZSz-CZ-jhu"/>
+                            <constraint firstItem="zHk-lk-hLR" firstAttribute="bottom" secondItem="Pez-Kc-r0R" secondAttribute="bottom" id="Zc0-uc-6Zm"/>
+                            <constraint firstItem="hHy-M6-Te3" firstAttribute="trailing" secondItem="Pez-Kc-r0R" secondAttribute="trailing" id="axW-dj-RhA"/>
+                            <constraint firstItem="zHk-lk-hLR" firstAttribute="top" secondItem="p2H-64-pFz" secondAttribute="bottom" id="eHl-Q1-5Gs"/>
+                            <constraint firstItem="8Ai-bL-OIi" firstAttribute="top" secondItem="p2H-64-pFz" secondAttribute="bottom" id="gen-Tm-l4j"/>
                             <constraint firstAttribute="bottom" secondItem="OHT-mG-nSk" secondAttribute="bottom" id="mhL-EO-TYw"/>
                             <constraint firstItem="Pez-Kc-r0R" firstAttribute="bottom" secondItem="aZ8-iz-WsX" secondAttribute="bottom" id="qw4-Md-kLl"/>
                             <constraint firstItem="OHT-mG-nSk" firstAttribute="leading" secondItem="Pez-Kc-r0R" secondAttribute="leading" id="uTM-YP-oAD"/>
@@ -174,6 +207,10 @@
                         <viewLayoutGuide key="safeArea" id="Pez-Kc-r0R"/>
                     </view>
                     <connections>
+                        <outlet property="buyingContainerView" destination="aZ8-iz-WsX" id="53V-9P-sv1"/>
+                        <outlet property="chattingContainerView" destination="zHk-lk-hLR" id="87C-av-PAG"/>
+                        <outlet property="myMainContainerView" destination="8Ai-bL-OIi" id="0S5-Qf-YQ7"/>
+                        <outlet property="sellingContainerView" destination="hHy-M6-Te3" id="00b-qv-3KG"/>
                         <outlet property="tabBarView" destination="OHT-mG-nSk" id="9tf-EW-4CQ"/>
                     </connections>
                 </viewController>
@@ -189,7 +226,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfJ-Yy-eu3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="728" y="574"/>
+            <point key="canvasLocation" x="993" y="208"/>
         </scene>
         <!--BuyingTab-->
         <scene sceneID="5Zr-iE-mkr">
@@ -207,7 +244,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jST-6c-xIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="382" y="574"/>
+            <point key="canvasLocation" x="511" y="574"/>
         </scene>
         <!--SellingTab-->
         <scene sceneID="Afz-Zh-EZ6">

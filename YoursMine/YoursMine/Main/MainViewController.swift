@@ -12,6 +12,11 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var tabBarView: UIView!
     
+    @IBOutlet weak var buyingContainerView: UIView!
+    @IBOutlet weak var sellingContainerView: UIView!
+    @IBOutlet weak var chattingContainerView: UIView!
+    @IBOutlet weak var myMainContainerView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,6 +24,11 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         showIntroVC()
+        
+        sellingContainerView.isHidden = true
+        chattingContainerView.isHidden = true
+        myMainContainerView.isHidden = true
+        buyingContainerView.isHidden = false
     }
 
     // 인트로 화면 띄우기
@@ -38,5 +48,41 @@ class MainViewController: UIViewController {
         self.tabBarView.isHidden = false
         self.view.backgroundColor = .white
     }
+    
+    
+    @IBAction func tabBarSelect(_ sender: UIButton) {
+        switch sender.tag {
+        case 0: // 니꺼사기
+            sellingContainerView.isHidden = true
+            chattingContainerView.isHidden = true
+            myMainContainerView.isHidden = true
+            buyingContainerView.isHidden = false
+            
+        case 1: // 내꺼팔기
+            buyingContainerView.isHidden = true
+            chattingContainerView.isHidden = true
+            myMainContainerView.isHidden = true
+            
+            sellingContainerView.isHidden = false
+            
+        case 2: // 채팅
+            buyingContainerView.isHidden = true
+            sellingContainerView.isHidden = true
+            myMainContainerView.isHidden = true
+            
+            chattingContainerView.isHidden = false
+            
+        case 3: // MY
+            buyingContainerView.isHidden = true
+            sellingContainerView.isHidden = true
+            chattingContainerView.isHidden = true
+            
+            myMainContainerView.isHidden = false
+        default:
+            break
+        }
+        
+    }
+    
 }
 

@@ -2,83 +2,10 @@
 [
     {
         "id":"hanaBank_001",
-        "name":"신지연",
-        "employeenum":"6329532",
-        "grade":"1",
-        "point" : "0",
-        "company" : "0"
-    },
-    {
-        "id":"hanaBank_002",
-        "name":"방명환",
-        "employeenum":"4321905",
-        "grade":"1",
-        "point" : "500",
-        "company" : "0"
-    },
-    {
-        "id":"hanaBank_003",
-        "name":"오영수",
-        "employeenum":"4212950",
-        "grade":"0",
-        "point" : "1,000",
-        "company" : "0"
-    },
-    {
-        "id":"hanaTi_001",
-        "name":"권현우",
-        "employeenum":"2635",
-        "grade":"3",
-        "point" : "30,000",
-        "company" : "1"
-    },
-    {
-        "id":"hanaTi_002",
-        "name":"이재경",
-        "employeenum":"1992",
-        "grade":"2",
-        "point" : "0",
-        "company" : "1"
-    },
-    {
-        "id":"hanaTi_003",
-        "name":"박혜미",
-        "employeenum":"2012",
-        "grade":"1",
-        "point" : "1,000",
-        "company" : "1"
-    },
-    {
-        "id":"hanaCard_001",
-        "name":"박삼성",
-        "employeenum":"17782",
-        "grade":"0",
-        "point" : "0",
-        "company" : "2"
-    },
-    {
-        "id":"hanaCard_002",
-        "name":"김비씨",
-        "employeenum":"12334",
-        "grade":"2",
-        "point" : "54",
-        "company" : "2"
-    },
-    {
-        "id":"hanaCard_003",
-        "name":"최하나",
-        "employeenum":"18886",
-        "grade":"1",
-        "point" : "30",
-        "company" : "2"
-    },
-    {
-        "id":"hanaInsurance_001",
-        "name":"박보험",
-        "employeenum":"12228",
-        "grade":"2",
-        "point" : "5,000",
-        "company" : "3"
+        "name": "김하나",
+        "employeeNum": "aaa0001",
+        "point":"500",
+        "grade": "2",
+        "company":"하나은행"
     }
-        
 ]

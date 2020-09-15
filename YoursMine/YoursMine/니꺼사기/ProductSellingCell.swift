@@ -1,45 +1,39 @@
 //
-//  ProductListController.swift
+//  ProductSellingCell.swift
 //  YoursMine
 //
-//  Created by sutie on 2020/09/10.
+//  Created by SutieDev on 2020/09/07.
 //  Copyright © 2020 developers. All rights reserved.
 //
 
 import UIKit
 
-class ProductListController: ItemListSuperController {
-
-    @IBOutlet weak var tableView: UITableView!
-    private var itemArray: [Product] = []
+class ProductSellingCell: UICollectionViewCell {
+    static let name = "ProductSellingCell"
     
-    static let name = "ProductListController"
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func awakeFromNib() {
         tableView.delegate = self
         tableView.dataSource = self
         let itemListCell = UINib(nibName: ItemListCell.name, bundle: nil)
         tableView.register(itemListCell, forCellReuseIdentifier: ItemListCell.name)
-        tableView.estimatedRowHeight = 80
-        tableView.contentInset.bottom = 100
+        tableView.estimatedRowHeight = 110
     }
     
-    override func setData(_ productArr: [Product]) {
-        self.itemArray = productArr
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
     }
 }
 
-extension ProductListController: UITableViewDataSource, UITableViewDelegate {
+extension ProductSellingCell: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemArray.count
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = itemArray[indexPath.row]
-        
         if let itemListCell = tableView.dequeueReusableCell(withIdentifier: ItemListCell.name, for: indexPath) as? ItemListCell {
-            itemListCell.setItem(item)
             return itemListCell
         }
         

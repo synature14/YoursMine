@@ -32,7 +32,10 @@ class ItemListCell: UITableViewCell {
     
     func setItem(_ item: Product) {
         itemTitleLabel.text = item.itemContent.explain
-        sellerIDLabel.text = item.sellerID
+        
+        let user = UserManager.shared.searchUser(userID: item.sellerID)
+        sellerIDLabel.text = user?.name
+        
         itemImageView.image = UIImage(named: item.itemContent.image ?? "")
         priceLabel.text = item.price + "원"
         nLikesLabel.text = item.nLikes

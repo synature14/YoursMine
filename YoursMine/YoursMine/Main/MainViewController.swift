@@ -59,11 +59,15 @@ class MainViewController: UIViewController {
             buyingContainerView.isHidden = false
             
         case 1: // 내꺼팔기
-            buyingContainerView.isHidden = true
-            chattingContainerView.isHidden = true
-            myMainContainerView.isHidden = true
-            
-            sellingContainerView.isHidden = false
+            let vc = SellingViewController.create()
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true, completion: {
+//                buyingContainerView.isHidden = true
+//                chattingContainerView.isHidden = true
+//                myMainContainerView.isHidden = true
+//
+//                sellingContainerView.isHidden = false
+            })
             
         case 2: // 채팅
             buyingContainerView.isHidden = true

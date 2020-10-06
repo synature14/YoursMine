@@ -166,6 +166,8 @@
 		57489BCA25071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */; };
 		57489BCC25072192003D7F1A /* EmployeeCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */; };
 		576118AF252C491200012CE7 /* WritingSellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576118AE252C491200012CE7 /* WritingSellingViewController.swift */; };
+		576118B3252C545A00012CE7 /* camera (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 576118B2252C545A00012CE7 /* camera (1).png */; };
+		576118B5252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576118B4252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png */; };
 		579D7B40251305A100FC250C /* SellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D7B3F251305A100FC250C /* SellingViewController.swift */; };
 		57B6340D250B731A004B98D8 /* PWSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6340C250B731A004B98D8 /* PWSettingViewController.swift */; };
 		57D7B68E250F356000805E26 /* PatternLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B68D250F356000805E26 /* PatternLockViewController.swift */; };
@@ -351,6 +353,8 @@
 		57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ccomBtnBackHeaderNormal@3x.png"; sourceTree = "<group>"; };
 		57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCertificateViewController.swift; sourceTree = "<group>"; };
 		576118AE252C491200012CE7 /* WritingSellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSellingViewController.swift; sourceTree = "<group>"; };
+		576118B2252C545A00012CE7 /* camera (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera (1).png"; sourceTree = "<group>"; };
+		576118B4252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ccomIcoAuthNextStepv@3x.png"; sourceTree = "<group>"; };
 		579D7B3F251305A100FC250C /* SellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingViewController.swift; sourceTree = "<group>"; };
 		57B6340C250B731A004B98D8 /* PWSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSettingViewController.swift; sourceTree = "<group>"; };
 		57D7B68D250F356000805E26 /* PatternLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLockViewController.swift; sourceTree = "<group>"; };
@@ -548,6 +552,8 @@
 		57489A8F2506000E003D7F1A /* @3x */ = {
 			isa = PBXGroup;
 			children = (
+				576118B4252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png */,
+				576118B2252C545A00012CE7 /* camera (1).png */,
 				57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */,
 				57489A9125060023003D7F1A /* allmenu_detail_arrow_n@3x.png */,
 				57489A9025060023003D7F1A /* btnCloseNormal@3x.png */,
@@ -1145,8 +1151,10 @@
 				3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */,
 				57489A9225060023003D7F1A /* btnCloseNormal@3x.png in Resources */,
 				57489A8E2505D00A003D7F1A /* NanumBarunGothicUltraLight.ttf in Resources */,
+				576118B3252C545A00012CE7 /* camera (1).png in Resources */,
 				57489A8D2505D00A003D7F1A /* NanumBarunGothic.ttf in Resources */,
 				375FF1232507154D00AA47BC /* ItemListCell.xib in Resources */,
+				576118B5252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png in Resources */,
 				57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */,
 				9870B9342510800E008C91F6 /* AuctionListCell.xib in Resources */,
 				57489A8C2505D00A003D7F1A /* NanumBarunGothicLight.ttf in Resources */,

@@ -165,6 +165,7 @@
 		57489BC825062A77003D7F1A /* checkbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC725062A77003D7F1A /* checkbox.json */; };
 		57489BCA25071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */; };
 		57489BCC25072192003D7F1A /* EmployeeCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */; };
+		579D7B40251305A100FC250C /* SellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D7B3F251305A100FC250C /* SellingViewController.swift */; };
 		57B6340D250B731A004B98D8 /* PWSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6340C250B731A004B98D8 /* PWSettingViewController.swift */; };
 		57D7B68E250F356000805E26 /* PatternLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B68D250F356000805E26 /* PatternLockViewController.swift */; };
 		57D7B69525107ABD00805E26 /* CCGestureLockSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B69025107ABD00805E26 /* CCGestureLockSensor.swift */; };
@@ -348,6 +349,7 @@
 		57489BC725062A77003D7F1A /* checkbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkbox.json; sourceTree = "<group>"; };
 		57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ccomBtnBackHeaderNormal@3x.png"; sourceTree = "<group>"; };
 		57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCertificateViewController.swift; sourceTree = "<group>"; };
+		579D7B3F251305A100FC250C /* SellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingViewController.swift; sourceTree = "<group>"; };
 		57B6340C250B731A004B98D8 /* PWSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSettingViewController.swift; sourceTree = "<group>"; };
 		57D7B68D250F356000805E26 /* PatternLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLockViewController.swift; sourceTree = "<group>"; };
 		57D7B69025107ABD00805E26 /* CCGestureLockSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCGestureLockSensor.swift; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 			isa = PBXGroup;
 			children = (
 				3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */,
+				579D7B3F251305A100FC250C /* SellingViewController.swift */,
 			);
 			name = "내꺼팔기";
 			path = "내꺼팔기";
@@ -1180,6 +1183,7 @@
 				57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */,
 				57489BA52506293C003D7F1A /* ShapeLayerModel.swift in Sources */,
 				57489B742506293C003D7F1A /* FillRenderer.swift in Sources */,
+				579D7B40251305A100FC250C /* SellingViewController.swift in Sources */,
 				9870B9352510800E008C91F6 /* AuctionListCell.swift in Sources */,
 				3782EC6725007F0500341AF6 /* MainViewController.swift in Sources */,
 				57489B682506293C003D7F1A /* ShapeCompositionLayer.swift in Sources */,

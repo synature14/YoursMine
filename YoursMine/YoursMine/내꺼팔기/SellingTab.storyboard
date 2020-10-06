@@ -3,24 +3,190 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Selling View Controller-->
         <scene sceneID="eUO-Ob-RZh">
             <objects>
-                <viewController id="MQh-G1-mBQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellingViewController" id="MQh-G1-mBQ" customClass="SellingViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJl-L2-bwS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-EJ-MQ0" userLabel="DimView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4mu-Wx-dRg">
+                                <rect key="frame" x="0.0" y="662" width="414" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gYx-dL-cUF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPK-Ze-CFY">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물품거래" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9no-3q-lRg">
+                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aw7-Hu-SxL">
+                                                        <rect key="frame" x="0.0" y="65.5" width="414" height="1"/>
+                                                        <color key="backgroundColor" name="LineViewColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="LXA-oY-S1k"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcB-bJ-WBO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
+                                                        <connections>
+                                                            <action selector="selectSelling:" destination="MQh-G1-mBQ" eventType="touchUpInside" id="pIW-Kg-LfO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="9no-3q-lRg" firstAttribute="centerY" secondItem="dPK-Ze-CFY" secondAttribute="centerY" id="2Zp-z7-aNO"/>
+                                                    <constraint firstItem="9no-3q-lRg" firstAttribute="centerX" secondItem="dPK-Ze-CFY" secondAttribute="centerX" id="2gF-KI-jQT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gcB-bJ-WBO" secondAttribute="bottom" id="G82-1q-5B6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aw7-Hu-SxL" secondAttribute="trailing" id="IOc-WO-Clu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aw7-Hu-SxL" secondAttribute="bottom" id="KKD-Ko-uhd"/>
+                                                    <constraint firstItem="gcB-bJ-WBO" firstAttribute="top" secondItem="dPK-Ze-CFY" secondAttribute="top" id="QYk-YQ-wYs"/>
+                                                    <constraint firstItem="gcB-bJ-WBO" firstAttribute="leading" secondItem="dPK-Ze-CFY" secondAttribute="leading" id="ieZ-ay-OiU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gcB-bJ-WBO" secondAttribute="trailing" id="o4P-gS-Hgz"/>
+                                                    <constraint firstItem="aw7-Hu-SxL" firstAttribute="leading" secondItem="dPK-Ze-CFY" secondAttribute="leading" id="ojl-hQ-ZK0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-4A-1zt">
+                                                <rect key="frame" x="0.0" y="66.5" width="414" height="67"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재능판매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrV-jL-opY">
+                                                        <rect key="frame" x="178.5" y="24.5" width="57.5" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sC-IL-Yrw">
+                                                        <rect key="frame" x="0.0" y="66" width="414" height="1"/>
+                                                        <color key="backgroundColor" name="LineViewColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="nXK-KN-e76"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2p-s8-se2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
+                                                        <connections>
+                                                            <action selector="selectSelling:" destination="MQh-G1-mBQ" eventType="touchUpInside" id="Pke-x9-Jvw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="P2p-s8-se2" secondAttribute="trailing" id="2ew-XK-STL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="7sC-IL-Yrw" secondAttribute="bottom" id="6J2-OS-pVM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7sC-IL-Yrw" secondAttribute="trailing" id="Bgx-sg-ID8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="P2p-s8-se2" secondAttribute="bottom" id="Eif-Tx-gBR"/>
+                                                    <constraint firstItem="P2p-s8-se2" firstAttribute="leading" secondItem="pRe-4A-1zt" secondAttribute="leading" id="Yed-DS-lSW"/>
+                                                    <constraint firstItem="P2p-s8-se2" firstAttribute="top" secondItem="pRe-4A-1zt" secondAttribute="top" id="tBt-9C-IuH"/>
+                                                    <constraint firstItem="mrV-jL-opY" firstAttribute="centerY" secondItem="pRe-4A-1zt" secondAttribute="centerY" id="tP5-1x-Ya3"/>
+                                                    <constraint firstItem="7sC-IL-Yrw" firstAttribute="leading" secondItem="pRe-4A-1zt" secondAttribute="leading" id="ukh-9C-say"/>
+                                                    <constraint firstItem="mrV-jL-opY" firstAttribute="centerX" secondItem="pRe-4A-1zt" secondAttribute="centerX" id="zML-Ih-RHR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CO1-Ej-sQZ">
+                                                <rect key="frame" x="0.0" y="133.5" width="414" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나눔경매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-rj-BeM">
+                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xZ-ZX-SoO">
+                                                        <rect key="frame" x="0.0" y="65.5" width="414" height="1"/>
+                                                        <color key="backgroundColor" name="LineViewColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="70c-DR-yXh"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-pC-qH6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
+                                                        <connections>
+                                                            <action selector="selectSelling:" destination="MQh-G1-mBQ" eventType="touchUpInside" id="NYO-L9-O8L"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="zZM-rj-BeM" firstAttribute="centerY" secondItem="CO1-Ej-sQZ" secondAttribute="centerY" id="0be-Ar-DWY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6xZ-ZX-SoO" secondAttribute="bottom" id="98Z-We-Ilr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Fyk-pC-qH6" secondAttribute="bottom" id="Ldb-Wr-xcF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6xZ-ZX-SoO" secondAttribute="trailing" id="ZgL-xZ-Rwx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Fyk-pC-qH6" secondAttribute="trailing" id="ahR-kE-qEQ"/>
+                                                    <constraint firstItem="6xZ-ZX-SoO" firstAttribute="leading" secondItem="CO1-Ej-sQZ" secondAttribute="leading" id="hl0-w9-4Yc"/>
+                                                    <constraint firstItem="zZM-rj-BeM" firstAttribute="centerX" secondItem="CO1-Ej-sQZ" secondAttribute="centerX" id="l75-Qg-R95"/>
+                                                    <constraint firstItem="Fyk-pC-qH6" firstAttribute="leading" secondItem="CO1-Ej-sQZ" secondAttribute="leading" id="sKD-hL-Bcm"/>
+                                                    <constraint firstItem="Fyk-pC-qH6" firstAttribute="top" secondItem="CO1-Ej-sQZ" secondAttribute="top" id="xTK-eq-56L"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="gYx-dL-cUF" firstAttribute="leading" secondItem="4mu-Wx-dRg" secondAttribute="leading" id="FDv-XK-AcB"/>
+                                    <constraint firstAttribute="height" constant="200" id="N6s-6h-LW1"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYx-dL-cUF" secondAttribute="trailing" id="NnM-nr-0VS"/>
+                                    <constraint firstItem="gYx-dL-cUF" firstAttribute="top" secondItem="4mu-Wx-dRg" secondAttribute="top" id="ONN-Gp-c1J"/>
+                                    <constraint firstAttribute="bottom" secondItem="gYx-dL-cUF" secondAttribute="bottom" id="WJ5-GE-zra"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pj4-O5-1L9" userLabel="TempView">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qeO-Ni-m9F" firstAttribute="trailing" secondItem="rHa-EJ-MQ0" secondAttribute="trailing" id="2f6-ph-1fN"/>
+                            <constraint firstItem="rHa-EJ-MQ0" firstAttribute="leading" secondItem="qeO-Ni-m9F" secondAttribute="leading" id="47c-wR-kNz"/>
+                            <constraint firstAttribute="bottom" secondItem="rHa-EJ-MQ0" secondAttribute="bottom" id="RmG-El-uTh"/>
+                            <constraint firstItem="pj4-O5-1L9" firstAttribute="top" secondItem="4mu-Wx-dRg" secondAttribute="bottom" id="TNC-TK-bi6"/>
+                            <constraint firstItem="qeO-Ni-m9F" firstAttribute="bottom" secondItem="4mu-Wx-dRg" secondAttribute="bottom" id="UzD-ON-LEN"/>
+                            <constraint firstItem="rHa-EJ-MQ0" firstAttribute="top" secondItem="iJl-L2-bwS" secondAttribute="top" id="XZ4-2p-hEs"/>
+                            <constraint firstAttribute="trailing" secondItem="pj4-O5-1L9" secondAttribute="trailing" id="caY-0p-8lg"/>
+                            <constraint firstAttribute="trailing" secondItem="4mu-Wx-dRg" secondAttribute="trailing" id="doh-Gh-alb"/>
+                            <constraint firstItem="4mu-Wx-dRg" firstAttribute="leading" secondItem="iJl-L2-bwS" secondAttribute="leading" id="gsl-KP-nma"/>
+                            <constraint firstItem="pj4-O5-1L9" firstAttribute="leading" secondItem="qeO-Ni-m9F" secondAttribute="leading" id="kVI-0c-v4a"/>
+                            <constraint firstAttribute="bottom" secondItem="pj4-O5-1L9" secondAttribute="bottom" id="nG6-ph-E0z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qeO-Ni-m9F"/>
                     </view>
+                    <connections>
+                        <outlet property="dimView" destination="rHa-EJ-MQ0" id="XzX-EN-j9I"/>
+                        <outlet property="selectView" destination="4mu-Wx-dRg" id="ri7-ka-AZH"/>
+                        <outlet property="tempView" destination="pj4-O5-1L9" id="Xbb-rz-9Gp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upj-4d-Fwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="426" y="-217"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="LineViewColor">
+            <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

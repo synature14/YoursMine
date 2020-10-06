@@ -11,16 +11,24 @@ import UIKit
 
 class SellingViewController: UIViewController {
     
+    @IBOutlet weak var dimView: UIView!
     @IBOutlet weak var selectView: UIView!
+    @IBOutlet weak var tempView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initUI()
+        self.selectView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
+        self.tempView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
     }
     
-    private func initUI() {
-        show()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIView.animate(withDuration: 0.35,
+                       animations: {
+                        self.selectView.transform = .identity
+                        self.tempView.transform = .identity
+        })
     }
     
     
@@ -28,18 +36,13 @@ class SellingViewController: UIViewController {
         hide()
     }
     
-    func show() {
-        self.selectView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
-        
-        UIView.animate(withDuration: 0.35,
-                       animations: {
-                        self.selectView.transform = .identity },
-                       completion: nil)
-    }
     
     func hide() {
         UIView.animate(withDuration: 0.35,
-                       animations: { self.selectView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height) },
+                       animations: {
+                        self.selectView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
+                        self.tempView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
+        },
                        completion: { _ in
                         self.dismiss(animated: false, completion: nil) })
     }

@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHa-EJ-MQ0" userLabel="DimView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                             </view>
@@ -36,7 +36,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물품거래" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9no-3q-lRg">
-                                                        <rect key="frame" x="179.5" y="24" width="55.5" height="19"/>
+                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                                 <rect key="frame" x="0.0" y="66.5" width="414" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재능판매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrV-jL-opY">
-                                                        <rect key="frame" x="179.5" y="24" width="55.5" height="19"/>
+                                                        <rect key="frame" x="178.5" y="24.5" width="57.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                                 <rect key="frame" x="0.0" y="133.5" width="414" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나눔경매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-rj-BeM">
-                                                        <rect key="frame" x="179.5" y="23.5" width="55.5" height="19"/>
+                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -161,10 +161,10 @@
                         <constraints>
                             <constraint firstItem="qeO-Ni-m9F" firstAttribute="trailing" secondItem="rHa-EJ-MQ0" secondAttribute="trailing" id="2f6-ph-1fN"/>
                             <constraint firstItem="rHa-EJ-MQ0" firstAttribute="leading" secondItem="qeO-Ni-m9F" secondAttribute="leading" id="47c-wR-kNz"/>
-                            <constraint firstItem="qeO-Ni-m9F" firstAttribute="bottom" secondItem="rHa-EJ-MQ0" secondAttribute="bottom" id="RmG-El-uTh"/>
+                            <constraint firstAttribute="bottom" secondItem="rHa-EJ-MQ0" secondAttribute="bottom" id="RmG-El-uTh"/>
                             <constraint firstItem="pj4-O5-1L9" firstAttribute="top" secondItem="4mu-Wx-dRg" secondAttribute="bottom" id="TNC-TK-bi6"/>
                             <constraint firstItem="qeO-Ni-m9F" firstAttribute="bottom" secondItem="4mu-Wx-dRg" secondAttribute="bottom" id="UzD-ON-LEN"/>
-                            <constraint firstItem="rHa-EJ-MQ0" firstAttribute="top" secondItem="qeO-Ni-m9F" secondAttribute="top" id="XZ4-2p-hEs"/>
+                            <constraint firstItem="rHa-EJ-MQ0" firstAttribute="top" secondItem="iJl-L2-bwS" secondAttribute="top" id="XZ4-2p-hEs"/>
                             <constraint firstAttribute="trailing" secondItem="pj4-O5-1L9" secondAttribute="trailing" id="caY-0p-8lg"/>
                             <constraint firstAttribute="trailing" secondItem="4mu-Wx-dRg" secondAttribute="trailing" id="doh-Gh-alb"/>
                             <constraint firstItem="4mu-Wx-dRg" firstAttribute="leading" secondItem="iJl-L2-bwS" secondAttribute="leading" id="gsl-KP-nma"/>
@@ -174,7 +174,9 @@
                         <viewLayoutGuide key="safeArea" id="qeO-Ni-m9F"/>
                     </view>
                     <connections>
+                        <outlet property="dimView" destination="rHa-EJ-MQ0" id="XzX-EN-j9I"/>
                         <outlet property="selectView" destination="4mu-Wx-dRg" id="ri7-ka-AZH"/>
+                        <outlet property="tempView" destination="pj4-O5-1L9" id="Xbb-rz-9Gp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upj-4d-Fwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

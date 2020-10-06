@@ -36,7 +36,6 @@ class SellingViewController: UIViewController {
         hide()
     }
     
-    
     func hide() {
         UIView.animate(withDuration: 0.35,
                        animations: {
@@ -44,7 +43,10 @@ class SellingViewController: UIViewController {
                         self.tempView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
         },
                        completion: { _ in
-                        self.dismiss(animated: false, completion: nil) })
+                        let vc = WritingSellingViewController.create()
+                        vc.modalPresentationStyle = .overFullScreen
+                        self.present(vc, animated: true, completion: nil)
+        })
     }
     
     static func create() -> SellingViewController {

@@ -183,6 +183,21 @@
             </objects>
             <point key="canvasLocation" x="426" y="-217"/>
         </scene>
+        <!--Writing Selling View Controller-->
+        <scene sceneID="q6s-Zo-CCY">
+            <objects>
+                <viewController storyboardIdentifier="WritingSellingViewController" id="JhE-Lp-UVJ" customClass="WritingSellingViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYa-oF-8js">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OcM-bg-hho"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Owf-5N-gEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="-218"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="LineViewColor">

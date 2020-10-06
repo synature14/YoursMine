@@ -165,6 +165,7 @@
 		57489BC825062A77003D7F1A /* checkbox.json in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC725062A77003D7F1A /* checkbox.json */; };
 		57489BCA25071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */; };
 		57489BCC25072192003D7F1A /* EmployeeCertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */; };
+		576118AF252C491200012CE7 /* WritingSellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576118AE252C491200012CE7 /* WritingSellingViewController.swift */; };
 		579D7B40251305A100FC250C /* SellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D7B3F251305A100FC250C /* SellingViewController.swift */; };
 		57B6340D250B731A004B98D8 /* PWSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6340C250B731A004B98D8 /* PWSettingViewController.swift */; };
 		57D7B68E250F356000805E26 /* PatternLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B68D250F356000805E26 /* PatternLockViewController.swift */; };
@@ -349,6 +350,7 @@
 		57489BC725062A77003D7F1A /* checkbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkbox.json; sourceTree = "<group>"; };
 		57489BC925071EA1003D7F1A /* ccomBtnBackHeaderNormal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ccomBtnBackHeaderNormal@3x.png"; sourceTree = "<group>"; };
 		57489BCB25072192003D7F1A /* EmployeeCertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCertificateViewController.swift; sourceTree = "<group>"; };
+		576118AE252C491200012CE7 /* WritingSellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSellingViewController.swift; sourceTree = "<group>"; };
 		579D7B3F251305A100FC250C /* SellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingViewController.swift; sourceTree = "<group>"; };
 		57B6340C250B731A004B98D8 /* PWSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSettingViewController.swift; sourceTree = "<group>"; };
 		57D7B68D250F356000805E26 /* PatternLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLockViewController.swift; sourceTree = "<group>"; };
@@ -464,6 +466,7 @@
 			children = (
 				3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */,
 				579D7B3F251305A100FC250C /* SellingViewController.swift */,
+				576118AE252C491200012CE7 /* WritingSellingViewController.swift */,
 			);
 			name = "내꺼팔기";
 			path = "내꺼팔기";
@@ -1264,6 +1267,7 @@
 				57489B802506293C003D7F1A /* StrokeNode.swift in Sources */,
 				9870B94525108036008C91F6 /* LessonsListController.swift in Sources */,
 				57489B4B2506293C003D7F1A /* CompatibleAnimationKeypath.swift in Sources */,
+				576118AF252C491200012CE7 /* WritingSellingViewController.swift in Sources */,
 				57489B612506293C003D7F1A /* PointValueProvider.swift in Sources */,
 				57489BA02506293C003D7F1A /* SolidLayerModel.swift in Sources */,
 				9870B94125108036008C91F6 /* ProductListController.swift in Sources */,

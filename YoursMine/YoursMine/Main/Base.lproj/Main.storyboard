@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+        <array key="NanumBarunGothicBold.ttf">
+            <string>NanumBarunGothicBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="5Lx-xh-ER3">
@@ -62,8 +70,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="97.5" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="니꺼 사기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW7-JN-9IM">
-                                                        <rect key="frame" x="17" y="17.5" width="63.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="18" y="18.5" width="61" height="18.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" red="1" green="0.92941176469999998" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -88,8 +96,8 @@
                                                 <rect key="frame" x="102.5" y="0.0" width="97" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내꺼 팔기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-0K-Nb5">
-                                                        <rect key="frame" x="16.5" y="17.5" width="63.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="20" y="19" width="57" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -115,8 +123,8 @@
                                                 <rect key="frame" x="204.5" y="0.0" width="97.5" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="채팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYp-ls-8ET">
-                                                        <rect key="frame" x="34" y="17.5" width="29.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="35" y="19" width="27" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
                                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -141,8 +149,8 @@
                                                 <rect key="frame" x="307" y="0.0" width="97" height="55"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKn-gR-Qet">
-                                                        <rect key="frame" x="35.5" y="17.5" width="25.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="37" y="19" width="22.5" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -206,9 +214,13 @@
                     </view>
                     <connections>
                         <outlet property="buyingContainerView" destination="aZ8-iz-WsX" id="53V-9P-sv1"/>
+                        <outlet property="buyingTabLabel" destination="nW7-JN-9IM" id="drX-v9-qcW"/>
                         <outlet property="chattingContainerView" destination="zHk-lk-hLR" id="87C-av-PAG"/>
+                        <outlet property="chattingTabLabel" destination="oYp-ls-8ET" id="o9r-NL-HxQ"/>
                         <outlet property="myMainContainerView" destination="8Ai-bL-OIi" id="0S5-Qf-YQ7"/>
+                        <outlet property="myTabLabel" destination="qKn-gR-Qet" id="aYX-2k-GV9"/>
                         <outlet property="sellingContainerView" destination="hHy-M6-Te3" id="00b-qv-3KG"/>
+                        <outlet property="sellingTabLabel" destination="EvX-0K-Nb5" id="c9H-c4-LhO"/>
                         <outlet property="tabBarView" destination="OHT-mG-nSk" id="9tf-EW-4CQ"/>
                     </connections>
                 </viewController>

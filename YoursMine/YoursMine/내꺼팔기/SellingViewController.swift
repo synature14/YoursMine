@@ -15,6 +15,8 @@ class SellingViewController: UIViewController {
     @IBOutlet weak var selectView: UIView!
     @IBOutlet weak var tempView: UIView!
     
+    private var sellingTxt = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,17 @@ class SellingViewController: UIViewController {
     
     
     @IBAction func selectSelling(_ sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            sellingTxt = "물품거래"
+        case 1:
+            sellingTxt = "재능판매"
+        case 2:
+            sellingTxt = "나눔경매"
+        default:
+            break
+        }
+        
         hide()
     }
     
@@ -45,6 +58,7 @@ class SellingViewController: UIViewController {
                        completion: { _ in
                         self.dismiss(animated: false, completion: {
                             let vc = WritingSellingViewController.create()
+                            vc.titleText = self.sellingTxt
                             vc.modalPresentationStyle = .overFullScreen
                             UIApplication.topViewController()?.present(vc, animated: true, completion: nil)
                             

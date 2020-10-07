@@ -7,18 +7,100 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--My Main View Controller-->
         <scene sceneID="uY1-yB-MZX">
             <objects>
-                <viewController id="8gf-F6-CUK" sceneMemberID="viewController">
+                <viewController id="8gf-F6-CUK" customClass="MyMainViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UBG-g0-AAJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0n-nn-33Z">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" name="LightBackgroundColor"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzh-pS-zyQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MrG-9T-5AV">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKw-9E-35J">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="45"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="판매 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17U-J7-W8A">
+                                                                <rect key="frame" x="77.5" y="14.5" width="52.5" height="16.5"/>
+                                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                                <color key="textColor" name="DarkBrown"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="17U-J7-W8A" firstAttribute="centerX" secondItem="BKw-9E-35J" secondAttribute="centerX" id="Hle-mK-3rg"/>
+                                                            <constraint firstItem="17U-J7-W8A" firstAttribute="centerY" secondItem="BKw-9E-35J" secondAttribute="centerY" id="iYK-nc-e1O"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsJ-3P-kXa">
+                                                        <rect key="frame" x="207" y="0.0" width="207" height="45"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구매 내역" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA7-pC-ecH">
+                                                                <rect key="frame" x="77.5" y="14.5" width="52.5" height="16.5"/>
+                                                                <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ZA7-pC-ecH" firstAttribute="centerY" secondItem="qsJ-3P-kXa" secondAttribute="centerY" id="HBv-SI-j5r"/>
+                                                            <constraint firstItem="ZA7-pC-ecH" firstAttribute="centerX" secondItem="qsJ-3P-kXa" secondAttribute="centerX" id="jyz-aM-brm"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26l-Bo-St9" userLabel="underlineView">
+                                                <rect key="frame" x="67.5" y="43" width="72.5" height="2"/>
+                                                <color key="backgroundColor" name="DarkBrown"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="IUc-ST-I1v"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MrG-9T-5AV" secondAttribute="trailing" id="6gg-E9-RCp"/>
+                                            <constraint firstAttribute="bottom" secondItem="MrG-9T-5AV" secondAttribute="bottom" id="AQ6-Wg-06g"/>
+                                            <constraint firstItem="MrG-9T-5AV" firstAttribute="top" secondItem="fzh-pS-zyQ" secondAttribute="top" id="LwE-Kv-PPo"/>
+                                            <constraint firstItem="26l-Bo-St9" firstAttribute="trailing" secondItem="17U-J7-W8A" secondAttribute="trailing" constant="10" id="dg6-bj-Nee"/>
+                                            <constraint firstAttribute="height" constant="45" id="lMH-Kf-Qal"/>
+                                            <constraint firstAttribute="bottom" secondItem="26l-Bo-St9" secondAttribute="bottom" id="ouc-Vo-PlF"/>
+                                            <constraint firstItem="26l-Bo-St9" firstAttribute="leading" secondItem="17U-J7-W8A" secondAttribute="leading" constant="-10" id="wYK-0m-Xsk"/>
+                                            <constraint firstItem="MrG-9T-5AV" firstAttribute="leading" secondItem="fzh-pS-zyQ" secondAttribute="leading" id="xz7-6y-MSf"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-go-s1N">
+                                        <rect key="frame" x="0.0" y="45" width="414" height="773"/>
+                                        <connections>
+                                            <segue destination="lUG-ud-rOk" kind="embed" id="HAd-h2-OiH"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Uc0-go-s1N" firstAttribute="top" secondItem="fzh-pS-zyQ" secondAttribute="bottom" id="DAx-Uk-ddP"/>
+                                    <constraint firstItem="fzh-pS-zyQ" firstAttribute="leading" secondItem="v0n-nn-33Z" secondAttribute="leading" id="HdV-XK-bzo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uc0-go-s1N" secondAttribute="bottom" id="Qro-ht-VtR"/>
+                                    <constraint firstAttribute="trailing" secondItem="fzh-pS-zyQ" secondAttribute="trailing" id="Y0U-2Y-dM6"/>
+                                    <constraint firstItem="Uc0-go-s1N" firstAttribute="leading" secondItem="v0n-nn-33Z" secondAttribute="leading" id="Yk1-Ll-uXr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uc0-go-s1N" secondAttribute="trailing" id="hvG-ts-dIk"/>
+                                    <constraint firstItem="fzh-pS-zyQ" firstAttribute="top" secondItem="v0n-nn-33Z" secondAttribute="top" id="vHe-GD-5m2"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,30 +112,96 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VVc-o8-C9r"/>
                     </view>
+                    <connections>
+                        <outlet property="underlineView" destination="26l-Bo-St9" id="3dI-0p-4U0"/>
+                        <outlet property="구매내역Label" destination="ZA7-pC-ecH" id="sZQ-8K-Orp"/>
+                        <outlet property="판매내역Label" destination="17U-J7-W8A" id="7pX-Qv-whe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCh-uF-gGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="-315.40178571428572"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="l8l-Kp-Vzy">
+        <!--Page View Controller-->
+        <scene sceneID="3qV-G4-LAm">
             <objects>
-                <viewController id="rAN-jY-mUJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="09I-54-0Mh">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="lUG-ud-rOk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIu-zg-7AQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-315"/>
+        </scene>
+        <!--Selling History Controller-->
+        <scene sceneID="rNm-X0-D1L">
+            <objects>
+                <viewController id="vB3-ZO-lDh" customClass="SellingHistoryController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2N-lt-crY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLt-yp-J2x">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vB3-ZO-lDh" id="No1-mW-Ml4"/>
+                                    <outlet property="delegate" destination="vB3-ZO-lDh" id="20F-HE-a6w"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Yx8-jE-bIg"/>
+                        <constraints>
+                            <constraint firstItem="IZQ-Ix-d3U" firstAttribute="bottom" secondItem="tLt-yp-J2x" secondAttribute="bottom" id="01L-Rh-7Xe"/>
+                            <constraint firstItem="tLt-yp-J2x" firstAttribute="leading" secondItem="IZQ-Ix-d3U" secondAttribute="leading" id="XxK-5Z-aAN"/>
+                            <constraint firstItem="tLt-yp-J2x" firstAttribute="top" secondItem="IZQ-Ix-d3U" secondAttribute="top" id="kh9-2G-zAN"/>
+                            <constraint firstItem="IZQ-Ix-d3U" firstAttribute="trailing" secondItem="tLt-yp-J2x" secondAttribute="trailing" id="mA4-gs-Glr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IZQ-Ix-d3U"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="tLt-yp-J2x" id="tMK-2z-P4N"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfK-20-L5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSF-uX-H7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="-315"/>
+            <point key="canvasLocation" x="764" y="427"/>
+        </scene>
+        <!--Buying History Controller-->
+        <scene sceneID="cNR-1t-IPT">
+            <objects>
+                <viewController id="881-V5-GaR" customClass="BuyingHistoryController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jo8-Lo-8vL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgR-pk-Hw8">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="881-V5-GaR" id="YOs-Vr-Ga0"/>
+                                    <outlet property="delegate" destination="881-V5-GaR" id="eJr-db-SY9"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cgR-pk-Hw8" firstAttribute="leading" secondItem="iER-xj-FwH" secondAttribute="leading" id="cPH-LI-mzs"/>
+                            <constraint firstItem="iER-xj-FwH" firstAttribute="trailing" secondItem="cgR-pk-Hw8" secondAttribute="trailing" id="fbJ-hd-D6v"/>
+                            <constraint firstItem="cgR-pk-Hw8" firstAttribute="top" secondItem="iER-xj-FwH" secondAttribute="top" id="kjz-7B-Icf"/>
+                            <constraint firstItem="iER-xj-FwH" firstAttribute="bottom" secondItem="cgR-pk-Hw8" secondAttribute="bottom" id="sZT-jh-cBj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iER-xj-FwH"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="cgR-pk-Hw8" id="glv-mE-iQ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQE-cd-VE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="427"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="LightBackgroundColor">
-            <color red="0.96470588235294119" green="0.94901960784313721" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="DarkBrown">
+            <color red="0.21568627450980393" green="0.13725490196078433" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

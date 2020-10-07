@@ -512,7 +512,7 @@
             <color red="0.21568627450980393" green="0.13725490196078433" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="PointYellowColor">
-            <color red="1" green="0.92900002002716064" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.92549019607843142" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.37299999594688416" green="0.24699999392032623" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

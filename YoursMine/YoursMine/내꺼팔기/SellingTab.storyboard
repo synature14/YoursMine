@@ -36,7 +36,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물품거래" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9no-3q-lRg">
-                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
+                                                        <rect key="frame" x="179.5" y="24" width="55.5" height="19"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                                 <rect key="frame" x="0.0" y="66.5" width="414" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재능판매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrV-jL-opY">
-                                                        <rect key="frame" x="178.5" y="24.5" width="57.5" height="18.5"/>
+                                                        <rect key="frame" x="179.5" y="24" width="55.5" height="19"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                                 <rect key="frame" x="0.0" y="133.5" width="414" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나눔경매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-rj-BeM">
-                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
+                                                        <rect key="frame" x="179.5" y="23.5" width="55.5" height="19"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -338,8 +338,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-HO-zsF" userLabel="Title View">
                                                 <rect key="frame" x="0.0" y="70" width="414" height="70"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  글 제목" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1W-g0-4Xn">
-                                                        <rect key="frame" x="20" y="25" width="374" height="20"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="글 제목" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1W-g0-4Xn">
+                                                        <rect key="frame" x="30" y="25" width="364" height="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -360,14 +360,14 @@
                                                     <constraint firstAttribute="trailing" secondItem="i1W-g0-4Xn" secondAttribute="trailing" constant="20" id="VcC-78-9IL"/>
                                                     <constraint firstItem="ew6-D7-qg9" firstAttribute="leading" secondItem="aYp-HO-zsF" secondAttribute="leading" constant="20" id="c7y-E4-olI"/>
                                                     <constraint firstAttribute="bottom" secondItem="ew6-D7-qg9" secondAttribute="bottom" id="cw7-Rx-v1D"/>
-                                                    <constraint firstItem="i1W-g0-4Xn" firstAttribute="leading" secondItem="aYp-HO-zsF" secondAttribute="leading" constant="20" id="dFw-gS-xiK"/>
+                                                    <constraint firstItem="i1W-g0-4Xn" firstAttribute="leading" secondItem="aYp-HO-zsF" secondAttribute="leading" constant="30" id="dFw-gS-xiK"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-y3-78m" userLabel="ClassCnt View">
                                                 <rect key="frame" x="0.0" y="140" width="414" height="70"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  🏷 회차" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YqH-Fr-vwg">
-                                                        <rect key="frame" x="20" y="25" width="374" height="20"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="🏷 회차" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YqH-Fr-vwg">
+                                                        <rect key="frame" x="30" y="25" width="364" height="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -388,14 +388,14 @@
                                                     <constraint firstAttribute="trailing" secondItem="YqH-Fr-vwg" secondAttribute="trailing" constant="20" id="euu-nb-EoV"/>
                                                     <constraint firstAttribute="height" constant="70" id="fVF-jH-7L4"/>
                                                     <constraint firstItem="YqH-Fr-vwg" firstAttribute="centerY" secondItem="S5s-y3-78m" secondAttribute="centerY" id="ilW-99-L6m"/>
-                                                    <constraint firstItem="YqH-Fr-vwg" firstAttribute="leading" secondItem="S5s-y3-78m" secondAttribute="leading" constant="20" id="qT5-bo-H1c"/>
+                                                    <constraint firstItem="YqH-Fr-vwg" firstAttribute="leading" secondItem="S5s-y3-78m" secondAttribute="leading" constant="30" id="qT5-bo-H1c"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an1-th-Tje" userLabel="Person View">
                                                 <rect key="frame" x="0.0" y="210" width="414" height="70"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  👨🏻‍💼 최대 인원" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-nj-7qi">
-                                                        <rect key="frame" x="20" y="25" width="374" height="20"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="👨🏻‍💼 최대 인원" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-nj-7qi">
+                                                        <rect key="frame" x="30" y="25" width="364" height="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -416,7 +416,7 @@
                                                     <constraint firstItem="2qK-nj-7qi" firstAttribute="centerY" secondItem="an1-th-Tje" secondAttribute="centerY" id="YZR-gv-NQ1"/>
                                                     <constraint firstAttribute="height" constant="70" id="Yh8-9j-8Wj"/>
                                                     <constraint firstAttribute="trailing" secondItem="Egp-e2-gGu" secondAttribute="trailing" constant="20" id="u6A-Xx-V1w"/>
-                                                    <constraint firstItem="2qK-nj-7qi" firstAttribute="leading" secondItem="an1-th-Tje" secondAttribute="leading" constant="20" id="uRR-Ag-V8Z"/>
+                                                    <constraint firstItem="2qK-nj-7qi" firstAttribute="leading" secondItem="an1-th-Tje" secondAttribute="leading" constant="30" id="uRR-Ag-V8Z"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWf-qy-0Gb" userLabel="Content View">

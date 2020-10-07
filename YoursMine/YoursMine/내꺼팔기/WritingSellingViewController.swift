@@ -22,7 +22,7 @@ class WritingSellingViewController: UIViewController {
     }
     
     @IBAction func close(_ sender: UIButton) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func finishWriting(_ sender: UIButton) {

@@ -43,9 +43,12 @@ class SellingViewController: UIViewController {
                         self.tempView.transform = CGAffineTransform(translationX: 0, y: self.view.frame.height)
         },
                        completion: { _ in
-                        let vc = WritingSellingViewController.create()
-                        vc.modalPresentationStyle = .overFullScreen
-                        self.present(vc, animated: true, completion: nil)
+                        self.dismiss(animated: false, completion: {
+                            let vc = WritingSellingViewController.create()
+                            vc.modalPresentationStyle = .overFullScreen
+                            UIApplication.topViewController()?.present(vc, animated: true, completion: nil)
+                            
+                        })
         })
     }
     

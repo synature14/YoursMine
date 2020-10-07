@@ -514,15 +514,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r7-tG-8E3" userLabel="ProgressView">
                                 <rect key="frame" x="0.0" y="458" width="414" height="30"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqd-ha-EUY">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
-                                        <color key="backgroundColor" name="PointYellowColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1차 7명/10명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8M-tl-2Nc">
                                         <rect key="frame" x="158.5" y="5" width="97" height="20"/>
                                         <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="17"/>
@@ -532,13 +523,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Nqd-ha-EUY" firstAttribute="top" secondItem="1r7-tG-8E3" secondAttribute="top" id="4Hq-sk-nd2"/>
                                     <constraint firstAttribute="height" constant="30" id="5Wj-01-Gvk"/>
                                     <constraint firstItem="P8M-tl-2Nc" firstAttribute="centerX" secondItem="1r7-tG-8E3" secondAttribute="centerX" id="BUs-m2-LFz"/>
                                     <constraint firstItem="P8M-tl-2Nc" firstAttribute="centerY" secondItem="1r7-tG-8E3" secondAttribute="centerY" id="CTq-p6-ASC"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nqd-ha-EUY" secondAttribute="bottom" id="Mdv-OK-P1h"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nqd-ha-EUY" secondAttribute="trailing" constant="100" id="TR3-sV-3Zp"/>
-                                    <constraint firstItem="Nqd-ha-EUY" firstAttribute="leading" secondItem="1r7-tG-8E3" secondAttribute="leading" id="psf-FK-AUX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -679,6 +666,12 @@
                         <viewLayoutGuide key="safeArea" id="0Vz-dM-osP"/>
                     </view>
                     <navigationItem key="navigationItem" id="hlX-gz-Bxd"/>
+                    <connections>
+                        <outlet property="classCntLabel" destination="P8M-tl-2Nc" id="xjy-Di-2bt"/>
+                        <outlet property="contextLabel" destination="C0Q-ZY-wHN" id="kTu-6D-swd"/>
+                        <outlet property="imgView" destination="qeu-Hn-0pk" id="Gk4-sf-zKh"/>
+                        <outlet property="titleLabel" destination="nKd-PU-MhY" id="Lh6-wb-TTN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hoz-Zg-ROU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

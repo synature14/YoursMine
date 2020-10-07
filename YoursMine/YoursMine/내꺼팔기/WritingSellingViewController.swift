@@ -37,7 +37,18 @@ class WritingSellingViewController: UIViewController {
     }
     
     @IBAction func finishWriting(_ sender: UIButton) {
-        
+        if let photo = photoImage.image {
+            let sellingData = Selling(title: titleText ?? "",
+                                      image: photo,
+                                      classCnt: txtFldCnt.text ?? "",
+                                      personCnt: txtFldPerson.text ?? "",
+                                      contextText: textView.text ?? "")
+            
+            let vc = WiritingFinishViewController.create()
+            vc.sellingData = sellingData
+            // 푸시인데 일단 present
+            self.present(vc, animated: true, completion: nil)
+        }
     }
     
     // 사진 고르기

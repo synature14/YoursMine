@@ -8,12 +8,34 @@
 
 import UIKit
 
+struct Selling {
+    let title: String
+    let image: UIImage
+    let classCnt: String
+    let personCnt: String
+    let contextText: String
+}
+
 class WiritingFinishViewController: UIViewController {
 
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var classCntLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var contextLabel: UILabel!
+    
+    var sellingData: Selling?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setUI()
+    }
+    
+    private func setUI() {
+        imgView.image = sellingData?.image
+        titleLabel.text = sellingData?.title
+        contextLabel.text = sellingData?.contextText
+        classCntLabel.text = String(format: "%@차 0명/%@", sellingData?.classCnt ?? "", sellingData?.personCnt ?? "")
     }
     
     static func create() -> WiritingFinishViewController {

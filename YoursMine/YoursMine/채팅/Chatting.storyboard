@@ -1,26 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IJ4-0o-V7H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bqN-le-iEn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NanumBarunGothic.ttf">
+            <string>NanumBarunGothic</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="2Tp-Ug-3q1">
+        <!--Chatting Table View Controller-->
+        <scene sceneID="H74-FW-70o">
             <objects>
-                <viewController id="IJ4-0o-V7H" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pfD-TN-Lnb">
+                <tableViewController id="bqN-le-iEn" customClass="ChattingTableViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XyC-iF-UY3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="AS5-3O-3hp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LBw-LJ-V7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="레오파드 갈축 키보드" id="UCW-vk-aNg">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="77" id="W33-mA-8dj">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W33-mA-8dj" id="rqK-u0-gar">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile01" translatesAutoresizingMaskIntoConstraints="NO" id="zWk-Vi-pv8">
+                                                    <rect key="frame" x="15" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="f3W-wJ-I4d"/>
+                                                        <constraint firstAttribute="height" constant="50" id="wMQ-oJ-KnE"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나금융티아이 최수연 대리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJD-b0-SGQ">
+                                                    <rect key="frame" x="73" y="10" width="131.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물건 다 팔렸나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLT-zA-xfP">
+                                                    <rect key="frame" x="73" y="34" width="100.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                    <color key="textColor" name="DarkBrown"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvl-cj-aXT">
+                                                    <rect key="frame" x="379" y="32.5" width="20" height="20"/>
+                                                    <color key="backgroundColor" red="0.84705882352941175" green="0.20000000000000001" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="EFz-jc-vFI"/>
+                                                        <constraint firstAttribute="height" constant="20" id="fCA-O0-7FX"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64s-EI-I4P">
+                                                    <rect key="frame" x="385.5" y="35.5" width="7" height="14"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DLT-zA-xfP" firstAttribute="leading" secondItem="rJD-b0-SGQ" secondAttribute="leading" id="4Et-Aw-0cc"/>
+                                                <constraint firstItem="rJD-b0-SGQ" firstAttribute="top" secondItem="zWk-Vi-pv8" secondAttribute="top" id="7H9-fc-ffu"/>
+                                                <constraint firstItem="nvl-cj-aXT" firstAttribute="centerY" secondItem="DLT-zA-xfP" secondAttribute="centerY" id="ABf-oe-e9R"/>
+                                                <constraint firstItem="64s-EI-I4P" firstAttribute="centerX" secondItem="nvl-cj-aXT" secondAttribute="centerX" id="Ee1-cI-ewc"/>
+                                                <constraint firstItem="zWk-Vi-pv8" firstAttribute="leading" secondItem="rqK-u0-gar" secondAttribute="leading" constant="15" id="H9p-e6-nEr"/>
+                                                <constraint firstAttribute="trailing" secondItem="nvl-cj-aXT" secondAttribute="trailing" constant="15" id="OYP-HQ-RPx"/>
+                                                <constraint firstAttribute="bottom" secondItem="zWk-Vi-pv8" secondAttribute="bottom" constant="10" id="U9c-5i-Khh"/>
+                                                <constraint firstItem="DLT-zA-xfP" firstAttribute="top" secondItem="rJD-b0-SGQ" secondAttribute="bottom" constant="10" id="UXv-zO-yBG"/>
+                                                <constraint firstItem="rJD-b0-SGQ" firstAttribute="leading" secondItem="zWk-Vi-pv8" secondAttribute="trailing" constant="8" id="i3H-HH-IPf"/>
+                                                <constraint firstItem="zWk-Vi-pv8" firstAttribute="top" secondItem="rqK-u0-gar" secondAttribute="top" constant="10" id="yJ8-pw-2MF"/>
+                                                <constraint firstItem="64s-EI-I4P" firstAttribute="centerY" secondItem="nvl-cj-aXT" secondAttribute="centerY" id="zvD-dD-de9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="77" id="Upy-SE-cL3">
+                                        <rect key="frame" x="0.0" y="105" width="414" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Upy-SE-cL3" id="Pyk-1Y-7RO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile02" translatesAutoresizingMaskIntoConstraints="NO" id="kx2-s3-cjj">
+                                                    <rect key="frame" x="15" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="54a-69-feh"/>
+                                                        <constraint firstAttribute="height" constant="50" id="loh-Ho-W1h"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나은행 김하나 계장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBr-Gw-Jjs">
+                                                    <rect key="frame" x="73" y="10" width="108.5" height="15"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저.. 혹시 물건 팔렸나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYK-f7-zJq">
+                                                    <rect key="frame" x="73" y="35" width="136.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                    <color key="textColor" name="DarkBrown"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfj-I4-hzk">
+                                                    <rect key="frame" x="379" y="33.5" width="20" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rJ-eg-oxy">
+                                                            <rect key="frame" x="6.5" y="3" width="7" height="14"/>
+                                                            <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.84705882352941175" green="0.19215686274509802" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="9f3-Fv-P8S"/>
+                                                        <constraint firstItem="5rJ-eg-oxy" firstAttribute="centerX" secondItem="lfj-I4-hzk" secondAttribute="centerX" id="F35-ip-YMT"/>
+                                                        <constraint firstItem="5rJ-eg-oxy" firstAttribute="centerY" secondItem="lfj-I4-hzk" secondAttribute="centerY" id="ix5-kL-FyD"/>
+                                                        <constraint firstAttribute="height" constant="20" id="mxT-OB-YK5"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lfj-I4-hzk" firstAttribute="centerY" secondItem="xYK-f7-zJq" secondAttribute="centerY" id="CUL-Dj-0Va"/>
+                                                <constraint firstItem="nBr-Gw-Jjs" firstAttribute="leading" secondItem="kx2-s3-cjj" secondAttribute="trailing" constant="8" id="GzW-0h-61H"/>
+                                                <constraint firstAttribute="trailing" secondItem="lfj-I4-hzk" secondAttribute="trailing" constant="15" id="JJX-di-VC6"/>
+                                                <constraint firstItem="xYK-f7-zJq" firstAttribute="leading" secondItem="nBr-Gw-Jjs" secondAttribute="leading" id="LBy-bq-4Ew"/>
+                                                <constraint firstItem="kx2-s3-cjj" firstAttribute="leading" secondItem="Pyk-1Y-7RO" secondAttribute="leading" constant="15" id="NaS-ao-Nyx"/>
+                                                <constraint firstItem="kx2-s3-cjj" firstAttribute="top" secondItem="Pyk-1Y-7RO" secondAttribute="top" constant="10" id="YVR-mB-ncd"/>
+                                                <constraint firstItem="nBr-Gw-Jjs" firstAttribute="top" secondItem="kx2-s3-cjj" secondAttribute="top" id="pfH-hL-d6u"/>
+                                                <constraint firstAttribute="bottom" secondItem="kx2-s3-cjj" secondAttribute="bottom" constant="10" id="qTa-On-XDc"/>
+                                                <constraint firstItem="xYK-f7-zJq" firstAttribute="top" secondItem="nBr-Gw-Jjs" secondAttribute="bottom" constant="10" id="zv4-se-u0m"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="[새상품] 콩순이 요술봉" id="jb0-HF-W7o">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="77" id="w4E-Uv-XIC">
+                                        <rect key="frame" x="0.0" y="238" width="414" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w4E-Uv-XIC" id="uWU-ca-oty">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile03" translatesAutoresizingMaskIntoConstraints="NO" id="Ruv-sL-Qd5">
+                                                    <rect key="frame" x="15" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="TS7-R9-zj9"/>
+                                                        <constraint firstAttribute="height" constant="50" id="j2w-2g-VFL"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 하나머니 보냈습니다~ 확인해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se8-sd-GpB">
+                                                    <rect key="frame" x="73" y="35" width="226" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="14"/>
+                                                    <color key="textColor" name="DarkBrown"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="943-Qv-BjX">
+                                                    <rect key="frame" x="379" y="33.5" width="20" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qJ-6O-kNj">
+                                                            <rect key="frame" x="6.5" y="3" width="7" height="14"/>
+                                                            <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.84705882352941175" green="0.19215686274509802" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="1nS-8E-nAm"/>
+                                                        <constraint firstItem="9qJ-6O-kNj" firstAttribute="centerY" secondItem="943-Qv-BjX" secondAttribute="centerY" id="RG3-aS-F9e"/>
+                                                        <constraint firstItem="9qJ-6O-kNj" firstAttribute="centerX" secondItem="943-Qv-BjX" secondAttribute="centerX" id="e0W-fn-EUg"/>
+                                                        <constraint firstAttribute="height" constant="20" id="oZM-2r-1Aw"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나카드 홍하나 대리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-tW-m9U">
+                                                    <rect key="frame" x="73" y="10" width="108.5" height="15"/>
+                                                    <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GPp-tW-m9U" firstAttribute="leading" secondItem="Ruv-sL-Qd5" secondAttribute="trailing" constant="8" id="26y-kz-klz"/>
+                                                <constraint firstItem="943-Qv-BjX" firstAttribute="centerY" secondItem="se8-sd-GpB" secondAttribute="centerY" id="8Fm-aB-fMS"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ruv-sL-Qd5" secondAttribute="bottom" constant="10" id="8f5-sf-1JH"/>
+                                                <constraint firstAttribute="trailing" secondItem="943-Qv-BjX" secondAttribute="trailing" constant="15" id="Duq-0k-3J1"/>
+                                                <constraint firstItem="Ruv-sL-Qd5" firstAttribute="leading" secondItem="uWU-ca-oty" secondAttribute="leading" constant="15" id="UhJ-1u-2dH"/>
+                                                <constraint firstItem="GPp-tW-m9U" firstAttribute="top" secondItem="Ruv-sL-Qd5" secondAttribute="top" id="UmB-YY-vuz"/>
+                                                <constraint firstItem="se8-sd-GpB" firstAttribute="top" secondItem="GPp-tW-m9U" secondAttribute="bottom" constant="10" id="iHS-XP-gwW"/>
+                                                <constraint firstItem="se8-sd-GpB" firstAttribute="leading" secondItem="GPp-tW-m9U" secondAttribute="leading" id="w6Q-lO-mVS"/>
+                                                <constraint firstItem="Ruv-sL-Qd5" firstAttribute="top" secondItem="uWU-ca-oty" secondAttribute="top" constant="10" id="wvd-I4-jpI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="bqN-le-iEn" id="bPW-I7-zPa"/>
+                            <outlet property="delegate" destination="bqN-le-iEn" id="xZJ-qd-j8H"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2v4-qU-19o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="174"/>
+            <point key="canvasLocation" x="-9" y="10"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profile01" width="69.333335876464844" height="80.666664123535156"/>
+        <image name="profile02" width="122.66666412353516" height="142.66667175292969"/>
+        <image name="profile03" width="66.666664123535156" height="66.666664123535156"/>
+        <namedColor name="DarkBrown">
+            <color red="0.21568627450980393" green="0.13725490196078433" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

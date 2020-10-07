@@ -25,6 +25,7 @@
 		3782EC802500A6E700341AF6 /* MyMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3782EC7F2500A6E700341AF6 /* MyMain.storyboard */; };
 		379593672502354800A340DE /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379593662502354800A340DE /* Chatting.storyboard */; };
 		3795936A250236BF00A340DE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37959369250236BF00A340DE /* Auth.storyboard */; };
+		37F0BAF9252D4A6D0093A8AC /* ChattingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAF8252D4A6D0093A8AC /* ChattingTableViewController.swift */; };
 		57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A782505C3FA003D7F1A /* UIView+Extension.swift */; };
 		57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A7C2505C46D003D7F1A /* IntroViewController.swift */; };
 		57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */; };
@@ -212,6 +213,7 @@
 		3782EC7F2500A6E700341AF6 /* MyMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMain.storyboard; sourceTree = "<group>"; };
 		379593662502354800A340DE /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 		37959369250236BF00A340DE /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		37F0BAF8252D4A6D0093A8AC /* ChattingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewController.swift; sourceTree = "<group>"; };
 		57489A782505C3FA003D7F1A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		57489A7C2505C46D003D7F1A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
@@ -510,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				379593662502354800A340DE /* Chatting.storyboard */,
+				37F0BAF8252D4A6D0093A8AC /* ChattingTableViewController.swift */,
 			);
 			name = "채팅";
 			path = "채팅";
@@ -1252,6 +1255,7 @@
 				57489B552506293C003D7F1A /* AnimationTime.swift in Sources */,
 				9870B9382510800E008C91F6 /* GroupBuyingCell.swift in Sources */,
 				57489BB62506293C003D7F1A /* LayerDebugging.swift in Sources */,
+				37F0BAF9252D4A6D0093A8AC /* ChattingTableViewController.swift in Sources */,
 				57489B522506293C003D7F1A /* LottieView.swift in Sources */,
 				57489B6F2506293C003D7F1A /* CompositionLayersInitializer.swift in Sources */,
 				57489B822506293C003D7F1A /* GradientStrokeNode.swift in Sources */,

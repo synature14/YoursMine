@@ -35,8 +35,13 @@ class WiritingFinishViewController: UIViewController {
         imgView.image = sellingData?.image
         titleLabel.text = sellingData?.title
         contextLabel.text = sellingData?.contextText
-        classCntLabel.text = String(format: "%@차 0명/%@", sellingData?.classCnt ?? "", sellingData?.personCnt ?? "")
+        classCntLabel.text = String(format: "%@차 0명 / %@", sellingData?.classCnt ?? "", sellingData?.personCnt ?? "")
     }
+    
+    @IBAction func hide(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     static func create() -> WiritingFinishViewController {
         let sb = UIStoryboard(name: "SellingTab", bundle: nil)

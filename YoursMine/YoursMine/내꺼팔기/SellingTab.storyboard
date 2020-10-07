@@ -11,6 +11,12 @@
         <array key="NanumBarunGothic.ttf">
             <string>NanumBarunGothic</string>
         </array>
+        <array key="NanumBarunGothicBold.ttf">
+            <string>NanumBarunGothicBold</string>
+        </array>
+        <array key="NanumBarunGothicLight.ttf">
+            <string>NanumBarunGothicLight</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Selling View Controller-->
@@ -505,22 +511,170 @@
                                     <constraint firstAttribute="width" secondItem="qeu-Hn-0pk" secondAttribute="height" multiplier="1:1" id="Tls-Ne-v06"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-vw-duh">
-                                <rect key="frame" x="0.0" y="458" width="414" height="80"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r7-tG-8E3" userLabel="ProgressView">
+                                <rect key="frame" x="0.0" y="458" width="414" height="30"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nqd-ha-EUY">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="30"/>
+                                        <color key="backgroundColor" name="PointYellowColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1차 7명/10명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8M-tl-2Nc">
+                                        <rect key="frame" x="158.5" y="5" width="97" height="20"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nqd-ha-EUY" firstAttribute="top" secondItem="1r7-tG-8E3" secondAttribute="top" id="4Hq-sk-nd2"/>
+                                    <constraint firstAttribute="height" constant="30" id="5Wj-01-Gvk"/>
+                                    <constraint firstItem="P8M-tl-2Nc" firstAttribute="centerX" secondItem="1r7-tG-8E3" secondAttribute="centerX" id="BUs-m2-LFz"/>
+                                    <constraint firstItem="P8M-tl-2Nc" firstAttribute="centerY" secondItem="1r7-tG-8E3" secondAttribute="centerY" id="CTq-p6-ASC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nqd-ha-EUY" secondAttribute="bottom" id="Mdv-OK-P1h"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nqd-ha-EUY" secondAttribute="trailing" constant="100" id="TR3-sV-3Zp"/>
+                                    <constraint firstItem="Nqd-ha-EUY" firstAttribute="leading" secondItem="1r7-tG-8E3" secondAttribute="leading" id="psf-FK-AUX"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-vw-duh" userLabel="Seller View">
+                                <rect key="frame" x="0.0" y="488" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="최하나 사원" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATk-7F-lgP">
+                                        <rect key="frame" x="20" y="10" width="374" height="19"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하나카드" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDI-xN-8R9">
+                                        <rect key="frame" x="20" y="34" width="57.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="우수 판매자" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgl-MR-wj2">
+                                        <rect key="frame" x="20" y="63" width="66" height="17"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothicLight" family="NanumBarunGothic" pointSize="14"/>
+                                        <color key="textColor" name="DarkBrown"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Hdu-fR-IaK"/>
+                                    <constraint firstAttribute="trailing" secondItem="ATk-7F-lgP" secondAttribute="trailing" constant="20" id="SKz-Ad-Via"/>
+                                    <constraint firstItem="Wgl-MR-wj2" firstAttribute="top" secondItem="bDI-xN-8R9" secondAttribute="bottom" constant="10" id="UJg-dk-BM9"/>
+                                    <constraint firstItem="ATk-7F-lgP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gtC-vw-duh" secondAttribute="top" id="VwK-FE-HV6"/>
+                                    <constraint firstItem="ATk-7F-lgP" firstAttribute="leading" secondItem="gtC-vw-duh" secondAttribute="leading" constant="20" id="WNm-XN-9ij"/>
+                                    <constraint firstItem="bDI-xN-8R9" firstAttribute="leading" secondItem="ATk-7F-lgP" secondAttribute="leading" id="WQY-wW-wzx"/>
+                                    <constraint firstItem="bDI-xN-8R9" firstAttribute="top" secondItem="ATk-7F-lgP" secondAttribute="bottom" constant="5" id="c1R-l7-obe"/>
+                                    <constraint firstItem="Wgl-MR-wj2" firstAttribute="leading" secondItem="ATk-7F-lgP" secondAttribute="leading" id="pUu-C2-RUY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wgl-MR-wj2" secondAttribute="bottom" id="ptD-84-Jd5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-Lr-OPr">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLz-J5-j4G">
+                                        <rect key="frame" x="294" y="5" width="100" height="40"/>
+                                        <color key="backgroundColor" name="PointYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0HU-R6-ph5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
+                                        <state key="normal" title="채팅 요청">
+                                            <color key="titleColor" name="DarkBrown"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="참여 시, 500P 차감" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayd-hG-2TP">
+                                        <rect key="frame" x="55" y="5" width="229" height="40"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2SJ-Jv-JAE">
+                                        <rect key="frame" x="20" y="16.5" width="25" height="22.5"/>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2SJ-Jv-JAE" secondAttribute="height" multiplier="1:1" id="Qv1-7L-vnj"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LLz-J5-j4G" firstAttribute="top" secondItem="kl0-Lr-OPr" secondAttribute="top" constant="5" id="DFG-34-1Ex"/>
+                                    <constraint firstItem="LLz-J5-j4G" firstAttribute="leading" secondItem="Ayd-hG-2TP" secondAttribute="trailing" constant="10" id="Fp8-Lv-hem"/>
+                                    <constraint firstItem="Ayd-hG-2TP" firstAttribute="top" secondItem="LLz-J5-j4G" secondAttribute="top" id="PdM-e9-T2V"/>
+                                    <constraint firstItem="2SJ-Jv-JAE" firstAttribute="top" secondItem="LLz-J5-j4G" secondAttribute="top" constant="10" id="RHI-U3-p9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="LLz-J5-j4G" secondAttribute="trailing" constant="20" id="gAc-cU-lry"/>
+                                    <constraint firstItem="2SJ-Jv-JAE" firstAttribute="bottom" secondItem="LLz-J5-j4G" secondAttribute="bottom" constant="-5" id="j4o-iK-XQj"/>
+                                    <constraint firstItem="Ayd-hG-2TP" firstAttribute="centerY" secondItem="kl0-Lr-OPr" secondAttribute="centerY" id="jdF-OF-VV5"/>
+                                    <constraint firstItem="Ayd-hG-2TP" firstAttribute="leading" secondItem="2SJ-Jv-JAE" secondAttribute="trailing" constant="10" id="mgA-Kg-1LG"/>
+                                    <constraint firstItem="2SJ-Jv-JAE" firstAttribute="leading" secondItem="kl0-Lr-OPr" secondAttribute="leading" constant="20" id="pFD-iD-hRG"/>
+                                    <constraint firstAttribute="height" constant="50" id="r7E-0S-eC2"/>
+                                    <constraint firstItem="Ayd-hG-2TP" firstAttribute="bottom" secondItem="LLz-J5-j4G" secondAttribute="bottom" id="x7p-Ax-LyS"/>
+                                    <constraint firstAttribute="bottom" secondItem="LLz-J5-j4G" secondAttribute="bottom" constant="5" id="xmj-EH-LoX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbU-Jv-CAR">
+                                <rect key="frame" x="0.0" y="568" width="414" height="244"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="생활 크로스핏" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-PU-MhY">
+                                        <rect key="frame" x="20" y="10" width="374" height="20"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0Q-ZY-wHN">
+                                        <rect key="frame" x="20" y="40" width="374" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nKd-PU-MhY" firstAttribute="top" secondItem="JbU-Jv-CAR" secondAttribute="top" constant="10" id="EUf-Ds-znN"/>
+                                    <constraint firstItem="C0Q-ZY-wHN" firstAttribute="leading" secondItem="JbU-Jv-CAR" secondAttribute="leading" constant="20" id="Iwu-0L-qbg"/>
+                                    <constraint firstAttribute="trailing" secondItem="C0Q-ZY-wHN" secondAttribute="trailing" constant="20" id="din-GA-M8O"/>
+                                    <constraint firstItem="nKd-PU-MhY" firstAttribute="leading" secondItem="JbU-Jv-CAR" secondAttribute="leading" constant="20" id="k3y-2P-0tN"/>
+                                    <constraint firstAttribute="trailing" secondItem="nKd-PU-MhY" secondAttribute="trailing" constant="20" id="m2n-AL-oLw"/>
+                                    <constraint firstItem="C0Q-ZY-wHN" firstAttribute="top" secondItem="nKd-PU-MhY" secondAttribute="bottom" constant="10" id="ywh-wX-aWx"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JbU-Jv-CAR" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="0WC-rD-4DS"/>
                             <constraint firstItem="qeu-Hn-0pk" firstAttribute="top" secondItem="0Vz-dM-osP" secondAttribute="top" id="6Xh-YT-xh1"/>
+                            <constraint firstItem="kl0-Lr-OPr" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="8IN-6K-wYP"/>
+                            <constraint firstItem="1r7-tG-8E3" firstAttribute="top" secondItem="qeu-Hn-0pk" secondAttribute="bottom" id="BIq-nh-u3G"/>
                             <constraint firstItem="gtC-vw-duh" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="EMC-l5-GIX"/>
                             <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="qeu-Hn-0pk" secondAttribute="trailing" id="LmO-NQ-Lsk"/>
+                            <constraint firstItem="kl0-Lr-OPr" firstAttribute="top" secondItem="JbU-Jv-CAR" secondAttribute="bottom" id="Mqy-Ui-Uez"/>
+                            <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="kl0-Lr-OPr" secondAttribute="trailing" id="ViB-Wb-sqY"/>
+                            <constraint firstItem="JbU-Jv-CAR" firstAttribute="top" secondItem="gtC-vw-duh" secondAttribute="bottom" id="XCM-KK-COB"/>
                             <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="gtC-vw-duh" secondAttribute="trailing" id="ch4-im-t38"/>
                             <constraint firstItem="qeu-Hn-0pk" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="dBu-z0-aJJ"/>
-                            <constraint firstItem="gtC-vw-duh" firstAttribute="top" secondItem="qeu-Hn-0pk" secondAttribute="bottom" id="gDt-Zf-Ivi"/>
+                            <constraint firstItem="gtC-vw-duh" firstAttribute="top" secondItem="1r7-tG-8E3" secondAttribute="bottom" id="gDt-Zf-Ivi"/>
+                            <constraint firstItem="0Vz-dM-osP" firstAttribute="bottom" secondItem="kl0-Lr-OPr" secondAttribute="bottom" id="jl8-b5-cuA"/>
+                            <constraint firstItem="1r7-tG-8E3" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="k5P-9R-MzR"/>
+                            <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="1r7-tG-8E3" secondAttribute="trailing" id="kI1-hr-7WB"/>
+                            <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="JbU-Jv-CAR" secondAttribute="trailing" id="qKb-Rq-Pyx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Vz-dM-osP"/>
                     </view>
@@ -528,14 +682,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hoz-Zg-ROU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="-218"/>
+            <point key="canvasLocation" x="1853.6231884057972" y="-218.30357142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="btnCloseNormal.png" width="32" height="32"/>
         <image name="camera (1).png" width="384" height="384"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <namedColor name="DarkBrown">
+            <color red="0.21568627450980393" green="0.13725490196078433" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="LineViewColor">
             <color red="0.89800000190734863" green="0.89800000190734863" blue="0.89800000190734863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PointYellowColor">
+            <color red="1" green="0.92549019607843142" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

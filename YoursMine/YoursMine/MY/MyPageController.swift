@@ -22,6 +22,11 @@ class MyPageController: UIPageViewController {
                 self.VCInstance(name: BuyingHistoryController.name)]
     }()
     
+    required init?(coder aDecoder: NSCoder) {
+        self.currentIndex = 0
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+    }
+    
     private func VCInstance(name: String) -> UIViewController {
         return UIStoryboard(name: "MyMain", bundle: nil).instantiateViewController(identifier: name)
     }
@@ -69,5 +74,16 @@ extension MyPageController: UIPageViewControllerDataSource, UIPageViewController
                 self.currentIndex = index                
             }
         }
+    }
+}
+
+extension MyPageController {
+    func goToViewController(_ index: Int) {
+        var direction: UIPageViewController.NavigationDirection = .forward
+        if index < currentIndex {
+            direction = .reverse
+        }
+        self.setViewControllers([VCArray[index]], direction: direction, animated: true)
+        self.currentIndex = index
     }
 }

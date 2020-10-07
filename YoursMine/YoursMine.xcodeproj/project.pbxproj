@@ -30,6 +30,7 @@
 		37F0BAFD252D5CC10093A8AC /* SellingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAFC252D5CC10093A8AC /* SellingHistoryController.swift */; };
 		37F0BAFF252D5CD10093A8AC /* BuyingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAFE252D5CD10093A8AC /* BuyingHistoryController.swift */; };
 		37F0BB01252D891B0093A8AC /* MyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BB00252D891B0093A8AC /* MyMainViewController.swift */; };
+		37F0BB03252D8EF40093A8AC /* MyHistorySuperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BB02252D8EF40093A8AC /* MyHistorySuperController.swift */; };
 		57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A782505C3FA003D7F1A /* UIView+Extension.swift */; };
 		57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A7C2505C46D003D7F1A /* IntroViewController.swift */; };
 		57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */; };
@@ -223,6 +224,7 @@
 		37F0BAFC252D5CC10093A8AC /* SellingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingHistoryController.swift; sourceTree = "<group>"; };
 		37F0BAFE252D5CD10093A8AC /* BuyingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingHistoryController.swift; sourceTree = "<group>"; };
 		37F0BB00252D891B0093A8AC /* MyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainViewController.swift; sourceTree = "<group>"; };
+		37F0BB02252D8EF40093A8AC /* MyHistorySuperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHistorySuperController.swift; sourceTree = "<group>"; };
 		57489A782505C3FA003D7F1A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		57489A7C2505C46D003D7F1A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
@@ -493,10 +495,11 @@
 			isa = PBXGroup;
 			children = (
 				3782EC7F2500A6E700341AF6 /* MyMain.storyboard */,
+				37F0BB00252D891B0093A8AC /* MyMainViewController.swift */,
 				37F0BAFA252D5ACA0093A8AC /* MyPageController.swift */,
+				37F0BB02252D8EF40093A8AC /* MyHistorySuperController.swift */,
 				37F0BAFC252D5CC10093A8AC /* SellingHistoryController.swift */,
 				37F0BAFE252D5CD10093A8AC /* BuyingHistoryController.swift */,
-				37F0BB00252D891B0093A8AC /* MyMainViewController.swift */,
 			);
 			path = MY;
 			sourceTree = "<group>";
@@ -1334,6 +1337,7 @@
 				57489B892506293C003D7F1A /* KeyframeInterpolator.swift in Sources */,
 				57489B992506293C003D7F1A /* FillI.swift in Sources */,
 				57489BA42506293C003D7F1A /* PreCompLayerModel.swift in Sources */,
+				37F0BB03252D8EF40093A8AC /* MyHistorySuperController.swift in Sources */,
 				57489B482506293C003D7F1A /* AnimationView.swift in Sources */,
 				57489B8E2506293C003D7F1A /* ShapeContainerLayer.swift in Sources */,
 				57489BAC2506293C003D7F1A /* KeyframeGroup.swift in Sources */,

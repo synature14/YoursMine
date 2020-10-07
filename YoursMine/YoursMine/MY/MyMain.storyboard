@@ -39,11 +39,21 @@
                                                                 <color key="textColor" name="DarkBrown"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpA-N9-bV2">
+                                                                <rect key="frame" x="20" y="0.0" width="167" height="45"/>
+                                                                <connections>
+                                                                    <action selector="판매내역ButtonTapped:" destination="8gf-F6-CUK" eventType="touchUpInside" id="Bio-Fc-T7z"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
                                                             <constraint firstItem="17U-J7-W8A" firstAttribute="centerX" secondItem="BKw-9E-35J" secondAttribute="centerX" id="Hle-mK-3rg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lpA-N9-bV2" secondAttribute="trailing" constant="20" id="Lkp-Lj-rvL"/>
+                                                            <constraint firstItem="lpA-N9-bV2" firstAttribute="leading" secondItem="BKw-9E-35J" secondAttribute="leading" constant="20" id="Ln6-mG-fSq"/>
                                                             <constraint firstItem="17U-J7-W8A" firstAttribute="centerY" secondItem="BKw-9E-35J" secondAttribute="centerY" id="iYK-nc-e1O"/>
+                                                            <constraint firstAttribute="bottom" secondItem="lpA-N9-bV2" secondAttribute="bottom" id="koY-oH-dkh"/>
+                                                            <constraint firstItem="lpA-N9-bV2" firstAttribute="top" secondItem="BKw-9E-35J" secondAttribute="top" id="mBD-D7-W2b"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qsJ-3P-kXa">
@@ -55,11 +65,21 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HT-UW-nWM">
+                                                                <rect key="frame" x="20" y="0.0" width="167" height="45"/>
+                                                                <connections>
+                                                                    <action selector="구매내역ButtonTapped:" destination="8gf-F6-CUK" eventType="touchUpInside" id="YwP-FR-iyk"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="1HT-UW-nWM" secondAttribute="trailing" constant="20" id="0ZD-PN-ni2"/>
+                                                            <constraint firstItem="1HT-UW-nWM" firstAttribute="top" secondItem="qsJ-3P-kXa" secondAttribute="top" id="5EM-jJ-1Fe"/>
+                                                            <constraint firstItem="1HT-UW-nWM" firstAttribute="leading" secondItem="qsJ-3P-kXa" secondAttribute="leading" constant="20" id="Gpn-7K-DhV"/>
                                                             <constraint firstItem="ZA7-pC-ecH" firstAttribute="centerY" secondItem="qsJ-3P-kXa" secondAttribute="centerY" id="HBv-SI-j5r"/>
                                                             <constraint firstItem="ZA7-pC-ecH" firstAttribute="centerX" secondItem="qsJ-3P-kXa" secondAttribute="centerX" id="jyz-aM-brm"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1HT-UW-nWM" secondAttribute="bottom" id="o7c-uF-hQd"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -122,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="-315.40178571428572"/>
         </scene>
-        <!--Page View Controller-->
+        <!--My Page Controller-->
         <scene sceneID="3qV-G4-LAm">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="lUG-ud-rOk" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="lUG-ud-rOk" customClass="MyPageController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIu-zg-7AQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1080" y="-315"/>
@@ -133,14 +153,14 @@
         <!--Selling History Controller-->
         <scene sceneID="rNm-X0-D1L">
             <objects>
-                <viewController id="vB3-ZO-lDh" customClass="SellingHistoryController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SellingHistoryController" id="vB3-ZO-lDh" customClass="SellingHistoryController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e2N-lt-crY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLt-yp-J2x">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="1" green="0.36862745099999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vB3-ZO-lDh" id="No1-mW-Ml4"/>
                                     <outlet property="delegate" destination="vB3-ZO-lDh" id="20F-HE-a6w"/>
@@ -167,14 +187,14 @@
         <!--Buying History Controller-->
         <scene sceneID="cNR-1t-IPT">
             <objects>
-                <viewController id="881-V5-GaR" customClass="BuyingHistoryController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BuyingHistoryController" id="881-V5-GaR" customClass="BuyingHistoryController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jo8-Lo-8vL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cgR-pk-Hw8">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.38823529410000002" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="dataSource" destination="881-V5-GaR" id="YOs-Vr-Ga0"/>
                                     <outlet property="delegate" destination="881-V5-GaR" id="eJr-db-SY9"/>

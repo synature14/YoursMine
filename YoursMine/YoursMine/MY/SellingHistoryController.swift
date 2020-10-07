@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SellingHistoryController: UIViewController {
+class SellingHistoryController: MyHistorySuperController {
     static let name = "SellingHistoryController"
     
     @IBOutlet weak var tableView: UITableView!

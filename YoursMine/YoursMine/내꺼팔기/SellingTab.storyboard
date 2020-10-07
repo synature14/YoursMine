@@ -84,7 +84,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="nXK-KN-e76"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2p-s8-se2">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2p-s8-se2">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="67"/>
                                                         <connections>
                                                             <action selector="selectSelling:" destination="MQh-G1-mBQ" eventType="touchUpInside" id="Pke-x9-Jvw"/>
@@ -120,7 +120,7 @@
                                                             <constraint firstAttribute="height" constant="1" id="70c-DR-yXh"/>
                                                         </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-pC-qH6">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-pC-qH6">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                                         <connections>
                                                             <action selector="selectSelling:" destination="MQh-G1-mBQ" eventType="touchUpInside" id="NYO-L9-O8L"/>
@@ -338,8 +338,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-HO-zsF" userLabel="Title View">
                                                 <rect key="frame" x="0.0" y="70" width="414" height="70"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  글 제목" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1W-g0-4Xn">
-                                                        <rect key="frame" x="20" y="25" width="374" height="20"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="글 제목" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i1W-g0-4Xn">
+                                                        <rect key="frame" x="30" y="25" width="364" height="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -360,17 +360,17 @@
                                                     <constraint firstAttribute="trailing" secondItem="i1W-g0-4Xn" secondAttribute="trailing" constant="20" id="VcC-78-9IL"/>
                                                     <constraint firstItem="ew6-D7-qg9" firstAttribute="leading" secondItem="aYp-HO-zsF" secondAttribute="leading" constant="20" id="c7y-E4-olI"/>
                                                     <constraint firstAttribute="bottom" secondItem="ew6-D7-qg9" secondAttribute="bottom" id="cw7-Rx-v1D"/>
-                                                    <constraint firstItem="i1W-g0-4Xn" firstAttribute="leading" secondItem="aYp-HO-zsF" secondAttribute="leading" constant="20" id="dFw-gS-xiK"/>
+                                                    <constraint firstItem="i1W-g0-4Xn" firstAttribute="leading" secondItem="aYp-HO-zsF" secondAttribute="leading" constant="30" id="dFw-gS-xiK"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5s-y3-78m" userLabel="ClassCnt View">
                                                 <rect key="frame" x="0.0" y="140" width="414" height="70"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  🏷 회차" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YqH-Fr-vwg">
-                                                        <rect key="frame" x="20" y="25" width="374" height="20"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="🏷 회차" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YqH-Fr-vwg">
+                                                        <rect key="frame" x="30" y="25" width="364" height="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-4T-uj4" userLabel="LineView">
                                                         <rect key="frame" x="20" y="69" width="374" height="1"/>
@@ -388,17 +388,17 @@
                                                     <constraint firstAttribute="trailing" secondItem="YqH-Fr-vwg" secondAttribute="trailing" constant="20" id="euu-nb-EoV"/>
                                                     <constraint firstAttribute="height" constant="70" id="fVF-jH-7L4"/>
                                                     <constraint firstItem="YqH-Fr-vwg" firstAttribute="centerY" secondItem="S5s-y3-78m" secondAttribute="centerY" id="ilW-99-L6m"/>
-                                                    <constraint firstItem="YqH-Fr-vwg" firstAttribute="leading" secondItem="S5s-y3-78m" secondAttribute="leading" constant="20" id="qT5-bo-H1c"/>
+                                                    <constraint firstItem="YqH-Fr-vwg" firstAttribute="leading" secondItem="S5s-y3-78m" secondAttribute="leading" constant="30" id="qT5-bo-H1c"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an1-th-Tje" userLabel="Person View">
                                                 <rect key="frame" x="0.0" y="210" width="414" height="70"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  👨🏻‍💼 최대 인원" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-nj-7qi">
-                                                        <rect key="frame" x="20" y="25" width="374" height="20"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="👨🏻‍💼 최대 인원" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qK-nj-7qi">
+                                                        <rect key="frame" x="30" y="25" width="364" height="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="17"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egp-e2-gGu" userLabel="LineView">
                                                         <rect key="frame" x="20" y="69" width="374" height="1"/>
@@ -416,18 +416,18 @@
                                                     <constraint firstItem="2qK-nj-7qi" firstAttribute="centerY" secondItem="an1-th-Tje" secondAttribute="centerY" id="YZR-gv-NQ1"/>
                                                     <constraint firstAttribute="height" constant="70" id="Yh8-9j-8Wj"/>
                                                     <constraint firstAttribute="trailing" secondItem="Egp-e2-gGu" secondAttribute="trailing" constant="20" id="u6A-Xx-V1w"/>
-                                                    <constraint firstItem="2qK-nj-7qi" firstAttribute="leading" secondItem="an1-th-Tje" secondAttribute="leading" constant="20" id="uRR-Ag-V8Z"/>
+                                                    <constraint firstItem="2qK-nj-7qi" firstAttribute="leading" secondItem="an1-th-Tje" secondAttribute="leading" constant="30" id="uRR-Ag-V8Z"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWf-qy-0Gb" userLabel="Content View">
                                                 <rect key="frame" x="20" y="280" width="374" height="616"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e4b-8x-FWg">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4b-8x-FWg">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="616"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                 </subviews>
@@ -487,6 +487,7 @@
                     </view>
                     <connections>
                         <outlet property="textView" destination="e4b-8x-FWg" id="hyO-nH-Esy"/>
+                        <outlet property="titleLabel" destination="dyl-sc-vOY" id="vAn-sF-80Z"/>
                         <outlet property="txtFldCnt" destination="YqH-Fr-vwg" id="Vqk-EY-soC"/>
                         <outlet property="txtFldPerson" destination="2qK-nj-7qi" id="7Me-B7-x5O"/>
                         <outlet property="txtFldTitle" destination="i1W-g0-4Xn" id="M5t-Op-Bi8"/>

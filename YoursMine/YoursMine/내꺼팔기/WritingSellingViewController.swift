@@ -10,19 +10,27 @@ import UIKit
 
 class WritingSellingViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var photoImages: [UIImageView]!
     @IBOutlet weak var txtFldTitle: UITextField!
     @IBOutlet weak var txtFldCnt: UITextField!
     @IBOutlet weak var txtFldPerson: UITextField!
     @IBOutlet weak var textView: UITextView!
     
+    var titleText: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUI()
+    }
+    
+    private func setUI() {
+        titleLabel.text = (titleText ?? "재능판매") + "글쓰기"
     }
     
     @IBAction func close(_ sender: UIButton) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func finishWriting(_ sender: UIButton) {

@@ -36,7 +36,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물품거래" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9no-3q-lRg">
-                                                        <rect key="frame" x="179.5" y="24" width="55.5" height="19"/>
+                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                                 <rect key="frame" x="0.0" y="66.5" width="414" height="67"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="재능판매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrV-jL-opY">
-                                                        <rect key="frame" x="179.5" y="24" width="55.5" height="19"/>
+                                                        <rect key="frame" x="178.5" y="24.5" width="57.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -108,7 +108,7 @@
                                                 <rect key="frame" x="0.0" y="133.5" width="414" height="66.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나눔경매" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-rj-BeM">
-                                                        <rect key="frame" x="179.5" y="23.5" width="55.5" height="19"/>
+                                                        <rect key="frame" x="178.5" y="24" width="57.5" height="18.5"/>
                                                         <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -490,6 +490,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Owf-5N-gEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1135" y="-218"/>
+        </scene>
+        <!--Wiriting Finish View Controller-->
+        <scene sceneID="AlA-kM-Eeq">
+            <objects>
+                <viewController storyboardIdentifier="WiritingFinishViewController" id="oIK-qB-UNY" customClass="WiritingFinishViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rwo-oh-hTq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qeu-Hn-0pk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qeu-Hn-0pk" secondAttribute="height" multiplier="1:1" id="Tls-Ne-v06"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtC-vw-duh">
+                                <rect key="frame" x="0.0" y="458" width="414" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Hdu-fR-IaK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qeu-Hn-0pk" firstAttribute="top" secondItem="0Vz-dM-osP" secondAttribute="top" id="6Xh-YT-xh1"/>
+                            <constraint firstItem="gtC-vw-duh" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="EMC-l5-GIX"/>
+                            <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="qeu-Hn-0pk" secondAttribute="trailing" id="LmO-NQ-Lsk"/>
+                            <constraint firstItem="0Vz-dM-osP" firstAttribute="trailing" secondItem="gtC-vw-duh" secondAttribute="trailing" id="ch4-im-t38"/>
+                            <constraint firstItem="qeu-Hn-0pk" firstAttribute="leading" secondItem="0Vz-dM-osP" secondAttribute="leading" id="dBu-z0-aJJ"/>
+                            <constraint firstItem="gtC-vw-duh" firstAttribute="top" secondItem="qeu-Hn-0pk" secondAttribute="bottom" id="gDt-Zf-Ivi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Vz-dM-osP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hlX-gz-Bxd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hoz-Zg-ROU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="-218"/>
         </scene>
     </scenes>
     <resources>

@@ -50,8 +50,6 @@ class WritingSellingViewController: UIViewController {
     }
     
     
-    
-    
     static func create() -> WritingSellingViewController {
         let sb = UIStoryboard(name: "SellingTab", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "WritingSellingViewController") as! WritingSellingViewController

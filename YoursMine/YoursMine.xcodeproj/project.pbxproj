@@ -169,6 +169,7 @@
 		576118AF252C491200012CE7 /* WritingSellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576118AE252C491200012CE7 /* WritingSellingViewController.swift */; };
 		576118B3252C545A00012CE7 /* camera (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 576118B2252C545A00012CE7 /* camera (1).png */; };
 		576118B5252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 576118B4252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png */; };
+		576118B7252D5D3100012CE7 /* WiritingFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576118B6252D5D3100012CE7 /* WiritingFinishViewController.swift */; };
 		579D7B40251305A100FC250C /* SellingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579D7B3F251305A100FC250C /* SellingViewController.swift */; };
 		57B6340D250B731A004B98D8 /* PWSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B6340C250B731A004B98D8 /* PWSettingViewController.swift */; };
 		57D7B68E250F356000805E26 /* PatternLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D7B68D250F356000805E26 /* PatternLockViewController.swift */; };
@@ -357,6 +358,7 @@
 		576118AE252C491200012CE7 /* WritingSellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSellingViewController.swift; sourceTree = "<group>"; };
 		576118B2252C545A00012CE7 /* camera (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera (1).png"; sourceTree = "<group>"; };
 		576118B4252C5A7500012CE7 /* ccomIcoAuthNextStepv@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ccomIcoAuthNextStepv@3x.png"; sourceTree = "<group>"; };
+		576118B6252D5D3100012CE7 /* WiritingFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiritingFinishViewController.swift; sourceTree = "<group>"; };
 		579D7B3F251305A100FC250C /* SellingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingViewController.swift; sourceTree = "<group>"; };
 		57B6340C250B731A004B98D8 /* PWSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWSettingViewController.swift; sourceTree = "<group>"; };
 		57D7B68D250F356000805E26 /* PatternLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternLockViewController.swift; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 				3782EC7D2500A6D200341AF6 /* SellingTab.storyboard */,
 				579D7B3F251305A100FC250C /* SellingViewController.swift */,
 				576118AE252C491200012CE7 /* WritingSellingViewController.swift */,
+				576118B6252D5D3100012CE7 /* WiritingFinishViewController.swift */,
 			);
 			name = "내꺼팔기";
 			path = "내꺼팔기";
@@ -1264,6 +1267,7 @@
 				57489B9A2506293C003D7F1A /* Repeater.swift in Sources */,
 				57489B602506293C003D7F1A /* GradientValueProvider.swift in Sources */,
 				57489B7C2506293C003D7F1A /* ShapeNode.swift in Sources */,
+				576118B7252D5D3100012CE7 /* WiritingFinishViewController.swift in Sources */,
 				57489BB12506293C003D7F1A /* Font.swift in Sources */,
 				57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */,
 				57489B7B2506293C003D7F1A /* RectNode.swift in Sources */,

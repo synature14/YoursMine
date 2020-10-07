@@ -10,9 +10,6 @@
         <array key="NanumBarunGothic.ttf">
             <string>NanumBarunGothic</string>
         </array>
-        <array key="NanumBarunGothicBold.ttf">
-            <string>NanumBarunGothicBold</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Main View Controller-->
@@ -71,7 +68,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="니꺼 사기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW7-JN-9IM">
                                                         <rect key="frame" x="18" y="18.5" width="61" height="18.5"/>
-                                                        <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="NanumBarunGothic" family="NanumBarunGothic" pointSize="16"/>
                                                         <color key="textColor" red="1" green="0.92941176469999998" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>

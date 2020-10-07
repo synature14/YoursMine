@@ -69,7 +69,6 @@ class MainViewController: UIViewController {
             buyingContainerView.isHidden = false
             
             buyingTabLabel.textColor = tabOnColor
-            buyingTabLabel.font = UIFont(name: "NanumBarunGothic_Bold", size: 15.0)
             
         case 1: // 내꺼팔기
             let vc = SellingViewController.create()
@@ -83,7 +82,6 @@ class MainViewController: UIViewController {
             })
             
             sellingTabLabel.textColor = tabOnColor
-            sellingTabLabel.font = UIFont(name: "NanumBarunGothic_Bold", size: 15.0)
             
         case 2: // 채팅
             buyingContainerView.isHidden = true
@@ -93,7 +91,6 @@ class MainViewController: UIViewController {
             chattingContainerView.isHidden = false
             
             chattingTabLabel.textColor = tabOnColor
-            chattingTabLabel.font = UIFont(name: "NanumBarunGothic_Bold", size: 15.0)
             
         case 3: // MY
             buyingContainerView.isHidden = true
@@ -103,7 +100,6 @@ class MainViewController: UIViewController {
             myMainContainerView.isHidden = false
             
             myTabLabel.textColor = tabOnColor
-            myTabLabel.font = UIFont(name: "NanumBarunGothic_Bold", size: 15.0)
         default:
             break
         }
@@ -116,10 +112,10 @@ class MainViewController: UIViewController {
         chattingTabLabel.textColor = tabOffColor
         myTabLabel.textColor = tabOffColor
         
-        buyingTabLabel.font = UIFont(name: "NanumBarunGothic_Regular", size: 15.0)
-        sellingTabLabel.font = UIFont(name: "NanumBarunGothic_Regular", size: 15.0)
-        chattingTabLabel.font = UIFont(name: "NanumBarunGothic_Regular", size: 15.0)
-        myTabLabel.font = UIFont(name: "NanumBarunGothic_Regular", size: 15.0)
+        buyingTabLabel.font = UIFont(name: "NanumBarunGothic", size: 15.0)
+        sellingTabLabel.font = UIFont(name: "NanumBarunGothic", size: 15.0)
+        chattingTabLabel.font = UIFont(name: "NanumBarunGothic", size: 15.0)
+        myTabLabel.font = UIFont(name: "NanumBarunGothic", size: 15.0)
     }
     
 }

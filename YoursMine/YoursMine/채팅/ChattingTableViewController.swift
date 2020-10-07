@@ -21,4 +21,11 @@ class ChattingTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 2
     }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        if let header = view as? UITableViewHeaderFooterView {
+            header.textLabel?.font = UIFont(name: "NanumBarunGothic", size: 14.0)
+            header.backgroundColor = #colorLiteral(red: 1, green: 0.9254901961, blue: 0.768627451, alpha: 1)
+        }
+    }
 }

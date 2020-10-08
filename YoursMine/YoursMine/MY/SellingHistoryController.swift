@@ -25,6 +25,11 @@ extension SellingHistoryController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: ItemListCell.name, for: indexPath) as? ItemListCell {
+            
+            return cell
+        }
+        
         return UITableViewCell()
     }
 }

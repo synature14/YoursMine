@@ -91,17 +91,27 @@
                                                     <constraint firstAttribute="height" constant="2" id="IUc-ST-I1v"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giA-Kd-XVV" userLabel="underlineView">
+                                                <rect key="frame" x="269.5" y="43" width="82.5" height="2"/>
+                                                <color key="backgroundColor" name="DarkBrown"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="klb-ha-QQc"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="MrG-9T-5AV" secondAttribute="trailing" id="6gg-E9-RCp"/>
                                             <constraint firstAttribute="bottom" secondItem="MrG-9T-5AV" secondAttribute="bottom" id="AQ6-Wg-06g"/>
+                                            <constraint firstAttribute="bottom" secondItem="giA-Kd-XVV" secondAttribute="bottom" id="CjJ-aY-7Rc"/>
+                                            <constraint firstItem="giA-Kd-XVV" firstAttribute="leading" secondItem="ZA7-pC-ecH" secondAttribute="leading" constant="-15" id="Dtz-Xc-zBm"/>
                                             <constraint firstItem="MrG-9T-5AV" firstAttribute="top" secondItem="fzh-pS-zyQ" secondAttribute="top" id="LwE-Kv-PPo"/>
                                             <constraint firstItem="26l-Bo-St9" firstAttribute="trailing" secondItem="17U-J7-W8A" secondAttribute="trailing" constant="10" id="dg6-bj-Nee"/>
                                             <constraint firstAttribute="height" constant="45" id="lMH-Kf-Qal"/>
                                             <constraint firstAttribute="bottom" secondItem="26l-Bo-St9" secondAttribute="bottom" id="ouc-Vo-PlF"/>
                                             <constraint firstItem="26l-Bo-St9" firstAttribute="leading" secondItem="17U-J7-W8A" secondAttribute="leading" constant="-10" id="wYK-0m-Xsk"/>
                                             <constraint firstItem="MrG-9T-5AV" firstAttribute="leading" secondItem="fzh-pS-zyQ" secondAttribute="leading" id="xz7-6y-MSf"/>
+                                            <constraint firstItem="giA-Kd-XVV" firstAttribute="trailing" secondItem="ZA7-pC-ecH" secondAttribute="trailing" constant="15" id="zJ8-ZE-6bg"/>
                                         </constraints>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uc0-go-s1N">
@@ -133,7 +143,8 @@
                         <viewLayoutGuide key="safeArea" id="VVc-o8-C9r"/>
                     </view>
                     <connections>
-                        <outlet property="underlineView" destination="26l-Bo-St9" id="3dI-0p-4U0"/>
+                        <outlet property="underlineView01" destination="26l-Bo-St9" id="7wy-h7-gqh"/>
+                        <outlet property="underlineView02" destination="giA-Kd-XVV" id="Vyd-hb-hi0"/>
                         <outlet property="구매내역Label" destination="ZA7-pC-ecH" id="sZQ-8K-Orp"/>
                         <outlet property="판매내역Label" destination="17U-J7-W8A" id="7pX-Qv-whe"/>
                     </connections>

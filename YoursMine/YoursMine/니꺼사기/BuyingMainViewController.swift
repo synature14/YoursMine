@@ -26,7 +26,6 @@ class Category {
 }
 
 class BuyingMainViewController: UIViewController {
-    var productArr: [Product] = []
     private let categoryArr = [Category(title: "물품 구매", productType: .물건),
                                Category(title: "재능 구매", productType: .재능),
                                Category(title: "나눔 경매", productType: .나눔),

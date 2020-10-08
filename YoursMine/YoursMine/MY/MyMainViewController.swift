@@ -15,13 +15,18 @@ class MyMainViewController: UIViewController {
     @IBOutlet weak var 판매내역Label: UILabel!
     @IBOutlet weak var 구매내역Label: UILabel!
     
-    @IBOutlet weak var underlineView: UIView!
+    @IBOutlet weak var underlineView01: UIView!
+    @IBOutlet weak var underlineView02: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let pageVC = self.children[0] as? MyPageController {
             self.pageVC = pageVC
             self.pageVC.pageDelegate = self
+            
+            underlineView02.isHidden = true
+            
 //            self.pageVC.itemArray = productArr
             
             for i in 0...1 {
@@ -49,10 +54,14 @@ extension MyMainViewController: PageIndexDelegate {
         if pageIndex == 0 {
             판매내역Label.textColor = #colorLiteral(red: 0.2156862745, green: 0.137254902, blue: 0.03529411765, alpha: 1)
             구매내역Label.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
-            underlineView.frame = CGRect(x: 0, y: 0, width: <#T##CGFloat#>, height: <#T##CGFloat#>)
+            underlineView01.isHidden = false
+            underlineView02.isHidden = true
+            
         } else {
             판매내역Label.textColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
             구매내역Label.textColor = #colorLiteral(red: 0.2156862745, green: 0.137254902, blue: 0.03529411765, alpha: 1)
+            underlineView01.isHidden = true
+            underlineView02.isHidden = false
         }
     }
 }

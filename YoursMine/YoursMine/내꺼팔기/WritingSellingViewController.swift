@@ -44,11 +44,15 @@ class WritingSellingViewController: UIViewController {
                                       personCnt: txtFldPerson.text ?? "",
                                       contextText: textView.text ?? "")
             
-            self.dismiss(animated: false, completion: {
                 let vc = WiritingFinishViewController.create()
                 vc.sellingData = sellingData
-                UIApplication.topViewController()?.navigationController?.pushViewController(vc, animated: true)
-            })
+                let transition = CATransition()
+                transition.duration = 0.35
+                transition.type = CATransitionType.push
+                transition.subtype = CATransitionSubtype.fromRight
+                transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+                view.window!.layer.add(transition, forKey: kCATransition)
+                self.present(vc, animated: false, completion: nil)
         }
     }
     

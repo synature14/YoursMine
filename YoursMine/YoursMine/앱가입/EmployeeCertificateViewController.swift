@@ -63,11 +63,16 @@ class EmployeeCertificateViewController: UIViewController {
     
     @IBAction func goNext(_ sender: UIButton) {
         let vc = PWSettingViewController.create()
-        // push해야하는데 일단 present
         vc.modalPresentationStyle = .overFullScreen
-        self.present(vc, animated: true, completion: nil)
+        
+        let transition = CATransition()
+        transition.duration = 0.35
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+        self.present(vc, animated: false, completion: nil)
     }
-    
     
 }
 

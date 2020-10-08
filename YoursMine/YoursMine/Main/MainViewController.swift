@@ -118,5 +118,11 @@ class MainViewController: UIViewController {
         myTabLabel.font = UIFont(name: "NanumBarunGothic", size: 15.0)
     }
     
+    static func create() -> MainViewController {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        return vc
+    }
+    
 }
 

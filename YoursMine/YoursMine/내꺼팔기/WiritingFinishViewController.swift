@@ -39,7 +39,7 @@ class WiritingFinishViewController: UIViewController {
     }
     
     @IBAction func hide(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        
     }
     
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="drJ-zp-vTD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r5i-Bh-FKo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -15,7 +15,7 @@
         <!--Main View Controller-->
         <scene sceneID="5Lx-xh-ER3">
             <objects>
-                <viewController id="drJ-zp-vTD" customClass="MainViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="drJ-zp-vTD" customClass="MainViewController" customModule="YoursMine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2QX-fh-Ms1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -209,6 +209,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pez-Kc-r0R"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gJZ-fd-nMt"/>
                     <connections>
                         <outlet property="buyingContainerView" destination="aZ8-iz-WsX" id="53V-9P-sv1"/>
                         <outlet property="buyingTabLabel" destination="nW7-JN-9IM" id="drX-v9-qcW"/>
@@ -223,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gn-4B-vpp" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="337.68115942028987" y="156.69642857142856"/>
+            <point key="canvasLocation" x="1247.8260869565217" y="156.69642857142856"/>
         </scene>
         <!--MyMain-->
         <scene sceneID="EBO-Gs-VRh">
@@ -233,7 +234,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfJ-Yy-eu3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="208"/>
+            <point key="canvasLocation" x="1902.8985507246377" y="207.58928571428569"/>
         </scene>
         <!--BuyingTab-->
         <scene sceneID="5Zr-iE-mkr">
@@ -241,7 +242,7 @@
                 <viewControllerPlaceholder storyboardName="BuyingTab" id="MwG-Ti-k4X" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dja-or-FN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1005" y="157"/>
+            <point key="canvasLocation" x="1914.4927536231885" y="156.69642857142856"/>
         </scene>
         <!--Chatting-->
         <scene sceneID="BNM-dm-j6W">
@@ -262,6 +263,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOz-3Y-80f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="124" y="581"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1NO-9C-eTV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="r5i-Bh-FKo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vVp-m5-fif">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="drJ-zp-vTD" kind="relationship" relationship="rootViewController" id="3A7-Sw-NX4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JPp-MP-sBC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337.68115942028987" y="156.69642857142856"/>
         </scene>
     </scenes>
 </document>

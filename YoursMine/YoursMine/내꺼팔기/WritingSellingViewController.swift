@@ -44,10 +44,11 @@ class WritingSellingViewController: UIViewController {
                                       personCnt: txtFldPerson.text ?? "",
                                       contextText: textView.text ?? "")
             
-            let vc = WiritingFinishViewController.create()
-            vc.sellingData = sellingData
-            // 푸시인데 일단 present
-            self.present(vc, animated: true, completion: nil)
+            self.dismiss(animated: false, completion: {
+                let vc = WiritingFinishViewController.create()
+                vc.sellingData = sellingData
+                UIApplication.topViewController()?.navigationController?.pushViewController(vc, animated: true)
+            })
         }
     }
     

@@ -105,12 +105,11 @@ class PatternLockViewController: UIViewController {
     }
     
     @objc func gestureComplete(gestureLock: CCGestureLock) {
-        print(#function)
+        print("patternlock finish =======")
         
-        UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: {
-            self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: false, completion: {
+            UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: nil)
         })
-        
     }
     
     @IBAction func goReRegisterAuth(_ sender: UIButton) {

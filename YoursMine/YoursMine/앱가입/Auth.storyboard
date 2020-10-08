@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EcX-Zq-yZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="-250"/>
+            <point key="canvasLocation" x="-926" y="-273"/>
         </scene>
         <!--Terms View Controller-->
         <scene sceneID="seC-h1-zFO">
@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blV-sO-SJV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-926" y="409"/>
+            <point key="canvasLocation" x="-926" y="395"/>
         </scene>
         <!--Employee Certificate View Controller-->
         <scene sceneID="Fgj-Yr-hWD">
@@ -629,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xTi-My-jN6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-200" y="409"/>
+            <point key="canvasLocation" x="-200" y="395"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="jfy-FN-9LP">
@@ -699,7 +699,7 @@
                                     <constraint firstAttribute="height" constant="45" id="zZb-yZ-pI1"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요 홍주연 사원님 😊" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-Y8-3aE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요 최하나 사원님 😊" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-Y8-3aE">
                                 <rect key="frame" x="20" y="119" width="374" height="23.5"/>
                                 <fontDescription key="fontDescription" name="NanumBarunGothicBold" family="NanumBarunGothic" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -882,7 +882,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1Y-pW-qk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="475" y="408"/>
+            <point key="canvasLocation" x="471" y="395"/>
         </scene>
         <!--Pattern Lock View Controller-->
         <scene sceneID="hKm-DP-dQk">
@@ -949,7 +949,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1in-on-on5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-245" y="-250"/>
+            <point key="canvasLocation" x="-228" y="-273"/>
         </scene>
     </scenes>
     <resources>
@@ -957,7 +957,7 @@
         <image name="btnCloseNormal.png" width="32" height="32"/>
         <image name="ccomBtnBackHeaderNormal.png" width="32" height="32"/>
         <namedColor name="PointYellowColor">
-            <color red="1" green="0.92900002002716064" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.92549019607843142" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextColor">
             <color red="0.37299999594688416" green="0.24699999392032623" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

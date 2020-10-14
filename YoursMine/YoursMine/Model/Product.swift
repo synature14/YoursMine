@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+var productArr: [Product] = []
 
 struct Product {
     enum CodingKeys: String,CodingKey {
@@ -30,7 +31,6 @@ struct Product {
     var category: ProductCategory!
     var nLikes: String!
     var nChattings: String!
-    
 
 //    convenience init(fromDict dictionary: [String:Any]) {
 //        sellerID = dictionary["sellerID"] as? String

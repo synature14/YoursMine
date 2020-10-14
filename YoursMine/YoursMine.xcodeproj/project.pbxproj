@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370FD3552536917100CDA026 /* MyMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FD3542536917100CDA026 /* MyMainCell.swift */; };
 		3718FEC42505BF54004B43E6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC32505BF54004B43E6 /* Product.swift */; };
 		3718FEC62505C286004B43E6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC52505C286004B43E6 /* User.swift */; };
 		3718FECA2505FF88004B43E6 /* BuyingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */; };
@@ -195,6 +196,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		370FD3542536917100CDA026 /* MyMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainCell.swift; sourceTree = "<group>"; };
 		3718FEC32505BF54004B43E6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		3718FEC52505C286004B43E6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3718FEC92505FF88004B43E6 /* BuyingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingMainViewController.swift; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 			children = (
 				3782EC7F2500A6E700341AF6 /* MyMain.storyboard */,
 				37F0BB00252D891B0093A8AC /* MyMainViewController.swift */,
+				370FD3542536917100CDA026 /* MyMainCell.swift */,
 			);
 			path = MY;
 			sourceTree = "<group>";
@@ -1320,6 +1323,7 @@
 				57489B472506293C003D7F1A /* AnimationViewInitializers.swift in Sources */,
 				57489BB92506293C003D7F1A /* AnimationKeypathExtension.swift in Sources */,
 				57489B892506293C003D7F1A /* KeyframeInterpolator.swift in Sources */,
+				370FD3552536917100CDA026 /* MyMainCell.swift in Sources */,
 				57489B992506293C003D7F1A /* FillI.swift in Sources */,
 				57489BA42506293C003D7F1A /* PreCompLayerModel.swift in Sources */,
 				57489B482506293C003D7F1A /* AnimationView.swift in Sources */,

@@ -26,12 +26,7 @@
 		379593672502354800A340DE /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379593662502354800A340DE /* Chatting.storyboard */; };
 		3795936A250236BF00A340DE /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37959369250236BF00A340DE /* Auth.storyboard */; };
 		37F0BAF9252D4A6D0093A8AC /* ChattingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAF8252D4A6D0093A8AC /* ChattingTableViewController.swift */; };
-		37F0BAFB252D5ACA0093A8AC /* MyPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAFA252D5ACA0093A8AC /* MyPageController.swift */; };
-		37F0BAFD252D5CC10093A8AC /* SellingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAFC252D5CC10093A8AC /* SellingHistoryController.swift */; };
-		37F0BAFF252D5CD10093A8AC /* BuyingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BAFE252D5CD10093A8AC /* BuyingHistoryController.swift */; };
 		37F0BB01252D891B0093A8AC /* MyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BB00252D891B0093A8AC /* MyMainViewController.swift */; };
-		37F0BB03252D8EF40093A8AC /* MyHistorySuperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BB02252D8EF40093A8AC /* MyHistorySuperController.swift */; };
-		37F0BB05252D97F00093A8AC /* SellingHistoryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0BB04252D97F00093A8AC /* SellingHistoryCellViewModel.swift */; };
 		57489A792505C3FA003D7F1A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A782505C3FA003D7F1A /* UIView+Extension.swift */; };
 		57489A7D2505C46D003D7F1A /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57489A7C2505C46D003D7F1A /* IntroViewController.swift */; };
 		57489A8B2505D00A003D7F1A /* NanumBarunGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */; };
@@ -221,12 +216,7 @@
 		379593662502354800A340DE /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
 		37959369250236BF00A340DE /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		37F0BAF8252D4A6D0093A8AC /* ChattingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewController.swift; sourceTree = "<group>"; };
-		37F0BAFA252D5ACA0093A8AC /* MyPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageController.swift; sourceTree = "<group>"; };
-		37F0BAFC252D5CC10093A8AC /* SellingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingHistoryController.swift; sourceTree = "<group>"; };
-		37F0BAFE252D5CD10093A8AC /* BuyingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingHistoryController.swift; sourceTree = "<group>"; };
 		37F0BB00252D891B0093A8AC /* MyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainViewController.swift; sourceTree = "<group>"; };
-		37F0BB02252D8EF40093A8AC /* MyHistorySuperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHistorySuperController.swift; sourceTree = "<group>"; };
-		37F0BB04252D97F00093A8AC /* SellingHistoryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellingHistoryCellViewModel.swift; sourceTree = "<group>"; };
 		57489A782505C3FA003D7F1A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		57489A7C2505C46D003D7F1A /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		57489A872505D009003D7F1A /* NanumBarunGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumBarunGothicBold.ttf; sourceTree = "<group>"; };
@@ -498,11 +488,6 @@
 			children = (
 				3782EC7F2500A6E700341AF6 /* MyMain.storyboard */,
 				37F0BB00252D891B0093A8AC /* MyMainViewController.swift */,
-				37F0BAFA252D5ACA0093A8AC /* MyPageController.swift */,
-				37F0BB02252D8EF40093A8AC /* MyHistorySuperController.swift */,
-				37F0BAFC252D5CC10093A8AC /* SellingHistoryController.swift */,
-				37F0BAFE252D5CD10093A8AC /* BuyingHistoryController.swift */,
-				37F0BB04252D97F00093A8AC /* SellingHistoryCellViewModel.swift */,
 			);
 			path = MY;
 			sourceTree = "<group>";
@@ -1227,7 +1212,6 @@
 				57489B7D2506293C003D7F1A /* StarNode.swift in Sources */,
 				57489B492506293C003D7F1A /* AnimationPublic.swift in Sources */,
 				57489BC52506293C003D7F1A /* AnimationContext.swift in Sources */,
-				37F0BAFB252D5ACA0093A8AC /* MyPageController.swift in Sources */,
 				57489BB02506293C003D7F1A /* TextAnimator.swift in Sources */,
 				57489B562506293C003D7F1A /* Vectors.swift in Sources */,
 				57489B862506293C003D7F1A /* NodePropertyMap.swift in Sources */,
@@ -1259,7 +1243,6 @@
 				57489BA92506293C003D7F1A /* Mask.swift in Sources */,
 				57489B772506293C003D7F1A /* PathOutputNode.swift in Sources */,
 				57489B622506293C003D7F1A /* CompositionLayer.swift in Sources */,
-				37F0BAFD252D5CC10093A8AC /* SellingHistoryController.swift in Sources */,
 				57489B5A2506293C003D7F1A /* AnimationTextProvider.swift in Sources */,
 				3718FEC42505BF54004B43E6 /* Product.swift in Sources */,
 				57489BB32506293C003D7F1A /* PrecompAsset.swift in Sources */,
@@ -1284,7 +1267,6 @@
 				57489B6F2506293C003D7F1A /* CompositionLayersInitializer.swift in Sources */,
 				57489B822506293C003D7F1A /* GradientStrokeNode.swift in Sources */,
 				57489B812506293C003D7F1A /* FillNode.swift in Sources */,
-				37F0BAFF252D5CD10093A8AC /* BuyingHistoryController.swift in Sources */,
 				57489B6A2506293C003D7F1A /* AnimationContainer.swift in Sources */,
 				57489B9A2506293C003D7F1A /* Repeater.swift in Sources */,
 				57489B602506293C003D7F1A /* GradientValueProvider.swift in Sources */,
@@ -1340,7 +1322,6 @@
 				57489B892506293C003D7F1A /* KeyframeInterpolator.swift in Sources */,
 				57489B992506293C003D7F1A /* FillI.swift in Sources */,
 				57489BA42506293C003D7F1A /* PreCompLayerModel.swift in Sources */,
-				37F0BB03252D8EF40093A8AC /* MyHistorySuperController.swift in Sources */,
 				57489B482506293C003D7F1A /* AnimationView.swift in Sources */,
 				57489B8E2506293C003D7F1A /* ShapeContainerLayer.swift in Sources */,
 				57489BAC2506293C003D7F1A /* KeyframeGroup.swift in Sources */,
@@ -1356,7 +1337,6 @@
 				57489B6C2506293C003D7F1A /* InvertedMatteLayer.swift in Sources */,
 				57489B8F2506293C003D7F1A /* PathNode.swift in Sources */,
 				9870B9362510800E008C91F6 /* LessonsListCell.swift in Sources */,
-				37F0BB05252D97F00093A8AC /* SellingHistoryCellViewModel.swift in Sources */,
 				57489B9F2506293C003D7F1A /* Star.swift in Sources */,
 				57489B702506293C003D7F1A /* TrimPathNode.swift in Sources */,
 				57D7B69925107ABD00805E26 /* CCGestureLockAppearance.swift in Sources */,
